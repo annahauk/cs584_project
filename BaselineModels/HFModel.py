@@ -1,3 +1,4 @@
+from __future__ import annotations
 import json
 import os
 from typing import Any
@@ -189,10 +190,15 @@ class HFModel:
             "report_to": [],
         }
 
+        # transformers >= 4.41 renamed evaluation_strategy → eval_strategy
+        import inspect
+        _ta_params = inspect.signature(TrainingArguments).parameters
+        _eval_key = "eval_strategy" if "eval_strategy" in _ta_params else "evaluation_strategy"
+
         if eval_dataset is not None:
             training_args_kwargs.update(
                 {
-                    "eval_strategy": "epoch",
+                    _eval_key: "epoch",
                     "save_strategy": "epoch",
                     "load_best_model_at_end": True,
                     "metric_for_best_model": "accuracy",
@@ -201,7 +207,7 @@ class HFModel:
         else:
             training_args_kwargs.update(
                 {
-                    "eval_strategy": "no",
+                    _eval_key: "no",
                     "save_strategy": "no",
                     "load_best_model_at_end": False,
                 }
@@ -248,7 +254,7 @@ class HFModel:
             texts = [input_data]
         elif isinstance(input_data, pd.Series):
             texts = input_data.fillna("").astype(str).tolist()
-        elif isinstance(input_data, list | tuple):
+        elif isinstance(input_data, (list, tuple)):
             texts = ["" if item is None else str(item) for item in input_data]
         else:
             raise TypeError("input_data must be a string, list/tuple of strings, or pandas Series")

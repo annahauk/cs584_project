@@ -1,0 +1,691 @@
+text,true_label,pred_label,pred_score,correct
+"""Just like students are given a couple of weeks of preparation before taking exams, doctors should also be given few days or weeks to prepare themselves before an operation or surgery, after all surgery is not as easy task""
+Is an example of....",fallacy of logic,faulty generalization,0.30643,0
+You don’t have to do this. My grandmother is in the hospital. I need my salary to support her medication. She’s dying.,appeal to emotion,appeal to emotion,0.392917,1
+"I know five people from Kentucky. They are all racists. Therefore, Kentuckians are racist.",faulty generalization,faulty generalization,0.522703,1
+"Pvt. Joe Bowers: What are these electrolytes? Do you even know?
+Secretary of State: They're... what they use to make Brawndo!
+Pvt. Joe Bowers: But why do they use them to make Brawndo?
+Secretary of Defense: [raises hand after a pause] Because Brawndo's got electrolytes.
+",circular reasoning,circular reasoning,0.243666,1
+"This is a fallacy of irrelevance that is based solely on someone's or something's history, origin, or source rather than its current meaning",ad hominem,circular reasoning,0.244239,0
+"Helga: You should not be eating that... it has been scientifically proven that eating fat burgers are no good for your health.
+
+Hugh: You eat fat burgers all the time so that can’t be true.",ad hominem,intentional,0.300819,0
+"Bill: “I believe that abortion is morally wrong.”
+Dave: “Of course you would say that, you’re a priest.”
+Bill: “What about the arguments I gave to support my position?”
+Dave: “Those don’t count. Like I said, you’re a priest, so you have to say that abortion is wrong. Further, you are just a lackey to the Pope, so I can’t believe what you say.”",ad hominem,ad hominem,0.536697,1
+"If we use one more can of hairspray this month, the ozone layer will not exist, and we will not exist!",faulty generalization,faulty generalization,0.605259,1
+"Argues that because something is popular, it must be right.",ad populum,ad populum,0.39939,1
+We either have to cut taxes or leave a huge debt for our children.,false dilemma,false dilemma,0.834927,1
+"""Why would you elect a mayor whose wife has been treated for alcohol addiction?""
+This logical fallacy is called...",ad hominem,ad hominem,0.567169,1
+" The best example of this fallacy is presented by the person who coined this term, Nassim Nicholas Taleb in his 2007 book, The Black Swan.  There are two people",false causality,fallacy of credibility,0.309584,0
+"""I drank bottled water and now I am sick, so the water must have made me sick.""",false causality,false causality,0.639817,1
+Teenagers are too immature and self-absorbed to understand anything about global issues.,faulty generalization,faulty generalization,0.386739,1
+"Ricky is watching television when he sees a commercial for foot cream. The commercial announcer says, ""This is the best foot cream on the market because no other foot cream makers have been able to prove otherwise!"" What fallacy has the announcer committed?",intentional,fallacy of credibility,0.303842,0
+"""No one stops to process...No one appreciates the value"" is an example of",faulty generalization,ad populum,0.304543,0
+"Everyone who is really into gaming already owns the latest video game. Don't be the only one left out!
+
+Which logical fallacy is being used in the passage?",ad populum,ad populum,0.518379,1
+"""A 2005 Gallup Poll found that an estimated 25% of Americans over the age of 18 believe in astrology - or that the position of the stars and planets can affect people’s lives. This is roughly 75,000,000 people. Therefore, there must be some truth to astrology!""",ad populum,ad populum,0.572662,1
+"""Drivers in Richmond are terrible. Why does everyone in a big city drive like that?""",ad hominem,faulty generalization,0.659205,0
+"No people under the age of 66 are senior citizens.
+No senior citizens are children.
+Therefore, all people under the age of 66 are children.",fallacy of logic,faulty generalization,0.405389,0
+"""Why worry about pandas going extinct, when we have the homeless in our country to worry about?""",fallacy of relevance,fallacy of extension,0.300217,0
+"The fallacy of equivocation occurs when a key term or phrase in an argument is used in an ambiguous way, with one meaning in one portion of the argument and then another meaning in another portion of the argument.",equivocation,circular reasoning,0.26154,0
+"Everyone in our family has gone to the University of Tennessee, so you need to apply to UT.",fallacy of credibility,ad populum,0.395713,0
+"Schools are like families; therefore teachers (like parents) should be allowed to discipline their students.
+Which logical fallacy is represented here?",fallacy of logic,circular reasoning,0.266534,0
+Recent auto accidents in your neighborhood have led you to propose to the city council that the speed limit along Main Street be reduced to calm the traffic flow. Opponents complain that reducing speed limits all over town is counterproductive and an unnecessary burden on drivers.,fallacy of extension,fallacy of extension,0.297018,1
+"Whatever happens by chance should be punished, because whatever happens by chance is a departure from law and all departures from law should be punished.
+
+Identify the logical fallacy commited in this argument.",equivocation,circular reasoning,0.475878,0
+"""The art teacher spoke in the trial as a witness in support of testing perfumes on animals, and he persuaded me.""",fallacy of credibility,fallacy of credibility,0.426765,1
+"P1. A sedentary lifestyle contributes to obesity.
+P2. People have become more sedentary in the last few decades.
+C. Therefore, the rise in obesity can be fixed by people getting more exercise.",false causality,false causality,0.473232,1
+Executions are moral because we must have a death penalty to discourage violent crime.,circular reasoning,circular reasoning,0.449232,1
+"Everyone knows that Japanese DVD players are the best. After all, the outsell American players two-to-one.",ad populum,ad populum,0.616855,1
+"Jimmy has a fever, sinus congestion, a cough, and can’t come to school, so he probably has a test later today.",false causality,faulty generalization,0.315534,0
+"Lily says the sun is fully risen at 5:00am, but how would she know she sleeps in until noon.
+
+(love you lily all jokes all jokes)",ad hominem,false causality,0.185302,0
+"Dr. Fauci says we need to wear masks, but Dr. Fauci is the oldest, meanest doctor around. I’m sure what he says isn’t true at all.",ad hominem,ad hominem,0.705254,1
+"You should drive on the right side of the road because that is what the law says, and the law is the law.",circular reasoning,circular reasoning,0.535722,1
+"""You shouldn't go to 'Vomito' I went once and the food was awful."" is",faulty generalization,false causality,0.240208,0
+"Buddy Burger has the greatest food in town.  Buddy Burger was voted #1 by the local paper.  Therefore, Phil, the owner of Buddy Burger, should run for president of the United States.",fallacy of logic,ad populum,0.311663,0
+"Robert Downey Jr. thinks everyone should vote. However, Robert Downey Jr. once went to prison for drug use. So, he's obviously wrong.",ad hominem,ad hominem,0.380554,1
+Let's talk about Glaucon. Where did you get the poison you used on him?,intentional,intentional,0.322228,1
+"""The only solutions I can see to climate change is either mass extinction of humans, or passing this green bill.""",false dilemma,false dilemma,0.69417,1
+"No kangaroos are MMA fighters.
+Some MMA fighters are not Mormons.
+Therefore, some Mormons are not kangaroos.",fallacy of logic,fallacy of logic,0.303017,1
+People who have to have a cup of coffee every morning before they can function have no less a problem than alcoholics who have to have their alcohol each day to sustain them.,fallacy of logic,faulty generalization,0.381552,0
+"The use of laptops and other devices to replace books in the classroom would eventually lead to the downfall of printing and publishing companies, causing many people to be laid off from their jobs. As such, schools should stick to using printed books as study materials.",faulty generalization,faulty generalization,0.570484,1
+"Everybody know that staying out in the rain can make you sick.
+Which logical fallacy is represented here?",ad populum,ad populum,0.406182,1
+"""Historically, up until the late 16th century, most people believed that the Earth was the center of the universe. Today we understand this is not true,"" is an example of what fallacy?",ad populum,ad populum,0.20193,1
+"James, the company you work for just filed for bankruptcy! How can I trust you with our money?",faulty generalization,ad hominem,0.39595,0
+All required university courses are boring.,faulty generalization,faulty generalization,0.750529,1
+God exists. How do you know? Because it says so in the Bible.,circular reasoning,circular reasoning,0.40444,1
+"""Either we re-elect Mayor Ruiz, or we watch our city fall to pieces"" is an example of",false dilemma,false dilemma,0.846595,1
+"Charlie: Fast food is filled with salt, fat, and added sugars.  We need better regulation of the industry.
+Bob: That may be, but you're sure a hypocrite!  I saw you devour a Triple-Baconator, super-sized fries, and 64 ounces of soda yesterday.",ad hominem,ad hominem,0.63585,1
+What is the appeal being used through this sad little girl?,appeal to emotion,appeal to emotion,0.290554,1
+"""My opponent raises a really good point, but can we really trust him? He moved to this town three years ago and everyone knows his wife left him.",ad hominem,ad hominem,0.781636,1
+"Sebastian saw that several of his friends had bought a new fidget spinner. He realized it must be a very cool gadget if they had one, and everyone else probably did, too.
+What fallacy did Sebastian fall into?",ad populum,ad populum,0.501675,1
+"I know I missed assignments, but if you fail me, I will lose my financial aid and have to drop out.",appeal to emotion,appeal to emotion,0.38665,1
+"If you get in a car wreck, and the fault of the wreck is a teenage boy at ECR, believing all teenage boys at ECR are bad drivers is an example of:",faulty generalization,faulty generalization,0.664159,1
+"the phrase ""Ninety percent of all people surveyed said that McDonalds is better than Burger King so it must be true."" represents which fallacy?",ad populum,ad populum,0.736204,1
+“The Senator thinks we can solve all our ecological problems by driving a Prius.”,fallacy of extension,fallacy of extension,0.274581,1
+Grizzly bears can't be dangerous! They're too cute.,fallacy of relevance,faulty generalization,0.345665,0
+"My friend swears the mechanic at that shop overcharged her last week and after looking at her invoice it seems she’s right. So don’t take your business there, as you’ll definitely get ripped off.",faulty generalization,faulty generalization,0.250301,1
+"Asking students to sit in the same class for 2 hours is like asking them to wander the desert alone, with no water, for a week.",fallacy of logic,fallacy of logic,0.238186,1
+"My roommate said her philosophy class was difficult, and the one I’m in is difficult, too. All philosophy classes must be hard.",faulty generalization,faulty generalization,0.719022,1
+It is an example of,false dilemma,circular reasoning,0.191414,0
+The Bible is filled with stories of God's magic.,appeal to emotion,circular reasoning,0.328154,0
+"Pizza has ingredients from all the food groups. Therefore, pizza must be healthy.",faulty generalization,faulty generalization,0.234388,1
+McDonald's Hamburgers: over 99 billion served.,ad populum,ad populum,0.639592,1
+"Mom, I know you're upset that I went over my cell limit this month. The important issue here, though, is that I got an A on my algebra exam.",fallacy of relevance,appeal to emotion,0.183119,0
+"An environmental group illegally blocked loggers and workers at a nuclear plant. Therefore, environmentalists are radicals who take the law into their own hands.",faulty generalization,ad hominem,0.640188,0
+"Look, you are going to have to make up your mind. Either you decide that you can afford this stereo, or you decide you are going to do without music for a while",false dilemma,false dilemma,0.840538,1
+Either you love me or you hate me.,false dilemma,false dilemma,0.851815,1
+"Service Tech: Your car could use some new tires.
+Bart: You have a financial interest in selling me tires, why should I trust you?
+Service Tech: You brought your car to me to have it checked, sir.
+Bart: I brought my car to the shop where you work.
+Service Tech: So should we forget about the new tires for now?
+Bart: I never suggested that.  Are you trying to use reverse psychology on me, so I will buy the tires?
+",fallacy of relevance,fallacy of extension,0.337033,0
+Marcus wants to go to a small community college close to home because all of his friends are there.,ad populum,ad populum,0.449695,1
+The thing about the new math teacher (who is an excellent teacher) is that he/she really stands out because he/she has good teaching skills.,circular reasoning,circular reasoning,0.253003,1
+"Smoking cigarettes is just like ingesting arsenic into your system; both have been shown to be causally related to death. If you wouldn't want to take a spoonful of arsenic, I would think that you wouldn't want to continue smoking.",fallacy of logic,false causality,0.365242,0
+"""The dinosaurs became extinct because they ate vegetables..."" is an example of what?",false causality,false causality,0.219098,1
+Of course that doctor advocates vaccination—he probably owns stock in a pharmaceutical company.,ad hominem,ad hominem,0.489037,1
+SM 2: book being popular because it has been on the best-seller list for months,ad populum,ad populum,0.257549,1
+"""Yes, we have safety issues in our factory. But we work really hard to make a good product.""",fallacy of relevance,appeal to emotion,0.181023,0
+Guns are like hammers--they're both tools with metal parts that could be used to kill someone. And yet it would be ridiculous to restrict the purchase of hammers--so restrictions on purchasing guns are equally ridiculous.,fallacy of logic,circular reasoning,0.189277,0
+"""I have a right to free speech so I can say what I want and you shouldn't try to stop me. """,circular reasoning,circular reasoning,0.276599,1
+You didn't remember to take out the trash this morning. It will pile up and the neighbors will complain and the health inspectors will come and take away the kids.,faulty generalization,faulty generalization,0.732547,1
+If you were a true American you would support the rights of people to choose whatever vehicle they want.,ad populum,appeal to emotion,0.420033,0
+"David: Can you believe that the president said, ""fat people are losers""?
+Sam: Where did you hear this?
+David: I read it in a headline on BrightBert News.
+Sam: He actually said, ""People who say, 'fat people are losers' are not only cruel, but they are also wrong as well as being irrational.""
+",intentional,ad hominem,0.524375,0
+"If you eat a good diet, you will never have a heart attack.",faulty generalization,faulty generalization,0.586907,1
+"""With 80% of consumers choosing our product, isn't obvious that you should, too?""
+This logical fallacy is called...",ad populum,ad populum,0.715574,1
+"When your mom gets your phone bill and you have gone over the data limit, you begin to distract her by talking about how well you did on a test today knowing she has offered to extend your data limit if you make good grades. This is an example of which logical fallacy?",fallacy of relevance,appeal to emotion,0.168109,0
+"Some students failed a test last week and they all had cell phones.  Having cell phones, therefore, made them fail.",false causality,false causality,0.458789,1
+"All professional athletes use Apple watches to track their training, so our team needs to purchase Apple watches for everyone.",ad populum,ad populum,0.354792,1
+"""The university committee for student discipline investigated all engineering tests for the past five years, and they found no evidence of cheating. We thus declare that no cheating has taken place during those five years.""",intentional,intentional,0.351389,1
+People who are psychotic act in a bizarre manner. This person acts in a bizarre manner. Therefore: This person is psychotic.,fallacy of logic,fallacy of logic,0.261983,1
+"Reporter: “It’s been two years since your policies were implemented, and so far they have failed to reduce unemployment rates.”
+
+Politician: “I have been working hard ever since I came into office, and I’m happy to say that I met with many business leaders throughout the country, who all say that they are glad to see that our hard work is paying off.”",fallacy of relevance,appeal to emotion,0.22076,0
+"Representative Gutierrez of Illinois, arguing in Congress on July 11, 1996, replying to Republicans arguing in favor of the ""Defense of Marriage Act"", a bill stipulating that 'marriage' be defined as being between a man and a woman only, excluding homosexual marriages: ""I now realize that my friends on the other side of the aisle aren't the least bit serious when they talk about how important it is for the federal government not to interfere in the lives of our people. I understand that they are just kidding - just teasing us - when they stress the importance of taking power out of Washington and giving it to local officials. And now I know that their biggest joke of all is that old line about family values - all that talk about encouraging people to care about and be committed to each other.""",ad hominem,ad hominem,0.389035,1
+"Well, every one else jumped off the roof, why can't I?",ad populum,ad populum,0.671202,1
+"Trump cites (biased) poll results showing that people think he’s a strong leader to prove a point that he is a strong leader.
+
+ABC News/Washington Post Poll (wrong big on election) said almost all stand by their vote on me & 53% said strong leader.",ad populum,ad populum,0.48313,1
+"This crash will likely damage the reputation of Malaysia Airlines, which will hurt the tourism industry of Malaysia and ruin their economy.",faulty generalization,faulty generalization,0.440715,1
+"Green Peace's strategies aren't effective because they are all dirty, lazy hippies.",ad hominem,ad hominem,0.519786,1
+"In both of the murder mysteries I have read, the District Attorney was the culprit. All mystery writers like to make lawyers out to be villains.",faulty generalization,faulty generalization,0.468438,1
+"Mayor Jones’ anti-DUI campaign should not be taken seriously. After all, the mayor himself was cited for driving under the influence in college",ad hominem,ad hominem,0.686051,1
+A man who has cheated on his spouse is confronted by a friend who tells him that it is wrong. The man begins to talk about right versus wrong and who decides.,fallacy of relevance,ad hominem,0.160733,0
+"Bill and Jill are arguing about cleaning out their closets:
+Jill: ""We should clean out the closets. They are getting a bit messy.""
+Bill: ""Why, we just went through those closets last year. Do we have to clean them out everyday?""
+Jill: ""I never said anything about cleaning them out every day. You just want too keep all your junk forever, which is just ridiculous.""",fallacy of extension,fallacy of extension,0.43217,1
+"Jeff's mom is concerned when she finds out that he skipped class one day. She tells him that she is concerned that since he skipped one class, he will start skipping more frequently. Then he will drop out altogether, never graduate or get into college, and end up unemployed and living at home for the rest of his life. What type of fallacy has Jeff's mom committed?",faulty generalization,faulty generalization,0.646315,1
+"Red had come up six times in a row on the roulette wheel, so Greg knew that it was close to certain that black would be next up. Suffering an economic form of natural selection with this thinking, he soon lost all of his savings.",false causality,appeal to emotion,0.230698,0
+"""Once you leave the house, you cannot go back. You will not receive any financial support so you need to stop going to school. Your credit card will be cut so you need to work. You will live on your own.""",faulty generalization,appeal to emotion,0.358488,0
+"Person 1: If you are a Marvel fan then you love Avengers: Endgame.
+Person 2: I am a Marvel fan and I did not love Avengers: Endgame.
+Person 1: Well you aren’t a TRUE Marvel fan.”",intentional,ad hominem,0.248458,0
+This has to work so it will work.,circular reasoning,appeal to emotion,0.307083,0
+"P1. Smoking has been empirically proven to cause lung cancer.
+C. Therefore, if we eradicate smoking, we will eradicate lung cancer.",false causality,fallacy of logic,0.194621,0
+"""Either we have the full football season or we scrap it altogether and have zero football"" IS an example of what fallacy?",false dilemma,false dilemma,0.841132,1
+Robot 2 (Blue) has been refuting all of Robot 1's (Orange) arguments. Robot 1 launches the above counterargument. What is this fallacy?,fallacy of extension,ad hominem,0.37338,0
+"Sure, that charity group is under investigation for misusing funds, but everyone deserves a healthy meal.",fallacy of relevance,ad populum,0.449798,0
+"A shopkeeper suspects you of stealing and asks you to empty your pockets. The first thing you take out is an empty gum wrapper and they immediately shout, “I knew it!” What fallacy has the shopkeeper committed?",faulty generalization,faulty generalization,0.247425,1
+The United States is the wealthiest nation in the world. So every American is wealthy.,faulty generalization,faulty generalization,0.33958,1
+Jack threw up because he ate Hot Cheetos.,false causality,false causality,0.426763,1
+Did John ever give up his bad habits?,intentional,intentional,0.400105,1
+I passed my math test after going out to the movies the night before. I should go to the movies the night before every math test!,false causality,false causality,0.380736,1
+"""It's important for you to take this psychology course. Sign up today. Don't wait.""",fallacy of relevance,appeal to emotion,0.444908,0
+"""My opponent suggests that lowering taxes will be a good idea, this is coming from a woman to eats a pint of Ben and Jerry's each night!""",ad hominem,ad hominem,0.74044,1
+"Before women got the vote, there were no nuclear weapons",false causality,intentional,0.196104,0
+"a connection between two ideas that doesn't always mean that one causes the other (correlation vs. causation)
+
+una conexión entre dos ideas que no siempre significa que una causa la otra (correlación vs. causación)",false causality,circular reasoning,0.191343,0
+"My best friend says you’re a liar, so I’m not going to talk to you.",ad hominem,ad hominem,0.747048,1
+Maria drives a car. She must be wealthy.,ad hominem,faulty generalization,0.343178,0
+"1. All the schools in the area had to kept closed for most part of the week.
+2. Many parents have withdrawn their children from the local schools.",false causality,faulty generalization,0.25225,0
+What type of persuasive writing is used to influence readers’ feelings (pathos)?,appeal to emotion,ad populum,0.231035,0
+We should prohibit all cadets from assisting on emergency services missions. Some cadets are so immature they won’t ever stop goofing around.,fallacy of extension,faulty generalization,0.343503,0
+"Teacher: Why don’t you have your homework today?
+
+Student: Well, I did my homework. I was actually really interested in all that info about the quadratic formula. Would you like to hear the song that I wrote to memorize it?",fallacy of relevance,fallacy of relevance,0.168187,1
+"Pastor Pete: People are turning to God everywhere! 9 out of 10 people I interviewed said that they had a personal relationship with Jesus Christ.
+
+Fred: Where did you find these people you interviewed?
+Pastor Pete: In my church.",faulty generalization,ad populum,0.200661,0
+"If you are a true American, you will ask your congressman to vote against NAFTA.",ad populum,appeal to emotion,0.298661,0
+"""Everyone is doing it, you should be too!"" is an example of which fallacy?",ad populum,ad populum,0.739359,1
+"A is part of B. A has property X. Therefore, B has property X. What fallacy is described in this logical form?",faulty generalization,circular reasoning,0.376593,0
+Mabel wants to get rid of the student newspaper. Next she will probably want to ban free speech! She won't want us to speak at all! She will make it a law that you cannot speak in public.,fallacy of extension,faulty generalization,0.524681,0
+"A Congressman calls a Whitehouse Spokesperson a ""giant idiot""",ad hominem,ad hominem,0.790722,1
+"""You are not a credible resource person. You haven't finished college.""",ad hominem,ad hominem,0.585567,1
+A commercial shows a group of friends all hanging out wearing clothes from a popular clothing company. This is an example of,ad populum,ad populum,0.416273,1
+"I cannot get a job because the public education system failed me;  I have to steal to  survive.  It is society's fault, not mine.",appeal to emotion,appeal to emotion,0.181875,1
+"“President Jones raised taxes, and then the rate of violent crime went up. Jones is responsible for the rise in crime.""",false causality,false causality,0.726748,1
+"How do I know the adult film industry is the third largest industry in the United States? Derek Shlongmiester, the adult film star of over 50 years, said it was. That's how I know.",fallacy of credibility,fallacy of credibility,0.193419,1
+Alissa has class with a football player who is a class clown. He disrupts the class and is failing. Alissa decides all football players are not serious students.,faulty generalization,faulty generalization,0.573727,1
+Fast food is bad for you because is junk.,circular reasoning,circular reasoning,0.417863,1
+"Elba: I can’t believe the art critic said my artwork is awful!
+Rowena: He must have meant it in the old sense of the word -- that your artwork inspired awe!
+Elba: Yes!  That makes sense now!
+",equivocation,ad hominem,0.436908,0
+"""We're going to protest and not get in trouble because Mr. Iglesias said it's okay.""",fallacy of credibility,appeal to emotion,0.170594,0
+"If I don't take this AP class, then I won't do well on the exam.  If I don't do well on the AP exam, then I can't get into a good college.  If I can't get into a good college, then I'll never get a good job.  If I can't get a good job, then I'm going to have to live in my parents' basement forever.  Guess I'll sign up for the AP class.",faulty generalization,faulty generalization,0.732495,1
+"Every time I wear this necklace, I pass my exams. Therefore, wearing this necklace causes me to pass my exams.",false causality,false causality,0.65728,1
+"Everyone is getting tattoos in college, so you might as well do it too.",ad populum,ad populum,0.608363,1
+"There is no need for additional taxes for education. Every year we throw more money into education, and all they do is hire more management and build more buildings. None of the money actually reaches the classroom or is really used for education.",fallacy of relevance,false causality,0.300426,0
+"Mrs. Peters is nominated for teacher of the year, which is voted on by her fellow faculty members. A colleague says that she would never vote for her because she is too young.",ad hominem,ad hominem,0.430348,1
+Don't believe what Kim says about global warming. Kim dropped out of college!,ad hominem,ad hominem,0.676866,1
+You're complaining because you have to walk to school? I used to have to give my parents my entire paycheck.,fallacy of relevance,fallacy of extension,0.266365,0
+This coin has landed heads-up nine times in a row. So it will probably land tails-up next time it is tossed.,ad populum,false causality,0.574596,0
+"Son: I am so excited!  I got an “A” on my physics exam!
+Dad:  Why not an “A+”?  This means that you answered something incorrectly.  That is not acceptable!
+",fallacy of relevance,ad hominem,0.302647,0
+"""The Cardinals are the best football team because they're better than all the other teams. They're better than all the other teams because they're the best.""",circular reasoning,circular reasoning,0.557569,1
+How can you tell me I should exercise to lose weight? All you do is sit behind a desk all day. I've never seen you do a lick of exercise.,ad hominem,ad hominem,0.377437,1
+"There are two kinds of people in this world: those who like penguins, and those who are terrible monsters.",false dilemma,faulty generalization,0.296968,0
+"""Four out of five dentists recommend Happy Glossy toothpaste. Therefore, it must be great.""",faulty generalization,ad populum,0.43619,0
+A mother says that she does not trust her pediatrician because he has never been a mother.,ad hominem,ad hominem,0.705423,1
+"She has always associated with shady people, so she must not be trustworthy.",faulty generalization,ad hominem,0.636901,0
+"Our garage sale made lots of money before Joan showed up. Obviously, she scared off all the customers.",false causality,false causality,0.336703,1
+"Speaker 1: No fault divorce is really harmful to the family and the larger society.
+Speaker 2: Well, you must not really think that since you’re divorced yourself.",ad hominem,ad hominem,0.408042,1
+"Mark: Do you believe in virgin births?
+Sue: You mean that babies are born virgins?
+Mark: I mean birth without fertilization.
+Sue: No.
+Mark: How could you not believe in virgin births? Roughly two billion people believe in them, don’t you think you should reconsider your position?
+",ad populum,ad populum,0.234471,1
+"After Will said that we should put more money into health and education, Warren responded by saying that he was surprised that Will hates our country so much that he wants to leave it defenceless by cutting military spending.",fallacy of extension,fallacy of extension,0.479479,1
+"I didn't want to the only one not listening to music while I completed my Achieve article, so I listened to music too.",ad populum,faulty generalization,0.286719,0
+"If we take away farmers' ability to grow genetically engineered crops, if we eliminate that option, people will go hungry, in fact, people will starve. Unlike my opponent, I choose to use the technology available to us and save lives.",fallacy of extension,appeal to emotion,0.31575,0
+"I thought you were a good person, but you were not at church today.",false dilemma,fallacy of extension,0.215696,0
+"""We both like music, so we should get married.""",fallacy of logic,ad populum,0.180701,0
+"Four out of five dentists recommend Happy Glossy Smiley toothpaste brand.  Therefore, it must be great.",faulty generalization,ad populum,0.449162,0
+What drugs were you on?,intentional,intentional,0.455029,1
+“Guns are like hammers—they’re both tools with metal parts that could be used to kill someone. And yet it would be ridiculous to restrict the purchase of hammers—so restrictions on purchasing guns are equally ridiculous.”,fallacy of logic,fallacy of logic,0.173923,1
+"A car makes less pollution than a bus. Therefore, cars are less of a pollution problem than buses",faulty generalization,faulty generalization,0.264976,1
+"Sam is riding her bike in her home town in Maine, minding her own business. A station wagon comes up behind her and the driver starts beeping his horn and then tries to force her off the road. As he goes by, the driver yells ""get on the sidewalk where you belong!"" Sam sees that the car has Ohio plates and concludes that all Ohio drivers are jerks.",faulty generalization,faulty generalization,0.285862,1
+"I’m raising funds to help cure XYZ disease. If you don’t donate, then you’re part of the problem.",false dilemma,false dilemma,0.561627,1
+"If we let the government implant tracking devices in criminals, it's not going to stop there! They're going to want to track us at work, our school children, and then eventually everyone!",faulty generalization,faulty generalization,0.790673,1
+"Jay: Dude, where are my car keys?
+Silent Bob: (says nothing)
+Jay: I KNEW you took them!
+",fallacy of relevance,ad hominem,0.352478,0
+Starbucks is the best because it's expensive.,circular reasoning,circular reasoning,0.49307,1
+"I saw two women get in a car accident. Therefore, all women are bad drivers",faulty generalization,faulty generalization,0.709832,1
+"Matthew: Everyone believes that teachers get paid enough for the job they do. Therefore, it must be true.",ad populum,ad populum,0.505415,1
+"If your neighbor robs a bank, should you go to jail? is an example of.....",intentional,faulty generalization,0.367352,0
+"Jon: ""Go easy on the scotch; you've had three shots already now."" Jeff: ""Oh sure, I'll put down my scotch when you put down that tequila. Lay off, man.""",fallacy of relevance,faulty generalization,0.255965,0
+"Broccoli has significantly less fat than the leading candy bar! Plus, it's nowhere near as hot as Hot Cheetos!",faulty generalization,faulty generalization,0.356805,1
+"Although we have proven that the moon is not made of spare ribs, we have not proven that its core cannot be filled with them; therefore, the moon’s core is filled with spare ribs.
+
+X is true because you cannot prove that X is false.
+X is false because you cannot prove that X is true.",intentional,circular reasoning,0.341884,0
+"Violent video games cause teens to be violent, because violent teens play violent video games.",circular reasoning,circular reasoning,0.218286,1
+"A 2005 Gallup Poll found that an estimated 25% of Americans over the age of 18 believe in astrology—or that the position of the stars and planets can affect people's lives.  That is roughly 75,000,000 people.  Therefore, there must be some truth to astrology!",ad populum,ad populum,0.570792,1
+"I saw Ashton Kutcher in a commercial for male skin care. He's looking good for his age, so I'm willing to try the product. He must know what he's talking about.",fallacy of credibility,fallacy of credibility,0.318318,1
+Trying the latest social media challenge is a good example of what logical fallacy?,ad populum,ad populum,0.253324,1
+"Murder is morally wrong. Therefore, abortion is morally wrong.",circular reasoning,fallacy of logic,0.280933,0
+The party was going great! Then Gerald showed up and little by little people started collecting their coats and heading home. Gerald ruined the party.,false causality,false causality,0.273275,1
+"The Supreme Court right now is deciding whether it is right to execute insane people who have committed murder. I think it is all right to execute insane people. If we ban executions of insane people, then everybody on death row will suddenly decide they are insane and purposely fail sanity tests. It would result in chaos.",fallacy of relevance,faulty generalization,0.736675,0
+"""That new home looks great! Let's buy it!""",faulty generalization,ad populum,0.615036,0
+"After I listened to the first song of my favorite musician’s new vinyl record, I knew I’d hate the entire record, so I converted it into a Frisbee.",faulty generalization,faulty generalization,0.247373,1
+"John: Members of the UbaTuba White Men's Club are upstanding citizens of the community.
+Marvin: Then why are there so many of these members in jail?
+John: They were never true UbaTuba White Men's Club members.
+Marvin: What’s a true UbaTuba White Men's Club member?
+John: Those who don't go to jail.
+",intentional,faulty generalization,0.390772,0
+"Tries to persuade the reader to do, think or buy something because it is popular or because ""everyone"" is doing it.",ad populum,ad populum,0.642724,1
+Why worry about taking attendance when there are so many starving children in the world?,fallacy of relevance,ad populum,0.237693,0
+Purchase our product or no one is going to think you’re attractive.,false dilemma,false dilemma,0.586997,1
+Senator Lewis says we should not fund the missile attack program. I disagree. I don't understand why he wants to leave us defenseless like that.,fallacy of extension,fallacy of extension,0.485682,1
+"This is an emotional appeal that speaks the concept that many people agree or disagree, so you should, too",ad populum,ad populum,0.684226,1
+Everyone being referred to as comrade.,ad populum,ad populum,0.55326,1
+"Slavery is accepted by just about everyone in our society, so it’s ethical to keep slaves.",ad populum,ad populum,0.621415,1
+"You tell me it's unpatriotic to cheat on federal income tax reports. Well, you should know. You've never once listed your huge bonuses.",fallacy of relevance,ad hominem,0.381043,0
+"I shop at Natural Happy Sunshine Store (NHSS), which is much better than your grocery store because at NHSS everything is natural including the 38-year-old store manager’s long gray hair and saggy breasts.",fallacy of credibility,faulty generalization,0.306253,0
+"I took a vitamin this morning and now I’m sick, so the vitamin must have made me ill.",false causality,false causality,0.611199,1
+Get Verizon--1 billion people can't be wrong.,ad populum,ad populum,0.640621,1
+"""If I raise you, I must raise everyone, and then the company goes bankrupt.""",faulty generalization,faulty generalization,0.386474,1
+Atheists are morally bankrupt.,faulty generalization,faulty generalization,0.553098,1
+Last year I wanted to quit school because my friends treated me like an outcast and talked about me to my friends. I felt betrayed and sad all of the time but now I think I have a place at my new middle school.,appeal to emotion,faulty generalization,0.420495,0
+"In order to really look at the problem of global warming, we must first consider how the homeless suffer when it is cold.",fallacy of relevance,appeal to emotion,0.279065,0
+Why should we worry about the negative depiction of women in music videos when thousands of women are dying of AIDS each year?,fallacy of logic,fallacy of extension,0.204543,0
+Donald Trump mocked Romney for walking like a penguin. He also repeatedly called Jeb Bush low-energy.,ad hominem,ad hominem,0.672773,1
+French people are great at kissing. Julie is French. Get me a date!,faulty generalization,faulty generalization,0.648305,1
+"First we handed out I-pads, now we use Quizizz, next we'll have robot subs!",faulty generalization,faulty generalization,0.623681,1
+There was a thunderstorm with rain therefore I did not finish my homework.,false causality,false causality,0.558013,1
+The sinister fisherman's suspicious smile frightened the innocent children,appeal to emotion,appeal to emotion,0.157614,1
+I guess I should buy my 12-year-old daughter an iPhone. Everyone at her new school has one and I want her to fit in with the other kids.,ad populum,ad populum,0.661555,1
+"""Everyone else believes it, so it must be true.""",ad populum,ad populum,0.735572,1
+"Charlie: Fast food is filled with salt, fat, and added sugars. We need better regulation of the industry.
+
+Bob: That may be, but you’re such a hypocrite! I saw you devour a Triple-Baconator, super-sized fries, and 64 ounces of soda yesterday.",ad hominem,ad hominem,0.638192,1
+", motive, or other attribute of the person making the argument.",ad hominem,intentional,0.256868,0
+"Speaker 1: I'll never talk.
+Speaker 2: We have ways of making you talk.",appeal to emotion,ad hominem,0.160321,0
+"Last week, the Cowboys played the Texans in Houston. Mrs. Gibson was excited to go to the game because she is a huge Cowboys fan. Because everyone in Houston cheers for the Texans, Mrs. Gibson decided to cheer for the Texans too.",ad populum,faulty generalization,0.269257,0
+Everyone is doing it.  You should too.,ad populum,ad populum,0.727672,1
+Join the crowd and don’t get left behind!,ad populum,appeal to emotion,0.339148,0
+"""There I was in the midst of thousands, and yet a perfect stranger; without home and without friends, in the midst of thousands of my own brethren—children of a common Father, and yet I dared not to unfold to any one of them my sad condition."" Check each literary term found in this quote:",appeal to emotion,appeal to emotion,0.265849,1
+"We cannot unlock our child from the closet because if we do, she will want to roam the house.  If we let her roam the house, she will want to roam the neighborhood.  If she roams the neighborhood, she will get picked up by a stranger in a van, who will sell her in a sex slavery ring in some other country.  Therefore, we should keep her locked up in the closet.",faulty generalization,faulty generalization,0.751809,1
+"Even though it's only the first day, I can tell this is going to be a boring course.",faulty generalization,faulty generalization,0.756106,1
+"Eugene is silly in class. Harry is his friend, so Harry must be silly, too.",faulty generalization,faulty generalization,0.364063,1
+"""How would you know anything about technology? You're too old!""",ad hominem,ad hominem,0.698644,1
+"""Everybody is late coming back from lunch, so it shouldn't matter if I'm late.""",ad populum,faulty generalization,0.402895,0
+"Lots of people bought this album, so it must be good.",ad populum,ad populum,0.722291,1
+My child was diagnosed with autism after receiving vaccinations. That is proof that vaccines are to blame.,false causality,false causality,0.455482,1
+"My parents are democrats, and they are good people. Therefore, all democrats must be good people.",faulty generalization,faulty generalization,0.628254,1
+"""You can't prove that mermaids actually don't exist and therefore it's reasonable to say that they do"" IS an example of this fallacy.",intentional,intentional,0.462697,1
+"All Greek gods are mythical.
+All modern day gods are real.
+Therefore, all Greek gods are real.",fallacy of logic,fallacy of logic,0.343198,1
+The senator voted for the tax increase. It's not hard to understand why when you consider that he is a millionaire and has never had to worry about money.,ad hominem,ad hominem,0.284107,1
+"Susie bought a flip-phone, so all of her friends bought flip-phones.",ad populum,faulty generalization,0.522746,0
+"Now that the Chiefs are going to the Super Bowl, everybody is suddenly a fan.",ad populum,ad populum,0.69357,1
+"Sure, we haven't given raises to our employees in more than ten years. However, we do pride ourselves on providing customer service in over seven different languages.",fallacy of relevance,fallacy of credibility,0.213557,0
+"Nicholas - ""An apple is a vegetable."" Alexis - ""Don't listen to Nicholas; he is failing AP Language""",ad hominem,ad hominem,0.575093,1
+"Laura is the class president. She believes that the class should sponsor a dance as a fundraiser. Then she learns that a group of girls that she doesn't like also support the idea of a dance as a fundraiser. So, Laura changes her mind and decides that the class should plan a race instead.",faulty generalization,fallacy of extension,0.178389,0
+"I can’t stop eating these chocolates.  I really love chocolate, or I seriously lack willpower.  I know I really love chocolate; therefore, I cannot lack willpower.",fallacy of logic,fallacy of logic,0.202904,1
+Did you really vote for Donald as class treasurer? Didn't you hear that his uncle was imprisoned for embezzling $1.5 million?,faulty generalization,ad hominem,0.269759,0
+"All of my friends are coming to my birthday party. If Micah doesn't, she might as well tell me that she doesn't like me.",false dilemma,faulty generalization,0.532978,0
+"No donkeys are fish.
+Some asses are donkeys.
+Therefore, some asses are fish.",fallacy of logic,fallacy of logic,0.35148,1
+I’ve never had the flu because I take my vitamins everyday.,false causality,false causality,0.336066,1
+We either ban hairspray or the world will end.,false dilemma,false dilemma,0.84654,1
+A speaker chooses a deliberately poor or oversimplified example in order to ridicule and refute an idea,fallacy of extension,ad hominem,0.500812,0
+"Everyone I know is making fruit smoothies for quick, portable meals, so smoothies must be really good for you.",ad populum,ad populum,0.481632,1
+"If we allow a housing development to be built on Sunny Lake, a resort will come next, and soon we won’t have any wilderness left!",faulty generalization,faulty generalization,0.707601,1
+"A: “Many stores are telling their employees to say Happy Holidays instead of Merry Christmas.”
+
+B: “This is crazy! Why are they trying to get rid of Christmas?!”",fallacy of extension,ad hominem,0.285385,0
+"The government is convinced that it was a bomb that brought down the aircraft. “Our countrymen believe it was a bomb,” said the president. “A survey done a few days after the crash indicates that almost seventy percent of the people believe it was a terrorist’s bomb.”",faulty generalization,ad populum,0.574411,0
+"Trying to finish a marathon is impossible, I know because I tried it once.",faulty generalization,circular reasoning,0.288166,0
+"Teacher: You are receiving a zero because you didn't do your homework.
+
+Students: Are you serious? You gave me a zero because you hate me????",fallacy of extension,fallacy of extension,0.359352,1
+"That German, Fred, stole my wallet. All Germans are thieves.",faulty generalization,faulty generalization,0.707318,1
+"person 1 : ""We should argue with logic facts""
+person 2: ""You should grow a brain before you open your mouth""",ad hominem,fallacy of extension,0.387207,0
+We should present Cadet Curry with our squadron’s cadet of the year award. He’s the most active and highest-performing cadet we have. REPLY: But Cadet Arnold has been in CAP longer.,fallacy of relevance,fallacy of credibility,0.286734,0
+"The more things change, the more they remain the same.",faulty generalization,faulty generalization,0.182233,1
+"Utah passed a strict gun-control law, and crime there decreased. Therefore, gun-control laws decrease crime.",false causality,false causality,0.486257,1
+"Bill: I think capital punishment is wrong.
+Adam: No it isn't. If it was wrong, it wouldn't be legal.
+Of which fallacy is this an example?  http://www.funtrivia.com",circular reasoning,circular reasoning,0.165227,1
+"Premise: All black bears are omnivores.
+
+Premise: All raccoons are omnivores.
+
+Conclusion: All raccoons are black bears.",fallacy of logic,fallacy of logic,0.285384,1
+"Running in the halls at school is against the rules. Therefore, the indoor track team should be written up.",faulty generalization,faulty generalization,0.543529,1
+"I thought you were a good person, but you weren’t at church today.",false dilemma,fallacy of extension,0.221053,0
+"I saw a student texting in my class yesterday; all my students must be texting, so cell phones should be banned.",faulty generalization,faulty generalization,0.704143,1
+"“The temperature has dropped this morning, and I also have a headache. Therefore, the cold weather must be causing my headache. “",false causality,false causality,0.685428,1
+A commercial about abandoned animals needing a shelter of a forever home. They ask for a small donation to help these struggling animals.,appeal to emotion,appeal to emotion,0.41631,1
+"""You can be a good politician and play dirty or you can drop out.""",false dilemma,false dilemma,0.830916,1
+"""I don't know how Professor Resnick can be such a hard grader.  He's always late for class. """,ad hominem,ad hominem,0.551768,1
+“The purpose of the Cadet Program is to prepare youth for Air Force Basic Military Training.” REPLY: “This is true because I heard it from the Wing Commander.”,fallacy of credibility,fallacy of credibility,0.347463,1
+"4 out of 5 dentists recommend this toothpaste! (only 5 were asked. Out of 1000 asked, only 20% recommend it)",intentional,ad populum,0.445283,0
+"It is said that we have a good understanding of our universe. Therefore, we know exactly how it began and when.",equivocation,circular reasoning,0.204309,0
+"We can’t freeze the academic year because then students won’t graduate on time. Next thing you know most people will be unemployed and will resort to crime. The crime rate will skyrocket and society will collapse.
+No podemos congelar el año académico porque entonces los estudiantes no se graduarán a tiempo. Lo siguiente que sabes es que la mayoría de la gente estará desempleada y recurrirá al crimen. La tasa de criminalidad se disparará y la sociedad colapsará.",faulty generalization,faulty generalization,0.776095,1
+"If we allow our 14 year-old to have her first date tonight, what's next? A wedding, kids?",faulty generalization,faulty generalization,0.395098,1
+"If we put limits on the right to bear arms, soon all of our Constitutionally-given  rights will be taken away.",faulty generalization,faulty generalization,0.5991,1
+A is true because A is true.,circular reasoning,circular reasoning,0.567981,1
+Have you stopped beating your wife?,intentional,intentional,0.500848,1
+No one in your family surfs? But I thought you said you lived in California before this.,faulty generalization,ad hominem,0.369972,0
+"Holly said that vaccinations caused autism in children, but her scientifically well-read friend Caleb said that this claim had been debunked and proven false. Their friend Alice offered a compromise that vaccinations must cause some autism, just not all autism.",fallacy of relevance,fallacy of credibility,0.346392,0
+Teacher: If I let you go to the bathroom pretty soon everybody will want to go to the bathroom. This is an example of,faulty generalization,faulty generalization,0.808201,1
+"Your friend says, ""You can't prove that space aliens don't exist, so they must be real"". This is an example of which logical fallacy?",intentional,intentional,0.446792,1
+This is when you characterize someone with one extreme trait in order to more effectively tear them down.,fallacy of extension,appeal to emotion,0.25101,0
+40 million people can't be wrong! Buy the new iPhone XIV today!,ad populum,ad populum,0.693413,1
+Smoking pot is against the law because it's wrong; I know it's wrong because it is against the law.,circular reasoning,circular reasoning,0.50238,1
+"I believe that when we die, we are all given new, young, perfect bodies, and we spend eternity with those whom we love. I can’t imagine the point of life if it all just ends when we die!",appeal to emotion,appeal to emotion,0.235057,1
+"Student: You didn't teach us this; we never learned this.
+
+Teacher: So, you're either lazy or unwilling to learn is that right?",false dilemma,false dilemma,0.442616,1
+"Which fallacy is the following example? ""By rejecting God, you are rejecting goodness, kindness, and love itself.""",appeal to emotion,appeal to emotion,0.209621,1
+"Ginger: Your dog just ran into our house and ransacked our kitchen!
+Mary: He would never do that, look at how adorable he is with those puppy eyes!
+",appeal to emotion,ad hominem,0.629473,0
+SM 6: North invading South during Civil War,fallacy of extension,appeal to emotion,0.161018,0
+"This new test seemed so promising, but the 3 studies that supported its validity turned out to have critical methodological flaws, so the test is probably not valid.",faulty generalization,intentional,0.35118,0
+"earthquakes in the Andes were correlated with the closest approaches of the planet Uranus. Therefore, Uranus must have caused them.",false causality,false causality,0.588681,1
+attaching an argument to a person of false or appeared authority in order to give credence to their argument,fallacy of credibility,fallacy of credibility,0.216536,1
+"Form: Idea X is popular.
+Therefore, X is correct.",ad populum,circular reasoning,0.22081,0
+"It says in the Bible that God exists. Since the Bible is God's word, and God never speaks falsely, then everything in the Bible must be true. So, God must exist.",circular reasoning,circular reasoning,0.513552,1
+I shouldn't have to pay for my parking ticket. There are far more dangerous offenses people commit. They should have to pay.,fallacy of relevance,faulty generalization,0.372771,0
+"My sister loves shopping, so all girls must love to shop too.",faulty generalization,faulty generalization,0.73496,1
+"Speaker 1: I’m against the war.
+Speaker 2: You must hate our troops.",false dilemma,ad hominem,0.410851,0
+Vote for me or live through four more years of higher taxes.,false dilemma,false dilemma,0.800765,1
+"The fallacy of equivocation occurs when a key term or phrase in an argument is used in an ambiguous way, with one meaning in one portion of the argument and then another meaning in another portion of the argument.",equivocation,circular reasoning,0.261505,0
+Two members of my team have become more engaged employees after taking public speaking classes. That proves we should have mandatory public speaking classes for the whole company to improve employee engagement.,faulty generalization,faulty generalization,0.350479,1
+"Justin claimed that passing federal laws to control the amount of violence in music is the first step in a process that will eventually result in absolute government control of the media and total censorship over all forms of artistic expression.
+Of what fallacy is this an example?",faulty generalization,faulty generalization,0.500063,1
+"I'm raising money to help cure XYZ disease. If you do not donate, you are part of the problem.",false dilemma,false dilemma,0.327373,1
+SM 7: No global warming happening,ad populum,intentional,0.2036,0
+Paranormal activity is real because I have experienced what can only be described as paranormal activity.,circular reasoning,circular reasoning,0.301798,1
+"""Once a year, a miracle causes this large rock to float about ten centimeters off the ground since supernatural powers want us to remember the martyrs who died in that spot.""",circular reasoning,false causality,0.318223,0
+"""Do not listen to Luisa, she will only tell you lies about the recent activities given in our EAPP class.""",ad hominem,ad hominem,0.375561,1
+"Jojo: All New Yorkers are tough
+Charli: I get shoved in a locker every day and cry when I see bunnies
+Jojo: Well, REAL New Yorkers are tough
+Charli: What does toughness have to do with Geography?
+Jojo: Todos los neoyorquinos son duros
+Charli: Me empujan en un casillero todos los días y lloro cuando veo conejitos.
+Jojo: Bueno, los verdaderos neoyorquinos son duros.
+Charli: ¿Qué tiene que ver la dureza con la geografía?",intentional,fallacy of extension,0.178515,0
+The Windmill debate- Snowball promises that the Windmill will mean less work and better living conditions. Napoleon says that it's just unnecessary and will be more work.,intentional,fallacy of extension,0.421268,0
+"Charlie: Fast food is filled with salt, fat, and added sugars. We need better regulation of the industry.
+Bob: That my be, but you're such a hypocrite! I saw you devour a Triple-Baconator, super-sized fries, and 64oz of soda yesterday!",ad hominem,ad hominem,0.694071,1
+"Boris is not qualified to make suggestions about our penal system. As an ex-convict, he would always take the criminals’ side.",ad hominem,ad hominem,0.775524,1
+"President Bush argues that we should open up the Arctic National Wildlife Refuge for oil drilling. But Bush just wants to reward his rich cronies in the oil industry, so we can't take his arguments seriously.",ad hominem,fallacy of extension,0.357573,0
+The noted oceanographer Walter Munk referred to sea-level rise as an “ enigma ” ; it has also been called a riddle and a puzzle .,fallacy of credibility,intentional,0.265397,0
+I therefore conclude—contrary to the general wisdom—that the temperature of sea water has no direct effect on sea-level rise .,fallacy of logic,intentional,0.467064,0
+"The onset of a new glaciation could cause the sea level to stop rising . It could even fall 400 feet , to the level at the last glaciation maximum 18,000 years ago .",fallacy of extension,intentional,0.274881,0
+"Currently , sea-level rise does not seem to depend on ocean temperature , and certainly not on CO2 .",false dilemma,intentional,0.557005,0
+"I conclude that it must be ice accumulation , through evaporation of ocean water , and subsequent precipitation turning into ice . Evidence suggests that accumulation of ice on the Antarctic continent has been offsetting the steric effect for at least several centuries .",false causality,intentional,0.321862,0
+"Of course , a lot can happen in 7,000 years . The onset of a new glaciation could cause the sea level to stop rising .",fallacy of logic,false causality,0.30025,0
+There is nothing we can do about rising sea levels in the meantime .,fallacy of logic,appeal to emotion,0.362493,0
+"But by studying a very short time interval , it is possible to sidestep most of the complications , like “ isostatic adjustment ” of the shoreline ( as continents rise after the overlying ice has melted ) and “ subsidence ” of the shoreline ( as ground water and minerals are extracted ) .",intentional,intentional,0.238793,1
+"I chose to assess the sea-level trend from 1915-45 , when a genuine , independently confirmed warming of approximately 0.5 degree Celsius occurred . I note particularly that sea-level rise is not affected by the warming ; it continues at the same rate , 1.8 millimeters a year , according to a 1990 review by Andrew S. Trupin and John Wahr .",intentional,intentional,0.417202,1
+"I note particularly that sea-level rise is not affected by the warming ; it continues at the same rate , 1.8 millimeters a year , according to a 1990 review by Andrew S. Trupin and John Wahr . I therefore conclude—contrary to the general wisdom—that the temperature of sea water has no direct effect on sea-level rise .",fallacy of credibility,intentional,0.46651,0
+Yet there is little heat available in the Antarctic to support melting .,fallacy of relevance,intentional,0.546344,0
+By 2100 the seas will rise another 6 inches or so—a far cry from Al Gore ’ s alarming numbers .,ad populum,appeal to emotion,0.269025,0
+"The Little Ice Age
+ended as recently as 1850 . Therefore , it is no surprise that we now are expe riencing a period of warming .",false causality,intentional,0.340824,0
+Only very few peer-reviewed papers even go so far as to say that recent warming is chiefly anthropogenic .,intentional,intentional,0.50902,1
+Warming is far slower than predicted,intentional,intentional,0.495117,1
+It tells us that we are far from understanding climate change .,intentional,intentional,0.355803,1
+"Climate policy relies on inadequate models
+Climate models have many shortcomings and are not remotely plausible as policy tools .",faulty generalization,intentional,0.421498,0
+Natural as well as anthropogenic factors cause warming,fallacy of credibility,false causality,0.280643,0
+"The geological archive reveals that Earth ’ s climate has varied as long as the planet has existed , with natural cold and warm phases .",fallacy of credibility,intentional,0.414821,0
+"Climate science should be less political , while climate policies should be more scientific . Scientists should openly address the uncertainties and exaggerations in their predictions of global warming , while politicians should dispassionately count the real benefits as well as the imagined costs of adaptation to global warming , and the real costs as well as the imagined benefits of mitigation .",intentional,fallacy of extension,0.302751,0
+A global network of 500 scientists and professionals has prepared this urgent message .,fallacy of credibility,ad populum,0.290362,0
+A global network of 500 scientists and professionals has prepared this urgent message .,ad populum,ad populum,0.290362,1
+"In addition , they ignore the fact that enriching the atmosphere with CO2 is beneficial . CO2 is plant food , the basis of all life on Earth
+CO2 is not a pollutant .",fallacy of relevance,intentional,0.236354,0
+"CO2 is plant food , the basis of all life on Earth
+CO2 is not a pollutant . It is essential to all life on Earth . Photosynthesis is a blessing . More CO2 is beneficial for nature , greening the Earth : additional CO2 in the air has promoted growth in global plant biomass . It is also good for agriculture , increasing the yields of crops worldwide .",fallacy of relevance,fallacy of logic,0.195086,0
+"For instance , wind turbines kill birds and insects , and palm-oil plantations destroy the biodiversity of the rainforests .",intentional,intentional,0.225482,1
+"It shows that ECS is probably between two and 4.5 degrees , possibly as low as 1.5 but not lower , and possibly as high as nine degrees .",intentional,intentional,0.354899,1
+The surprising thing is that the Energy Balance estimates are very low compared to model-based estimates .,intentional,intentional,0.394821,1
+"But if ECS is high — say , around four degrees or more — then climate change is probably a big problem . We may not be able to stop it , but we ’ d better get ready to adapt to it .",intentional,appeal to emotion,0.276905,0
+"People who study the impacts of global warming have found that if ECS is low — say , less than two — then the impacts of global warming on the economy will be mostly small and , in many places , mildly beneficial .",intentional,faulty generalization,0.240564,0
+"If it is very low , for instance around one , it means greenhouse gas emissions are simply not worth doing anything about . But if ECS is high — say , around four degrees or more — then climate change is probably a big problem . We may not be able to stop it , but we ’ d better get ready to adapt to it .",false dilemma,faulty generalization,0.27719,0
+"People who study the impacts of global warming have found that if ECS is low — say , less than two — then the impacts of global warming on the economy will be mostly small and , in many places , mildly beneficial .",intentional,faulty generalization,0.240564,0
+A recent Energy Balance ECS estimate was just published in the Journal of Climate by Nicholas Lewis and Judith Curry .,intentional,intentional,0.395157,1
+"But it is part of a long list of studies from independent teams ( as this interactive graphic shows ) , using a variety of methods that take account of critical challenges , all of which conclude that climate models exhibit too much sensitivity to greenhouse gases .",intentional,fallacy of credibility,0.324264,0
+"The result was that the estimated economic damages of greenhouse gas emissions fell by between 40 and 80 per cent , and in the case of one model the damages had a 40 per cent probability of being negative for the next few decades — that is , they would be beneficial changes .",intentional,intentional,0.255803,1
+"The new Lewis and Curry ECS estimate is even lower than their old one , so if we re-did the same study we would find even lower social costs of carbon .",faulty generalization,intentional,0.292909,0
+"If ECS is as low as the Energy Balance literature suggests , it means that the climate models we have been using for decades run too hot and need to be revised .",intentional,intentional,0.453379,1
+"First , they rely on IPCC estimates of greenhouse gases , solar changes and other climate forcings , so they can ’ t be accused of putting a finger on the scale by their choice of data .",fallacy of credibility,intentional,0.258955,0
+The report in part intends to `` reset '' the estimations for the new predictions on when the earth will hit what the U.N. has determined to be dangerous warming levels .,intentional,intentional,0.316704,1
+"So , therefore , they derive a budget which is much lower , '' he added .",false causality,intentional,0.179518,0
+"A new report published by a team of prominent climate scientists confirms what many skeptics have pointed out for years : the climate models have overestimated the amount of global warming and failed to predict what climatologists call the warming `` hiatus , '' over 20 years of almost no change in temperatures .",false causality,intentional,0.530465,0
+"`` The models end up with a warming which is larger than the observed warming for the current emissions , '' University of Exerter 's Pierre Friedlingstein , one of the study 's authors , told The Washington Post . ``",false causality,intentional,0.342001,0
+"A new report published by a team of prominent climate scientists confirms what many skeptics have pointed out for years : the climate models have overestimated the amount of global warming and failed to predict what climatologists call the warming `` hiatus , '' over 20 years of almost no change in temperatures .",fallacy of credibility,intentional,0.530465,0
+"The report , published in the journal Nature Geoscience on September 18 , acknowledges that most of the models of warming trends failed to predict the `` slowdown '' in warming post-2000 , resulting in less pronounced warming than predicted and thus more room in the CO2 `` emissions budget '' for the coming decades .",fallacy of credibility,intentional,0.546973,0
+Cato Institute scientists Patrick Michaels and Chip Knappenberger have noted the climate models have been over-hyping warming for decades . Scientist John Christy of the University of Alabama-Huntsville has testified before Congress on the matter . Christy ’ s research has shown climate models show 2.5 times more warming in the bulk atmosphere than has been observed . ...,fallacy of credibility,intentional,0.401094,0
+In April the extent of Arctic sea ice was back to where it was in April 13 years ago .,intentional,false causality,0.360003,0
+"As for those record temperatures brought in 2016 by an exceptionally strong El Niño , the satellites now show that in recent months global temperatures have plummeted by more that 0.6 degrees : just as happened 17 years ago after a similarly strong El Niño had also made 1998 the “ hottest year on record ” .",false causality,intentional,0.521448,0
+This means the global temperature trend has now shown no further warming for 19 years .,intentional,intentional,0.601357,1
+In April the extent of Arctic sea ice was back to where it was in April 13 years ago .,fallacy of relevance,false causality,0.360003,0
+The Greenland ice cap last winter increased in volume faster than at any time for years .,intentional,intentional,0.4417,1
+This means the global temperature trend has now shown no further warming for 19 years .,fallacy of logic,intentional,0.601357,0
+So it ’ s been a surprise to climate scientists that 2017 has been so remarkably warm — because the last El Niño ended a year ago .,appeal to emotion,intentional,0.298445,0
+"`` The impact of astronomical cycles on climate can be quite large , '' explains Meyers , noting as an example the pacing of the Earth ’ s ice ages , which have been reliably matched to periodic changes in the shape of Earth ’ s orbit , and the tilt of our planet on its axis .",false causality,intentional,0.302018,0
+"Over the ages , the subtle variations in the orbits of Earth and Mars , the scientists theorize , have impacted the amount of Earth 's exposure to solar radiation and thus led to shifts in global temperatures and impacting the pattern of Earth 's ice ages .",fallacy of credibility,intentional,0.328682,0
+Anew study produced by a University of Wisconsin-Madison geoscientist and Northwestern astrophysicist presents an explanation of the fluctuations of the earth 's temperatures that global warming alarmists are going to make sure to bury :,fallacy of credibility,intentional,0.40118,0
+Anew study produced by a University of Wisconsin-Madison geoscientist and Northwestern astrophysicist presents an explanation of the fluctuations of the earth 's temperatures that global warming alarmists are going to make sure to bury :,ad hominem,intentional,0.40118,0
+"In an article summarizing the scientists ' findings , which were originally published this week in the journal Nature , the University of Wisconsin-Madison notes that the study `` provides the first hard proof for what scientists call the 'chaotic solar system , ' a theory proposed in 1989 to account for small variations in the present conditions of the solar system . '' Those variations over millions of years `` produce big changes in our planet ’ s climate . ''",equivocation,intentional,0.333521,0
+"Over the ages , the subtle variations in the orbits of Earth and Mars , the scientists theorize , have impacted the amount of Earth 's exposure to solar radiation and thus led to shifts in global temperatures and impacting the pattern of Earth 's ice ages .",fallacy of relevance,intentional,0.328682,0
+"Global warming alarmists frequently make false and deplorable assertions ( see , for example , my recent column debunking false claims that global warming is causing a decline in wheat production ) , but the Environmental Defense Fund ’ s recent fund-raising mailer , “ 10 Global Warming Effects",ad hominem,intentional,0.238608,0
+Open-minded readers should have very little difficulty dismissing the mythical global warming crisis after examining the top 10 assertions in the alarmist playbook .,appeal to emotion,fallacy of credibility,0.19804,0
+"While reading how flawed EDF ’ s assertions are , remember these are the very best arguments global warming alarmists can make .",ad hominem,fallacy of credibility,0.230288,0
+"Global warming alarmists ’ preferred electricity source – wind power – kills nearly 1 million bats every year ( to say nothing of the more than 500,000 birds killed every year ) in the United States alone .",fallacy of relevance,intentional,0.300332,0
+"Ramping up wind power to 10 , 20 , or 30 % of U.S. electricity production would likely increase annual bat kills to 10-to-30 million every year .",fallacy of extension,appeal to emotion,0.276896,0
+"Killing 30 million bats every year in response to dubious claims that global warming might once in a great while kill 100,000 bats makes no sense .",fallacy of logic,intentional,0.267037,0
+"Asserting , without any supporting data or evidence , that a disease that prospers in cool climates will become more prevalent as a result of global warming defies objective data and common sense .",false dilemma,intentional,0.407513,0
+"Any attempts to claim global warming will cause a few more Lyme Disease deaths must be weighed against the 36,000 Americans who are killed by the flu each year .",equivocation,appeal to emotion,0.364155,0
+"Also , the alarmist assertion that polar ice sheets are melting is simply false .",ad hominem,intentional,0.418713,0
+"If global warming caused the 2014 Queensland heat wave , why wasn ’ t it as severe as the 1972 Queensland heat wave ?",false causality,intentional,0.491448,0
+"For people experiencing an increase in vegetation in previously barren regions , this greening of the Earth is welcome and wonderful news .",faulty generalization,appeal to emotion,0.373031,0
+"Global warming alarmists claim a greener biosphere with richer and more abundant plant life is horrible and justifies massive , economy-destroying energy restrictions .",fallacy of relevance,fallacy of extension,0.211868,0
+One can not claim global warming is causing colder winters and then turn around and simultaneously claim global warming is causing warmer winters .,false dilemma,fallacy of logic,0.204756,0
+Global warming activists ’ propensity for doing so shows just how little value they place in a truthful debate .,ad hominem,ad hominem,0.397982,1
+"Also , the modest recent warming is producing U.S. and global crop production records virtually every year , creating billions of dollars in new economic and human welfare benefits each and every year . This creates a net economic benefit completely ignored by EDF .",fallacy of relevance,intentional,0.246658,0
+"For example , DDT had all but eliminated malaria in the United States and on the global stage during the mid-20th century .",false causality,intentional,0.31598,0
+One can hardly argue that western pine forests are “ destroying iconic Western forests ” when western forests are becoming denser and more prevalent as the planet warms .,fallacy of logic,fallacy of logic,0.216659,1
+"Playing on a general tendency for people to fear change , EDF and global warming alarmists argue that changes in the biosphere that make it richer , lusher , and more conducive to life are changes to be feared and opposed .",false dilemma,fallacy of extension,0.254343,0
+The U.S. National Institutes of Health have documented how influenza is aided and abetted by cold climate . Any attempt to connect a warmer climate to an increase in Lyme Disease must be accompanied by an acknowledgement of a warmer climate ’ s propensity to reduce influenza incidence and mortality . The net impact of a warmer climate on viruses and diseases such as Lyme Disease and influenza is substantially beneficial and life-saving .,fallacy of relevance,intentional,0.262458,0
+Any attempt to connect a warmer climate to an increase in Lyme Disease must be accompanied by an acknowledgement of a warmer climate ’ s propensity to reduce influenza incidence and mortality .,false dilemma,intentional,0.211818,0
+"Global warming alarmists frequently make false and deplorable assertions ( see , for example , my recent column debunking false claims that global warming is causing a decline in wheat production ) , but the Environmental Defense Fund ’ s recent fund-raising mailer , “ 10 Global Warming Effects",fallacy of credibility,intentional,0.238608,0
+"However , climate realists can make lemonade from EDF ’ s preposterous mailer by using it to show open-minded people the difference between global warming alarmists and global warming truth-tellers . EDF has assembled what it believes to be the 10 most powerful global warming assertions in the alarmists ’ playbook , yet each assertion either backfires on alarmists or has been proven false .",ad hominem,ad hominem,0.255505,1
+"While reading how flawed EDF ’ s assertions are , remember these are the very best arguments global warming alarmists can make .",intentional,fallacy of credibility,0.230288,0
+"Global warming alarmists ’ preferred electricity source – wind power – kills nearly 1 million bats every year ( to say nothing of the more than 500,000 birds killed every year ) in the United States alone . This appalling death toll occurs every year even while wind power produces just 3 % of U.S. electricity .",appeal to emotion,intentional,0.231051,0
+"Ramping up wind power to 10 , 20 , or 30 % of U.S. electricity production would likely increase annual bat kills to 10-to-30 million every year .",faulty generalization,appeal to emotion,0.27686,0
+"Killing 30 million bats every year in response to dubious claims that global warming might once in a great while kill 100,000 bats makes no sense .",fallacy of extension,intentional,0.267452,0
+"Just as importantly , alarmists present no evidence that global warming caused the summer heat wave in a notoriously hot desert near the equator . To the contrary , climate change theory and objective data show our recent global warming is occurring primarily in the winter , toward the poles , and at night .",intentional,intentional,0.581819,1
+"Indeed , Queensland ’ s 2014 heat wave paled in comparison to the 1972 heat wave that occurred 42 years of global warming ago . If global warming caused the 2014 Queensland heat wave , why wasn ’ t it as severe as the 1972 Queensland heat wave ?",intentional,intentional,0.340262,1
+Blaming every single summer heat wave or extreme weather event on global warming is a stale and discredited tactic in the alarmist playbook .,fallacy of extension,ad hominem,0.407915,0
+Alarmist attempts to frame thriving forests as harmful perfectly illustrate the alarmists ’ proclivity to claim anything and everything – no matter how beneficial – is severely harmful and caused by global warming .,fallacy of extension,fallacy of extension,0.184377,1
+"Any attempts to claim global warming will cause a few more Lyme Disease deaths must be weighed against the 36,000 Americans who are killed by the flu each year .",faulty generalization,appeal to emotion,0.364099,0
+The alarmists ’ asserted national security threat depends on assertions that ( 1 ) global warming is causing a reduction in food and water supplies and ( 2 ) migrations of people to places with more food and water will increase risks of military conflict . Objective facts refute both assertions .,fallacy of logic,intentional,0.21797,0
+"Longer growing seasons and fewer frost events also benefit plant growth and crop production . As this column has repeatedly documented ( see articles here , here , and here , for example ) , global crops set new production records virtually every year as our planet modestly warms . If crop shortages cause national security threats and global warming increases crop production , then global warming benefits rather than jeopardizes national security .",faulty generalization,false causality,0.30867,0
+"Objective data show there has been a gradual increase in global precipitation and soil moisture as our planet warms . Warmer temperatures evaporate more water from the oceans , which in turn stimulates more frequent precipitation over continental land masses . The result of this enhanced precipitation is an improvement in soil moisture at almost all sites in the Global Soil Moisture Data Bank . If declining precipitation and declining soil moisture are military threat multipliers , than global warming is creating a safer , more peaceful world .",faulty generalization,intentional,0.260093,0
+"Utilizing 20th century technologies , humans effectively adapted to global sea level rise . Utilizing 21st century technologies , humans will be even better equipped to adapt to global sea level rise .",fallacy of relevance,faulty generalization,0.204788,0
+"Although alarmists frequently point to a modest recent shrinkage in the Arctic ice sheet , that decline has been completely offset by ice sheet expansion in the Antarctic . Cumulatively , polar ice sheets have not declined at all since NASA satellite instruments began precisely measuring them 35 years ago . Alarmist Assertion # 5",equivocation,intentional,0.505015,0
+"As such , pollen counts will rise and fall along with plant health and vegetation intensity . Any increase in pollen will be the result of a greener biosphere with more plant growth .",intentional,false causality,0.268158,0
+"For people experiencing an increase in vegetation in previously barren regions , this greening of the Earth is welcome and wonderful news . For global warming alarmists , however , a greener biosphere is terrible news and something to be opposed .",fallacy of extension,appeal to emotion,0.240201,0
+"Global warming alarmists claim a greener biosphere with richer and more abundant plant life is horrible and justifies massive , economy-destroying energy restrictions .",fallacy of extension,fallacy of extension,0.211662,1
+Global warming realists understand that a greener biosphere with richer and more abundant plant life is not a horrible thing simply because humans may have had some role in creating it .,fallacy of extension,intentional,0.236985,0
+"Objective scientific data verify winters are getting colder , which counters the key prerequisite to EDF ’ s pine beetle claim . NOAA temperature data show winter temperatures in the United States have been getting colder for at least the past two decades . Pine beetles can not be taking advantage of warmer winters if winters are in fact getting colder .",intentional,intentional,0.534886,1
+"Pine beetles are a natural part of forest ecosystems . Expanding pine forests can support more beetles . The predictable increase in pine beetles is largely a product of , rather than a foil against , expanding pine forests .",false causality,false causality,0.31496,1
+One can hardly argue that western pine forests are “ destroying iconic Western forests ” when western forests are becoming denser and more prevalent as the planet warms .,fallacy of extension,fallacy of logic,0.216665,0
+"Decades of over-aggressive fire suppression policies have caused an unnatural buildup of older , denser , more vulnerable pine forests . These conditions predictably aid pine beetles .",false causality,false causality,0.23596,1
+Only global warming alarmists would claim that lusher vegetation and more abundant plant life is a bad thing .,fallacy of extension,intentional,0.168036,0
+"Playing on a general tendency for people to fear change , EDF and global warming alarmists argue that changes in the biosphere that make it richer , lusher , and more conducive to life are changes to be feared and opposed .",fallacy of extension,fallacy of extension,0.2546,1
+"If barren ecosystems constitute an ideal planet , then the alarmist fears of more plant life make sense . On the contrary , global warming realists understand a climate more conducive to richer , more abundant plant life is beneficial rather than harmful .",fallacy of extension,fallacy of extension,0.203974,1
+"Severe storms , floods and agricultural losses may cost a great deal of money , but such extreme weather events – and their resulting costs – are dramatically declining as the Earth modestly warms . Accordingly , EDF ’ s asserted economic costs are actually economic benefits .",intentional,false causality,0.279413,0
+Any increase in flooding activity is due to human alterations of river and stream flow rather than precipitation changes .,false causality,intentional,0.308767,0
+"Also , the modest recent warming is producing U.S. and global crop production records virtually every year , creating billions of dollars in new economic and human welfare benefits each and every year .",false causality,intentional,0.296012,0
+Forcing the American economy to operate on expensive and unreliable wind and solar power will have tremendous negative economic consequences .,faulty generalization,appeal to emotion,0.338032,0
+"The economic consequences of Obama ’ s global warming policies can already be seen in electricity prices , which are currently the highest in U.S. history .",intentional,intentional,0.418954,1
+"Remarkably , Obama ’ s global warming policies are increasing electricity prices even while new natural gas discoveries , revolutionary advances in natural gas production technologies , and a dramatic resultant decline in natural gas prices would otherwise spur a dramatic decline in electricity prices .",appeal to emotion,intentional,0.322118,0
+"For example , DDT had all but eliminated malaria in the United States and on the global stage during the mid-20th century . However , environmental activists championed false environmental accusations against DDT and dramatically reduced use of the life-saving mosquito killer throughout much of the world . As a result , malaria has reemerged with a vengeance and millions of people die every year as a result .",false causality,intentional,0.201374,0
+"In the United States alone , influenza kills 36,000 people every year , which dwarfs all heat-dependent viruses and diseases combined .",fallacy of relevance,ad populum,0.308754,0
+"Few people other than global warming alarmists would argue that it is better to have 36,000 people die each year from influenza than have a few people die each year from Lyme Disease ( which , as documented above , isn ’ t even related to global warming ) .",fallacy of extension,intentional,0.154485,0
+"Calling attention to anecdotal incidents of icebergs breaking off the Antarctic ice sheet , while deliberately ignoring the overall growth of the Antarctic ice sheet , is a misleading and favorite tactic of global warming alarmists .",ad hominem,ad hominem,0.284599,1
+"The EDF ’ s assertion about Glacier National Park is also misleading . Alpine glaciers at Glacier National Park and elsewhere have been receding for over 300 years , since the Earth ’ s temperature bottomed out during the depths of the Little Ice Age . The warming of the past 300 years and the resulting recession of alpine glaciers predated humans building coal-fired power plants and driving SUVs .",intentional,intentional,0.458092,1
+"Moreover , opening up more of the Earth ’ s surface to vegetation and plant and animal life would normally be considered a beneficial change , if global warming alarmists had not so thoroughly politicized the global warming discussion .",fallacy of extension,intentional,0.288025,0
+"Calling attention to anecdotal incidents of icebergs breaking off the Antarctic ice sheet , while deliberately ignoring the overall growth of the Antarctic ice sheet , is a misleading and favorite tactic of global warming alarmists .",fallacy of relevance,ad hominem,0.284599,0
+"These are the highest CO2 levels in the 800,000 years for which we have good data . This is expected to have a catastrophic effect on human health and the planet .",ad populum,intentional,0.315705,0
+"The potential effects of higher average temperatures include tens of thousands of deaths from heat waves , more extreme weather events , and the spread of diseases carried by ticks and mosquitoes — something we 're already seeing . ( There 's a full list of possible ways climate change will affect human health on an archived Environmental Protection Agency page . )",appeal to emotion,appeal to emotion,0.267142,1
+"One 2008 study found that for every degree Celsius the temperature rises because of CO2 levels , ozone pollution can be expected to kill an additional 22,000 people via respiratory illness , asthma , and emphysema .",appeal to emotion,intentional,0.2962,0
+"In recent years , we 've pushed those gas levels into uncharted territory . That change has inevitable and scary consequences .",appeal to emotion,intentional,0.246069,0
+"Research indicates that if unchecked , increased CO2 levels could cause pollution-related deaths to increase by tens of thousands , and lead to the slowing of human cognition ( especially when you take into account the fact that CO2 levels tend to be higher indoors in cities ) . Carbon dioxide also contributes to warming that causes sea-level rise , searing heat waves , and superstorms .",appeal to emotion,intentional,0.216636,0
+"`` As a scientist , what concerns me the most is what this continued rise actually means : that we are continuing full speed ahead with an unprecedented experiment with our planet , the only home we have , '' Katharine Hayhoe , a climate scientist , said on Twitter .",appeal to emotion,fallacy of credibility,0.292138,0
+"A recent study found that 9 million people died prematurely from pollution-related diseases in 2015 , accounting for 16 % of all deaths worldwide .",ad populum,intentional,0.211782,0
+"The melting Greenland ice sheet is already a major contributor to rising sea level and if it was eventually lost entirely , the oceans would rise by six metres around the world , flooding many of the world ’ s largest cities .",faulty generalization,appeal to emotion,0.354585,0
+"The melting Greenland ice sheet is already a major contributor to rising sea level and if it was eventually lost entirely , the oceans would rise by six metres around the world , flooding many of the world ’ s largest cities .",appeal to emotion,appeal to emotion,0.354585,1
+"The melting Greenland ice sheet is already a major contributor to rising sea level and if it was eventually lost entirely , the oceans would rise by six metres around the world , flooding many of the world ’ s largest cities .",intentional,appeal to emotion,0.354585,0
+"But scientific research indicates the world was last this warm about 115,000 years ago and that the planet has not experienced such high levels of carbon dioxide in the atmosphere for 4m years .",faulty generalization,intentional,0.554398,0
+"But scientific research indicates the world was last this warm about 115,000 years ago and that the planet has not experienced such high levels of carbon dioxide in the atmosphere for 4m years .",faulty generalization,intentional,0.554398,0
+Trump is aiming to cut climate change research .,appeal to emotion,fallacy of extension,0.226871,0
+Trump is aiming to cut climate change research .,fallacy of extension,fallacy of extension,0.226871,1
+"“ Our children and grandchildren will look back on the climate deniers and ask how they could have sacrificed the planet for the sake of cheap fossil fuel energy , when the cost of inaction exceeds the cost of a transition to a low-carbon economy , ” Watson said . Trump is aiming to cut climate change research .",ad hominem,appeal to emotion,0.346949,0
+"For example , the Arctic heatwaves are made tens of times more likely and the soaring temperatures seen in Australia in February were made twice as likely .",intentional,false causality,0.238208,0
+"CNN —
+Following a successful international tour and the G-7 Summit in Italy , President Trump has an opportunity to relieve our nation of the unfair and economically devastating requirements of the Paris Agreement , the United Nations climate treaty he pledged to rip up during the campaign . And as soon as possible , President Trump should act on – and keep – his campaign promise .",intentional,appeal to emotion,0.477017,0
+"Not only would these unfair standards reduce American job growth and wages and increase monthly utility costs for hardworking families , they would fundamentally disadvantage the United States in the global economy .",appeal to emotion,appeal to emotion,0.288101,1
+We can not pursue a path that puts American workers first if we cripple a fossil fuel energy sector that generates 82 % of the energy consumed in the United States .,fallacy of logic,appeal to emotion,0.353826,0
+"This , all while doing nothing to meaningfully decrease global temperatures .",fallacy of extension,intentional,0.516396,0
+"According to a recent National Economic Research Associates Economic Consulting study , the Paris Agreement could obliterate $ 3 trillion of GDP , 6.5 million industrial sector jobs and $ 7,000 in per capita household income from the American economy by 2040 .",fallacy of credibility,appeal to emotion,0.24114,0
+Meeting the 2025 emissions reduction target alone could subtract $ 250 billion from our GDP and eliminate 2.7 million jobs .,ad populum,appeal to emotion,0.338191,0
+America is poised to become a net energy exporter over the next decade . We should not abandon that progress at the cost of weakening our energy renaissance and crippling economic growth .,false dilemma,appeal to emotion,0.368092,0
+"We simply can not afford an agreement that puts thousands of Americans out of work , increases their energy costs and devastates our core industries .",fallacy of extension,appeal to emotion,0.286772,0
+"In return for crippling our economy , the Paris Agreement would do next to nothing to impact global temperatures .",faulty generalization,appeal to emotion,0.38365,0
+The Paris Agreement would also handicap America in the global race for new sources of energy .,fallacy of relevance,appeal to emotion,0.329469,0
+"The emission cuts that the US would have to make today , and the resultant costs for our own energy firms , would weaken our ability to battle our rivals on an equal footing in the drive for untapped energy sources .",fallacy of relevance,appeal to emotion,0.311837,0
+We can not pursue a path that puts American workers first if we cripple a fossil fuel energy sector that generates 82 % of the energy consumed in the United States .,false dilemma,appeal to emotion,0.353783,0
+"Under the EPA ’ s own models , if all carbon emissions in America were basically eliminated , global temperatures would only decrease by less than two-tenths of a degree Celsius .",ad populum,appeal to emotion,0.248798,0
+"That ’ s because while the Obama administration irresponsibly committed America to immediate , real cuts in emissions , our global economic competitors would have no such handicap .",intentional,intentional,0.343246,1
+"In the meantime , the agreement would force American taxpayers to subsidize alternative energy at the expense of clean coal , nuclear power and natural gas – energy resources that actually work for our economy and our environment .",faulty generalization,appeal to emotion,0.454304,0
+"Unless the US completely withdraws , the Paris Agreement will continue to cause sustained harm to our security and economy , and it keeps the door open for future administrations to use it as means to impose more costly and ineffective energy regulations .",faulty generalization,appeal to emotion,0.346441,0
+"We should not let a deal subject to the whims of future administrations or Congresses hang like a wet blanket over our economy – driving up energy prices , devastating our industrial base and bolstering our rivals .",appeal to emotion,appeal to emotion,0.369346,1
+"CNN —
+Following a successful international tour and the G-7 Summit in Italy , President Trump has an opportunity to relieve our nation of the unfair and economically devastating requirements of the Paris Agreement , the United Nations climate treaty he pledged to rip up during the campaign . And as soon as possible , President Trump should act on – and keep – his campaign promise .",ad hominem,appeal to emotion,0.477017,0
+The result : our economic output would lag while other countries continued to expand their GDPs .,false dilemma,appeal to emotion,0.217759,0
+"The agreement ’ s proponents market it as a panacea for addressing the impacts of climate change , but at its core , it is about increasing government control – over the economy , the energy sector and nearly every aspect of our daily lives .",faulty generalization,fallacy of extension,0.350399,0
+"In return for crippling our economy , the Paris Agreement would do next to nothing to impact global temperatures .",fallacy of logic,appeal to emotion,0.383637,0
+"In fact , Russia is permitted to increase its emissions approximately 50 % and China and India have no meaningful cap on emissions until 2030 .",ad hominem,intentional,0.504473,0
+"In the meantime , the agreement would force American taxpayers to subsidize alternative energy at the expense of clean coal , nuclear power and natural gas – energy resources that actually work for our economy and our environment .",fallacy of extension,appeal to emotion,0.454266,0
+"It represents the exact misguided , top-down , government-knows-best approach that American voters resoundingly rejected in 2016 .",appeal to emotion,ad hominem,0.326326,0
+"By allowing our rivals to increase their cooperation and strategic leverage around the world – pressuring our allies and partners , harming domestic job creators and materially reducing our prestige and influence in the process — the agreement would damage America ’ s national security as much as our economic security .",appeal to emotion,appeal to emotion,0.389712,1
+"• Most extreme weather phenomena have not become more extreme , more deadly , or more destructive",intentional,intentional,0.363873,1
+The report will make hugely depressing reading for all the prominent environmental activists — from the Pope and Doom Goblin Greta Thunberg to the Great Reset ’ s Klaus Schwab — who have been pushing the “ climate emergency ” narrative .,ad hominem,ad hominem,0.33982,1
+"It is an article of faith for the globalist elite and their useful idiots in the media , in politics , in business , and the entertainment that the world is on course for climate disaster which only radical and costly international action can prevent .",ad hominem,ad hominem,0.234115,1
+"In fact , human wellbeing has never been higher",fallacy of relevance,intentional,0.418577,0
+"• Empirical evidence directly contradicts claims that increased carbon dioxide has reduced human wellbeing . In fact , human wellbeing has never been higher",false causality,intentional,0.5802,0
+"His credentials as a climate expert are impeccable . He was a member of the U.S. delegation that established the Intergovernmental Panel on Climate Change ( IPCC ) and helped develop its First Assessment Report . He subsequently served as a U.S. delegate to the IPCC , and as an IPCC reviewer .",fallacy of credibility,fallacy of credibility,0.422195,1
+"At the end , Goklany provides a table , setting out all the scaremongering claims made by environmental groups — and then comparing them with observed reality .",appeal to emotion,fallacy of credibility,0.21432,0
+"There is no “ climate emergency ” , according to a study for the Global Warming Policy Foundation by independent scientist Dr Indur Goklany . Goklany concludes : While climate may have changed for the warmer :",fallacy of credibility,intentional,0.516868,0
+Droughts more frequent and intense — No,intentional,intentional,0.339663,1
+Area burned by wildfire increasing —,intentional,intentional,0.272861,1
+Cereal yields decreasing —,intentional,intentional,0.35826,1
+Food supplies per capita decreasing —,intentional,intentional,0.315918,1
+"Land area and beaches shrinking , coral islands submerged —",intentional,false causality,0.231694,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",fallacy of extension,intentional,0.30321,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",fallacy of extension,intentional,0.30321,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",fallacy of extension,intentional,0.30321,0
+"The impact of extreme weather events ― hurricanes , tornadoes , floods and droughts ― are , if anything , declining .",intentional,intentional,0.306363,1
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",appeal to emotion,intentional,0.30321,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",intentional,intentional,0.30321,1
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",intentional,intentional,0.30321,1
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",intentional,intentional,0.30321,1
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",intentional,intentional,0.30321,1
+"In other words , fossil fuels have saved 13.8 per cent of the non-frozen parts of the world from being converted to agriculture .",intentional,ad populum,0.257857,0
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",intentional,intentional,0.368933,1
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",fallacy of logic,intentional,0.368933,0
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",fallacy of logic,intentional,0.368933,0
+"At the beginning , he quotes a number of climate doom-mongers , including the Pope .",ad hominem,ad hominem,0.685186,1
+"In fact , human wellbeing has never been higher",intentional,intentional,0.418574,1
+"• Whatever detrimental effects warming and higher carbon dioxide may have had on terrestrial species and ecosystems , they have been swamped by the contribution of fossil fuels to increased biological productivity .",intentional,intentional,0.439195,1
+Tornadoes increase and become more intense — No,fallacy of extension,false causality,0.272465,0
+Cyclones/hurricanes more intense or frequent — No,intentional,intentional,0.249829,1
+Floods more frequent and more intense — No,intentional,intentional,0.202598,1
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",fallacy of extension,intentional,0.30321,0
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",fallacy of logic,intentional,0.368922,0
+"Not only , he suggests , has their CO2 contributed to “ global greening ” — “ contrary to prevailing wisdom , tree cover globally has increased by over 2 million km2 between 1982 and 2016 , an increase of 7 per cent ” — but they provide the fertilisers and pesticides which simultaneously feed the planet and reduce the amount of land required for agriculture :",intentional,intentional,0.449579,1
+"Not only , he suggests , has their CO2 contributed to “ global greening ” — “ contrary to prevailing wisdom , tree cover globally has increased by over 2 million km2 between 1982 and 2016 , an increase of 7 per cent ” — but they provide the fertilisers and pesticides which simultaneously feed the planet and reduce the amount of land required for agriculture :",intentional,intentional,0.449579,1
+"• Most extreme weather phenomena have not become more extreme , more deadly , or more destructive",intentional,intentional,0.363851,1
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",appeal to emotion,intentional,0.30321,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",appeal to emotion,intentional,0.30321,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",appeal to emotion,intentional,0.30321,0
+"Access to cleaner water has increased ; mortality from ‘ Extreme Weather Events ’ has declined by 99 per cent since the 1920s ; fewer people are dying from heat ; death rates from climate-sensitive diseases like malaria and diarrhoea have decreased ( since 1900 malaria death rates have declined 96 per cent ) ; hunger rates have declined ; poverty has declined ( GDP per capita has quadrupled since 1950 even as CO2 levels have sextupled ) ; life expectancy has more than doubled since the start of industrialisation ; health adjusted life expectancy has increased ; global inequality has decreased in terms of incomes , life expectancies and access to modern-day amenities ; the earth is green and more productive ; habitat lost to agriculture has peaked due to fossil fuel dependent technologies .",intentional,intentional,0.30321,1
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",intentional,intentional,0.368922,1
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",intentional,intentional,0.368922,1
+"Thus , nitrogen fertilisers and carbon dioxide fertilisation have together increased global food production by 111 per cent .",intentional,intentional,0.368922,1
+"To limit global warming to 1.5 degree C is “ possible within the laws of chemistry and physics , ” said Jim Skea , co-chair of IPCC Working Group III . “ But doing so would require unprecedented changes . ”",fallacy of extension,fallacy of credibility,0.374475,0
+"To limit global warming to 1.5 degree C is “ possible within the laws of chemistry and physics , ” said Jim Skea , co-chair of IPCC Working Group III . “ But doing so would require unprecedented changes . ”",appeal to emotion,fallacy of credibility,0.374475,0
+"Consequences of past inaction
+“ One of the key messages that comes out very strongly from this report is that we are already seeing the consequences of 1 degree C of global warming through more extreme weather , rising sea levels and diminishing Arctic sea ice , among other changes , ” said Panmao Zhai , co-chair of IPCC Working Group I .",faulty generalization,fallacy of credibility,0.264904,0
+"Countries in the southern hemisphere will be among the worse off , the report said , “ projected to experience the largest impacts on economic growth due to climate change should global warming increase . ”",equivocation,appeal to emotion,0.222631,0
+Eight countries control land in the Arctic Circle . Five have coastlines to defend . The temperature is rising . The ice is melting . The race for newly accessible resources is beginning . And Russia is gaining ground .,fallacy of logic,appeal to emotion,0.259295,0
+"The sea-ice loss is President Vladimir Putin ’ s gain . Already the largest country on the planet , Russia stands to gain access to shipping routes and energy reserves , and a strategic military advantage from the opening of the Arctic . Along the Russian coastline , which makes up more than half the Arctic total , winds and currents push old ice away from potential shipping lanes and prevent the build-up of thicker , multi-year ice that would leave other parts of the Arctic impassable for longer periods .",appeal to emotion,appeal to emotion,0.280382,1
+Seismologists have begun to install sensors in the Russian Arctic to give advance notice of fields ready to blow their top . These local events are a powerful visual example of how the world is changing in dramatic and surprising ways .,fallacy of relevance,intentional,0.286076,0
+"Had a scientist in the early 1990s suggested that within 25 years a single heat wave would measurably raise sea levels , at an estimated two one-hundredths of an inch , bake the Arctic and produce Sahara-like temperatures in Paris and Berlin , the prediction would have been dismissed as alarmist . But many worst-case scenarios from that time are now realities .",intentional,intentional,0.363895,1
+"In 1990 , the Intergovernmental Panel on Climate Change , the United Nations group of thousands of scientists representing 195 countries , said in its first report that climate change would arrive at a stately pace , that the methane-laden Arctic permafrost was not in danger of thawing , and that the Antarctic ice sheets were stable .",intentional,intentional,0.30307,1
+"As we now know , all of those predictions turned out to be completely wrong .",intentional,intentional,0.273554,1
+The climate change panel seems finally to have caught up with the gravity of the climate crisis .,intentional,intentional,0.362642,1
+"Unfortunately , this dose of reality arrives more than 30 years after human-caused climate change became a mainstream issue .",intentional,intentional,0.265743,1
+"As recently as 1995 , it was thought to be stable .",intentional,intentional,0.453642,1
+"For decades , most scientists saw climate change as a distant prospect .",faulty generalization,fallacy of credibility,0.256094,0
+"But in the case of climate , this deliberation has been accompanied by inertia born of bureaucratic caution and politics .",intentional,intentional,0.31858,1
+A recent essay in Scientific American argued that scientists “ tend to underestimate the severity of threats and the rapidity with which they might unfold ” and said one of the reasons was “ the perceived need for consensus. ”,intentional,intentional,0.369041,1
+The realization that the global climate can swing between warm and cold periods in a matter of decades or even less came as a profound shock to scientists who thought those shifts took hundreds if not thousands of years .,intentional,intentional,0.324959,1
+"Before that , almost nobody confidently believed that the climate could change massively within a decade or two ; after the report , almost nobody felt sure that it could not . ”",intentional,intentional,0.354556,1
+"And even today , 17 years later , a substantial portion of the American public remains unaware or unconvinced it is happening .",fallacy of extension,ad populum,0.466389,0
+Few expect that to happen anytime soon .,intentional,faulty generalization,0.423844,0
+"This summer , for instance , a heat wave in Europe penetrated the Arctic , pushing temperatures into the 80s across much of the Far North and , according to the Belgian climate scientist Xavier Fettweis , melting some 40 billion tons of Greenland ’ s ice sheet .",intentional,intentional,0.377423,1
+"Which makes you wonder whether the projected risks of further warming , dire as they are , might still be understated .",faulty generalization,intentional,0.410509,0
+How bad will things get ?,intentional,appeal to emotion,0.258761,0
+"New York City ’ s subway system did not flood in its first 108 years , but Hurricane Sandy ’ s 2012 storm surge caused nearly $ 5 billion in water damage , much of which is still not repaired . In 2017 , Hurricane Harvey gave Houston and the surrounding region a $ 125 billion lesson about the costs of misjudging the potential for floods .",intentional,false causality,0.193875,0
+"More recently , its actions approached the surreal as the Justice Department opened an antitrust investigation into those auto companies that have agreed in principle to abide by higher gas mileage standards required by California .",ad hominem,intentional,0.33991,0
+"Even if scientists end up having lowballed their latest assessments of the consequences of the greenhouse gases we continue to emit into the atmosphere , their predictions are dire enough .",fallacy of logic,intentional,0.219196,0
+It ’ s already here . And it is going to get worse .,appeal to emotion,faulty generalization,0.512083,0
+"Australia relies on the Great Barrier Reef for about 70,000 jobs and billions of dollars annually in tourism revenue , and it is not yet clear how that economy will be affected by the reef ’ s deterioration .",intentional,appeal to emotion,0.323585,0
+"He said that he and his students cried when he showed them maps of the damage , which he had calculated in part by flying low in small planes and helicopters .",appeal to emotion,intentional,0.215421,0
+"Australia relies on the Great Barrier Reef for about 70,000 jobs and billions of dollars annually in tourism revenue , and it is not yet clear how that economy will be affected by the reef ’ s deterioration .",fallacy of extension,appeal to emotion,0.323585,0
+"Within a decade , certain kinds of branching and plate coral could be extinct , reef scientists say , along with a variety of small fish that rely on them for protection from predators .",faulty generalization,faulty generalization,0.334191,1
+"The Great Barrier Reef in Australia has long been one of the world ’ s most magnificent natural wonders , so enormous it can be seen from space , so beautiful it can move visitors to tears . But the reef , and the profusion of sea creatures living near it , are in profound trouble .",appeal to emotion,appeal to emotion,0.253669,1
+"Much of recent global warming has been fabricated by climate scientists to make it look more frightening , a study has found .",fallacy of credibility,intentional,0.489979,0
+"In fact , the magnitude of their historical data adjustments , that removed their cyclical temperature patterns , are totally inconsistent with published and credible U.S. and other temperature data .",intentional,intentional,0.612088,1
+"That is , the adjusted data used by alarmist organizations like NASA , NOAA , and the UK Met Office differs so markedly from the original raw data that it can not be trusted .",intentional,intentional,0.454825,1
+"Much of recent global warming has been fabricated by climate scientists to make it look more frightening , a study has found .",faulty generalization,intentional,0.489961,0
+“ You would think that when you make adjustments you ’ d sometimes get warming and sometimes get cooling . That ’ s almost never happened . ”,faulty generalization,faulty generalization,0.299102,1
+"What this means , the report concludes , is that claims by NASA , NOAA , and the UK Met Office that the world is experiencing unprecedented and dramatic warming should be taken with a huge pinch of salt : they all use the same corrupted global average temperature ( GAST ) data . The conclusive findings of this research are that the three GAST data sets are not a valid representation of reality .",ad hominem,intentional,0.407162,0
+"That is , the adjusted data used by alarmist organizations like NASA , NOAA , and the UK Met Office differs so markedly from the original raw data that it can not be trusted .",ad hominem,intentional,0.454825,0
+He was not connected to the study .,fallacy of relevance,intentional,0.338763,0
+"Brazil , the world ’ s largest exporter of red meat , holds around 212 million cattle . ( In June , the U.S. temporarily suspended imports of beef from Brazil due to abscesses , collections of pus , in the meat . )",fallacy of relevance,intentional,0.222655,0
+"In addition to the well-documented health benefits of a plant-based diet , this case also brings empowerment , or at least reprieve .",appeal to emotion,false causality,0.160805,0
+Donald Trump has called climate change a fabrication on the part of “ the Chinese in order to make U.S. manufacturing non-competitive. ”,intentional,fallacy of extension,0.2805,0
+Donald Trump has called climate change a fabrication on the part of “ the Chinese in order to make U.S. manufacturing non-competitive. ”,fallacy of relevance,fallacy of extension,0.2805,0
+"Brazil , the world ’ s largest exporter of red meat , holds around 212 million cattle . ( In June , the U.S. temporarily suspended imports of beef from Brazil due to abscesses , collections of pus , in the meat . )",fallacy of logic,intentional,0.222655,0
+"Just down the coast from Donald Trump 's weekend retreat , the residents and businesses of south Florida are experiencing regular episodes of water in the streets .",appeal to emotion,faulty generalization,0.203352,0
+Ask nearly anyone in the Miami area about flooding and they ’ ll have an anecdote to share . Many will also tell you that it ’ s happening more and more frequently . The data backs them up .,false causality,ad populum,0.571822,0
+"There also are six Trump-branded residential buildings in Sunny Isles , one of which still provides the president with income , and a Trump-branded condominium complex in Hollywood . Look beyond all the glass and steel , though , and – despite the federal government ’ s sidelining of the issue – there ’ s another thrum of activity .",fallacy of credibility,fallacy of relevance,0.165612,0
+"“ This would be no different than if I came to you and said ‘ Hey , in 40 years , gravity ’ s going to change . I can ’ t tell you exactly what it ’ s going to be . But let ’ s assume roughly between 50 % and 80 % stronger or weaker than it is now. ’",fallacy of logic,intentional,0.243719,0
+"At extreme high tides , water levels have surged to an inch below the Intracoastal Waterway , says Jennifer Jurado , Broward County ’ s chief resiliency officer . “ Once that ’ s breached , you ’ re open to the ocean – the supply of water is endless . The system is really at capacity . These are flood conditions , even with just the high tide and supermoon… You see men in business suits trying to trudge through water . ”",faulty generalization,false causality,0.184574,0
+"Shortly thereafter , Obama ’ s science advisor John Holdren accused him of misleading Congress and launched a lengthy but ill-informed attack on Pielke , which prompted congressional Democrats to open an investigation into Pielke ’ s sources of funding ( which quickly fizzled amid benign conclusions ) .",intentional,ad hominem,0.472892,0
+"Globally there ’ s no clear evidence of trends and patterns in extreme events such as droughts , hurricanes and floods . Some regions experience more , some less and some no trend .",false causality,intentional,0.415318,0
+"If anything , the past 50 years has been relatively quiet . There ’ s no trend in hurricane-related flooding in the U.S .",false causality,intentional,0.409376,0
+"Nor is there evidence of an increase in floods globally . Since 1965 , more parts of the U.S. have seen a decrease in flooding than have seen an increase . And from 1940 to today , flood damage as a percentage of GDP has fallen to less than 0.05 per cent per year from about 0.2 per cent .",ad populum,intentional,0.373479,0
+"There ’ s no trend in U.S. tornado damage ( in fact , 2012 to 2017 was below average ) . There ’ s no trend in global droughts . Cold snaps in the U.S. are down but , unexpectedly , so are heatwaves . The bottom line is there ’ s no solid connection between climate change and many major indicators of extreme weather that politicians keep talking about , such as hurricanes , tornadoes , droughts , rainfall and floods , despite Trudeau ’ s claims to the contrary .",intentional,intentional,0.401333,1
+"Roger Pielke Jr. is a scientist at University of Colorado in Boulder who , up until a few years ago , did world-leading research on climate change and extreme weather . He found convincing evidence that climate change was not leading to higher rates of weather-related damages worldwide , once you correct for increasing population and wealth .",fallacy of credibility,fallacy of credibility,0.34821,1
+"For his efforts , Pielke was subjected to a vicious , well-funded smear campaign backed by , among others , the Obama White House and leading Democratic congressmen , culminating in his decision in 2015 to quit the field .",appeal to emotion,ad hominem,0.422954,0
+"His presentation was recently circulated on Twitter . With so much misinformation nowadays about supposed climate emergencies , it ’ s worth reviewing carefully .",intentional,ad hominem,0.212359,0
+"They concluded that trends toward rising climate damages were mainly due to increased population and economic activity in the path of storms , that it was not currently possible to determine the portion of damages attributable to greenhouse gases , and that they didn ’ t expect that situation to change in the near future .",intentional,intentional,0.571551,1
+"He found convincing evidence that climate change was not leading to higher rates of weather-related damages worldwide , once you correct for increasing population and wealth .",faulty generalization,intentional,0.402182,0
+Said Hayhoe : “ The biggest myth that the largest number of people have bought into is that ‘ climate change doesn ’ t matter to me personally. ’ ”,intentional,ad populum,0.439972,0
+Gone are the days when scientists drew a bright line dividing weather and climate .,false dilemma,fallacy of logic,0.203835,0
+"President Trump , who in the past has called global warming a hoax , has vowed to pull the United States out of the accord as soon as that becomes possible , in 2020 . The 2017 National Climate Assessment , released in November , concluded what it has for nearly three decades : Human-made climate change is real , and the impacts have already started .",intentional,intentional,0.411865,1
+"In the town of Sodankyla , Finland , the thermometer on July 17 registered a record-breaking 90 degrees , a remarkable figure given that Sodankyla is 59 miles north of the Arctic Circle , in a region known for winter snowmobiling and an abundance of reindeer . This is a hot , strange and dangerous summer across the planet . Greece is in mourning after scorching heat and high winds fueled wildfires that have killed more than 80 people . Japan recorded its highest temperature in history , 106 degrees , in a heat wave that killed 65 people in a week and hospitalized 22,000 , shortly after catastrophic flooding killed 200 .
+Ouargla , Algeria , hit 124 degrees on July 5 , a likely record for the continent of Africa . And the 109-degree reading in Quriyat , Oman , on June 28 amazed meteorologists because that wasn ’ t the day ’ s high temperature . That was the low . It was the hottest low temperature ever recorded on Earth . Montreal hit 98 degrees on July 2 , its warmest temperature ever measured . Canadian health officials estimate as many as 70 people died in that heat wave . In the United States , 35 weather stations in the past month have set new marks for warm overnight temperatures . Southern California has had record heat and widespread power outages . In Yosemite Valley , which is imperiled by wildfires , park rangers have told everyone to flee . The brutal weather has been supercharged by human-induced climate change , scientists say . Climate models for three decades have predicted exactly what the world is seeing this summer .",intentional,false causality,0.314496,0
+"In the Southwest , it ’ s water availability . On the Gulf Coast , it ’ s hurricanes . In the East , it ’ s flooding .",intentional,false causality,0.255145,0
+"In Dallas , where the temperature hit 100 on 10 out of 11 days this month , three homeless people have died of heat-related causes in the past week , said Brenda Snitzer , executive director of the Stewpot , a downtown shelter . In Phoenix , where this week ’ s temperature hit 116 degrees , Dustin Nye , 36 , who spent the day installing air-conditioning units , said he has suffered heat stroke in the past and still gets woozy . “ It takes a special breed to do this all day long in this heat , ” he said . “ You ’ ve really got to work up your endurance and just buckle down and deal with it . ” In Los Angeles , Marty Adams , chief operating officer of the Department of Water and Power , said , “ It seems like every year , we ’ ve had some type of temperature anomaly that we normally would not have. ” Residents of beach cities such as Long Beach and Santa Monica , who normally rely on the ocean breeze to cool their homes , have added air-conditioning units , which strains the grid and has contributed to power outages , he said . Said Hayhoe : “ The biggest myth that the largest number of people have bought into is that ‘ climate change doesn ’ t matter to me personally.",intentional,false causality,0.203155,0
+"The 2017 National Climate Assessment , released in November , concluded what it has for nearly three decades : Human-made climate change is real , and the impacts have already started .",fallacy of relevance,intentional,0.372267,0
+"President Trump , who in the past has called global warming a hoax , has vowed to pull the United States out of the accord as soon as that becomes possible , in 2020 . The 2017 National Climate Assessment , released in November , concluded what it has for nearly three decades : Human-made climate change is real , and the impacts have already started .",false causality,intentional,0.411898,0

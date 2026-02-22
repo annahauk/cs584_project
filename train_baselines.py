@@ -274,7 +274,7 @@ def run_one_model(
 
 def main():
     args = parse_args()
-
+    print("Args parsed")
     train_path = os.path.join(args.data_dir, args.train_file)
     dev_path = os.path.join(args.data_dir, args.dev_file)
     test_path = os.path.join(args.data_dir, args.test_file)
