@@ -28,6 +28,7 @@ from typing import Any
 
 import pandas as pd
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
+from tqdm import tqdm
 
 
 TEXT_COL = "source_article"
@@ -235,7 +236,9 @@ def run_model_on_split(
     records: list[dict[str, Any]] = []
     start = time.time()
 
-    for row_num, (_, row) in enumerate(df.iterrows()):
+    for row_num, (_, row) in enumerate(
+        tqdm(df.iterrows(), total=len(df), desc=f"[{model}][{split_name}]", ncols=80)
+    ):
         pred = predict_one(
             client=client,
             model=model,
@@ -266,12 +269,13 @@ def run_model_on_split(
     metrics["seconds"] = round(elapsed, 3)
     metrics["samples_per_sec"] = round((len(pred_df) / elapsed), 3) if elapsed > 0 else 0.0
 
-    print(
-        f"[{model}][{split_name}] "
-        f"acc={metrics['accuracy']:.4f} f1_macro={metrics['f1_macro']:.4f} "
-        f"parsed={metrics['parsed_rate']:.3f} n={int(metrics['num_samples'])} "
-        f"time={metrics['seconds']:.1f}s"
-    )
+    # Final summary print
+    acc = metrics['accuracy']
+    f1 = metrics['f1_macro']
+    parsed = metrics['parsed_rate']
+    n = int(metrics['num_samples'])
+    t = metrics['seconds']
+    print(f"[{model}][{split_name}] acc={acc:.4f} f1_macro={f1:.4f} parsed={parsed:.3f} n={n} time={t:.1f}s")
 
     return metrics, pred_df, elapsed
 
