@@ -1,0 +1,5 @@
+model,num_labels,train_samples,dev_samples,test_samples,epochs,batch_size,learning_rate,max_length,train_time_s,dev_accuracy,dev_precision_macro,dev_recall_macro,dev_f1_macro,dev_f1_weighted,test_accuracy,test_precision_macro,test_recall_macro,test_f1_macro,test_f1_weighted
+bert-base-uncased,13,1849,300,300,3,8,2e-05,256,104.56,0.56,0.524296,0.456416,0.440713,0.526501,0.47,0.395,0.38241,0.360745,0.421175
+distilbert-base-uncased,13,1849,300,300,3,8,2e-05,256,55.87,0.546667,0.540319,0.438134,0.438937,0.517927,0.533333,0.516104,0.450562,0.424136,0.48682
+roberta-base,13,1849,300,300,3,8,2e-05,256,110.75,0.66,0.585368,0.59925,0.586752,0.65361,0.59,0.503558,0.519411,0.502639,0.569738
+albert-base-v2,13,1849,300,300,3,8,2e-05,256,79.71,0.55,0.519081,0.466354,0.467584,0.536221,0.51,0.389802,0.41475,0.387959,0.466084

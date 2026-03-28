@@ -1,0 +1,255 @@
+text,true_label,pred_label,pred_score,correct
+"Rep. Bill Posey ( R-FL ) said scientists said in the 1970s that the Earth was cooling , a popular talking point of climate skeptics and the subject of a fake",intentional,intentional,0.247124,1
+"`` Look , if you want to characterize a temperature above today 's temperature as normal , you 're free to do that , but that does n't mean that 's a planet we want to live on , '' Duffy said .",intentional,intentional,0.218055,1
+"At one point , Smith showed a slide of two charts that he said demonstrated how the rate of sea-level rise does not equal the sharp spike in the consumption of fossil fuels .",intentional,intentional,0.313156,1
+"Brooks then said that erosion plays a significant role in sea-level rise , which is not an idea embraced by mainstream climate researchers .",faulty generalization,intentional,0.313649,0
+Brooks added that Antarctic ice is growing .,intentional,intentional,0.282127,1
+"Now , you could make a different argument if you want to talk about Greenland or the Arctic . ''",intentional,appeal to emotion,0.137942,0
+The Earth is not warming .,intentional,intentional,0.24508,1
+The White Cliffs of Dover are tumbling into the sea and causing sea levels to rise .,intentional,appeal to emotion,0.17981,0
+Global warming is helping grow the Antarctic ice sheet .,intentional,intentional,0.263877,1
+"Now , you could make a different argument if you want to talk about Greenland or the Arctic . ''",intentional,appeal to emotion,0.137942,0
+"Rep. Bill Posey ( R-FL ) said scientists said in the 1970s that the Earth was cooling , a popular talking point of climate skeptics and the subject of a fake Time magazine cover that has become a meme .",ad hominem,intentional,0.221445,0
+"Rep. Bill Posey ( R-FL ) said scientists said in the 1970s that the Earth was cooling , a popular talking point of climate skeptics and the subject of a fake Time magazine cover that has become a meme .",fallacy of relevance,intentional,0.221445,0
+"The epic amount of rain that led to deadly , catastrophic flooding across large parts of South Carolina and North Carolina is an example of exactly the type of supercharged storm system climate scientists have been warning about for years as a likely consequence of global warming .",false causality,intentional,0.248097,0
+"The epic amount of rain that led to deadly , catastrophic flooding across large parts of South Carolina and North Carolina is an example of exactly the type of supercharged storm system climate scientists have been warning about for years as a likely consequence of global warming .",intentional,intentional,0.248097,1
+"While it 's too soon to say precisely how global warming may have affected the rare confluence of events that conspired to dump at least 26.88 inches of rain in less than four days on South Carolina , changes in extreme precipitation events are one of global warming 's most well-documented climate change impacts .",intentional,intentional,0.300361,1
+"Updated data from NASA satellite instruments reveal the Earth ’ s polar ice caps have not receded at all since the satellite instruments began measuring the ice caps in 1979 . Since the end of 2012 , moreover , total polar ice extent has largely remained above the post-1979 average .",intentional,intentional,0.364704,1
+Nicklen is no stranger to bears .,appeal to emotion,intentional,0.147327,0
+The study found climate deniers are able to downplay the threat of climate change by discrediting the threat facing polar bears .,appeal to emotion,intentional,0.319998,0
+"But the emaciated polar bear , featured in videos Nicklen published to social media on December 5 , was one of the most gut-wrenching sights he 's ever seen .",appeal to emotion,intentional,0.151795,0
+"`` We stood there crying—filming with tears rolling down our cheeks , '' he said .",appeal to emotion,intentional,0.15017,0
+"Video shows the polar bear clinging to life , its white hair limply covering its thin , bony frame . One of the bear 's back legs drags behind it as it walks , likely due to muscle atrophy . Looking for food , the polar bear slowly rummages through a nearby trashcan used seasonally by Inuit fishers . It finds nothing and resignedly collapses back down onto the ground . In the days since Nicklen posted the footage , he 's been asked why he didn ’ t intervene .",appeal to emotion,intentional,0.159622,0
+"Even then , the report found that polar bears were moving from ice to land earlier and staying on land longer , unhealthily extending the bears ' fasting season . By the end of summer , most bears studied by the World Wildlife Fund showed signs of starvation . Fifteen years later , polar bears ' icy hunting grounds are in even worse shape .",appeal to emotion,intentional,0.288254,0
+"`` When scientists say bears are going extinct , I want people to realize what it looks like . Bears are going to starve to death , '' said Nicklen . ``",appeal to emotion,intentional,0.185454,0
+"By telling the story of one polar bear , Nicklen hopes to convey a larger message about how a warming climate has deadly consequences .",false causality,intentional,0.162083,0
+Species thrive when it is warm .,faulty generalization,intentional,0.183388,0
+"Renew­ables such as wind turbines are environmentally disastrous because they pollute a huge land area , slice and dice birds and bats , kill insects that are bird food , create health problems for humans who live within kilometres of them , leave toxins around the turbine site and despoil the landscape .",intentional,intentional,0.177399,1
+Shorten refuses to tell us how he will spend our money or to give any detail on energy ­systems that are proven failures .,fallacy of extension,appeal to emotion,0.154497,0
+"A quick search would show him that whenever in the past there was an explosion of plant life , the carbon dioxide content was far higher than at present .",intentional,intentional,0.28884,1
+"A quick search would show him that whenever in the past there was an explosion of plant life , the carbon dioxide content was far higher than at present . If we halve the carbon dioxide content of the atmosphere , all life dies .",faulty generalization,intentional,0.247628,0
+"There are measurable cycles with the sun , Earth ’ s orbit , oceans and moon that drive climate change , especially if cycles coincide . It has yet to be demonstrated that the climate change today is any different from those of the past .",intentional,intentional,0.322749,1
+"Despite hundreds of billions of dollars of expenditure during the past few decades , it still has not been shown that human emissions of carbon dioxide drive ­global warming .",intentional,intentional,0.311945,1
+He should know that climate always changes and that the planet would be in serious trouble if it did not .,faulty generalization,appeal to emotion,0.169475,0
+"He would have learned that ­natural warm times , like now , bring great prosperity , increased longevity and less disease , whereas Jack Frost brings death , depopulation and economic stresses .",faulty generalization,intentional,0.166268,0
+The amount of energy used to construct solar and wind facilities is greater than they produce in their working lives .,intentional,intentional,0.227936,1
+Species thrive when it is warm .,fallacy of logic,intentional,0.183388,0
+"If he does , he is unelectable .",ad hominem,appeal to emotion,0.16575,0
+"In school science , Shorten would have learned carbon dioxide is the food of life and without this natural gas , which occurs in space and all planets , there would be no life .",faulty generalization,intentional,0.254979,0
+"These subsidies , paid by the long-suffering consumer and employer , add to emissions because coal-fired elec­tricity needs to be on standby for when there is no wind or sunshine .",appeal to emotion,intentional,0.19667,0
+"These subsidies , paid by the long-suffering consumer and employer , add to emissions because coal-fired elec­tricity needs to be on standby for when there is no wind or sunshine .",intentional,intentional,0.19667,1
+"These subsidies , paid by the long-suffering consumer and employer , add to emissions because coal-fired elec­tricity needs to be on standby for when there is no wind or sunshine .",fallacy of logic,intentional,0.19667,0
+"As soon as renewables were introduced into the grid , electric­ity prices increased and delivery became unreliable .",false causality,intentional,0.201015,0
+An increase in renewables will make matters worse .,faulty generalization,intentional,0.184297,0
+I have never written a blank cheque for a used car .,fallacy of logic,intentional,0.140504,0
+"He would have learned that ­natural warm times , like now , bring great prosperity , increased longevity and less disease , whereas Jack Frost brings death , depopulation and economic stresses .",false causality,intentional,0.166268,0
+"In biology , the Labor leader would have learned of Darwinism and environmental adapta­tion of species .",fallacy of relevance,intentional,0.232952,0
+"In school science , Shorten would have learned carbon dioxide is the food of life and without this natural gas , which occurs in space and all planets , there would be no life .",fallacy of relevance,intentional,0.254979,0
+"If he is knowingly promoting a falsehood , he is unelectable .",ad hominem,appeal to emotion,0.144244,0
+"A quick search would show him that whenever in the past there was an explosion of plant life , the carbon dioxide content was far higher than at present .",fallacy of logic,intentional,0.28884,0
+"A quick search would show him that whenever in the past there was an explosion of plant life , the carbon dioxide content was far higher than at present .",false causality,intentional,0.28884,0
+"Shorten should know that for thousands of millions of years the Earth has been changing , with cycles­ and one-off events such as an asteroid impact , super-volcano or a supernova explosion .",fallacy of credibility,intentional,0.306617,0
+"Shorten should know that for thousands of millions of years the Earth has been changing , with cycles­ and one-off events such as an asteroid impact , super-volcano or a supernova explosion .",faulty generalization,intentional,0.306617,0
+He should know that climate always changes and that the planet would be in serious trouble if it did not .,fallacy of extension,appeal to emotion,0.169475,0
+"Does Shorten ’ s energy policy consider those who lose jobs and have the power cut off in his race to achieve 50 per cent renewables to fill the pockets of Labor union mates ? And what about the scams siphoning off tens of billions that slosh around the world as carbon credits , carbon trading and renewable energy certificates ?",intentional,intentional,0.169041,1
+"In July , the Greenland ice sheet experienced one of the most significant melting events in the past decade , losing more than 8.5 billion tons of surface mass in a single day , which was enough to submerge Florida in two inches of water .",fallacy of relevance,intentional,0.27407,0
+"Two years ago , a polar bear made it to the Summit Station , which was unusual since polar bears live in coastal regions where they can easily find food .",faulty generalization,intentional,0.215048,0
+"Other unusual events have become more frequent , too , Mercer said . Two years ago , a polar bear made it to the Summit Station , which was unusual since polar bears live in coastal regions where they can easily find food . The bear had trekked several hundred miles inland across the ice sheet . In the last five years , Mercer said three polar bears have been sighted high on Greenland 's ice sheet .",fallacy of relevance,intentional,0.246216,0
+"The warm air fueled an extreme rain event that dumped 7 billion tons of water on the ice sheet , enough to fill the Reflecting Pool at the National Mall in Washington , DC , nearly 250,000 times .",fallacy of relevance,intentional,0.184448,0
+Global sea level rose permanently by 1.5 millimeters as a result .,faulty generalization,intentional,0.334443,0
+"The theory is that tropical cyclones have slowed down in their speed by about 10 percent over the past 70 years due to a retreat of the jet stream farther north , depriving storms of steering currents and making them stall and keep raining in one location . This is what happened with Hurricane Harvey in Houston last year .",false causality,intentional,0.241074,0
+"But like most claims regarding global warming , the real effect is small , probably temporary , and most likely due to natural weather patterns .",false causality,intentional,0.352898,0
+"Any changes in hurricanes over 70 years , even if real , can easily be part of natural cycles — or incomplete data .",false causality,intentional,0.353551,0
+"Coastal lake sediments along the Gulf of Mexico shoreline from 1,000 to 2,000 years ago suggest more frequent and intense hurricanes than occur today .",fallacy of relevance,intentional,0.245595,0
+"Until 2017 , the United States went 11 years without a major hurricane strike — something that is statistically very improbable .",ad populum,intentional,0.26575,0
+"The monetary cost of damages has increased dramatically in recent decades , but that is due to increasing population , wealth and the amount of vulnerable infrastructure . It ’ s not due to stronger storms .",false causality,intentional,0.215331,0
+Natural variability is simply too large . This should not be surprising given that humanity ’ s greenhouse gas emissions have caused only a1 percent change in the natural energy flows coursing through the climate system .,ad populum,intentional,0.314742,0
+"Even before Hurricane Florence made landfall somewhere near the border of North and South Carolina , predicted damage from potentially catastrophic flooding from the storm was already being blamed on global warming .",fallacy of relevance,intentional,0.181885,0
+Now it ’ s fashionable to blame stalling hurricanes on global warming .,intentional,appeal to emotion,0.179456,0
+"But examination of a weather map of the atmospheric flow at an altitude of 18,000 feet shows the jet stream is pushed farther south over western North America . This kind of natural variation in atmospheric flow is called weather , not climate change .",intentional,intentional,0.265368,1
+"But like most claims regarding global warming , the real effect is small , probably temporary , and most likely due to natural weather patterns .",faulty generalization,intentional,0.352898,0
+"Unusual things happen in nature sometimes The Massachusetts Bay Colony in 1635 experienced a Category 3 or 4 storm , with up to a 20-foot storm surge .",fallacy of relevance,intentional,0.18845,0
+Now it ’ s fashionable to blame stalling hurricanes on global warming .,ad populum,appeal to emotion,0.179456,0
+"This kind of natural variation in atmospheric flow is called weather , not climate change .",equivocation,intentional,0.264129,0
+"But I ’ m afraid , human nature being what it is , the thing gets exaggerated out of all proportion , and the greens have behaved deplorably instead of being reasonably sensible . ”",ad hominem,ad hominem,0.143644,1
+"So for now , nuclear energy is the only viable option .",fallacy of logic,intentional,0.195612,0
+"But all this , he clarifies cheerfully , is more or less academic . “ Because quite soon – before we ’ ve reached the end of this century , even – I think that what people call robots will have taken over.",fallacy of relevance,intentional,0.155359,0
+"Oh well , it ’ s doing a good job designing itself , let ’ s encourage it. ’ ” Computers will develop independent volition and intuition ( “ To some extent , they already have ” ) and become capable of reproducing themselves , and of evolving . “",faulty generalization,intentional,0.159654,0
+"A defiant generalist in an era of increasingly specialised study , and a mischievous provocateur , Lovelock is regarded by many as a scientific genius .",fallacy of credibility,intentional,0.163523,0
+"But isn ’ t that exactly what he did last time we met ? “ I know , ” he grins teasingly . “ But I ’ ve grown up a bit since then . ”",intentional,intentional,0.148272,1
+"He now says : “ Anyone who tries to predict more than five to 10 years is a bit of an idiot , because so many things can change unexpectedly. ”",ad hominem,intentional,0.218991,0
+"A defiant generalist in an era of increasingly specialised study , and a mischievous provocateur , Lovelock is regarded by many as a scientific genius .",ad populum,intentional,0.163523,0
+"It ’ s two-and-a-half times higher than the worst-case scenario for climate change , and it ’ s one of the most desirable cities in the world to live in . ”",false causality,intentional,0.190068,0
+You ’ ve only got to look at Singapore .,intentional,appeal to emotion,0.156095,0
+"The fashionable hope that windfarms or recycling could prevent global famine and mass migration was , he assured me , a fantasy ; it was too late for ethical consumption to save us .",faulty generalization,appeal to emotion,0.178983,0
+"Before the end of this century , 80 % of the world ’ s population would be wiped out .",faulty generalization,intentional,0.238787,0
+"His Gaia hypothesis , which contends that the earth is a single , self-regulating organism , is now accepted as the founding principle of most climate science , and his invention of a device to detect CFCs helped identify the hole in the ozone layer .",intentional,intentional,0.285531,1
+"He now says : “ Anyone who tries to predict more than five to 10 years is a bit of an idiot , because so many things can change unexpectedly. ”",intentional,intentional,0.218991,1
+"It ’ s two-and-a-half times higher than the worst-case scenario for climate change , and it ’ s one of the most desirable cities in the world to live in . ”",fallacy of relevance,intentional,0.190068,0
+"All things being equal – “ and it ’ s only got to take one sizable volcano to erupt and all the models , everything else , is right off the board ” – he expects that before the consequences of global warming can impact on us significantly , something else will have made our world unrecognisable , and threaten the human race .",faulty generalization,appeal to emotion,0.175285,0
+"Lovelock maintains that , unlike most environmentalists , he is a rigorous empiricist , but it is manifestly clear that he enjoys maddening the green movement . “ Well , it ’ s a religion , really , you see . It ’ s totally unscientific. ”",ad hominem,intentional,0.140832,0
+"He pauses to do some quick mental arithmetic , as casually as I might tot up how many pints of milk to grab from Sainsburys .",fallacy of credibility,appeal to emotion,0.132527,0
+The implications for climate change are obvious . “ The world that they ’ re going to be comfortable in is wildly different from the one that we feel comfortable in .,faulty generalization,intentional,0.202168,0
+The implications for climate change are obvious . “ The world that they ’ re going to be comfortable in is wildly different from the one that we feel comfortable in .,fallacy of relevance,intentional,0.202168,0
+"It is not difficult to imagine that conflicts arising from forced migrations and economic collapse might make the planet ungovernable , threatening the fabric of civilization . ”",faulty generalization,intentional,0.15852,0
+"Even as global ocean temperatures rise to their highest levels in recorded history , some parts of the ocean , near where ice is melting exceptionally fast , are actually cooling , slowing ocean circulation currents and sending weather patterns into a frenzy . Sure enough , a persistently cold patch of ocean is starting to show up just south of Greenland , exactly where previous experimental predictions of a sudden surge of freshwater from melting ice expected it to be .",false causality,intentional,0.263437,0
+"Salmon are crucial to their coastal ecosystem like perhaps few other species on the planet . A significant portion of the nitrogen in West Coast forests has been traced back to salmon , which can travel hundreds of miles upstream to lay their eggs . The largest trees on Earth simply wouldn ’ t exist without salmon .",fallacy of logic,intentional,0.213278,0
+"“ The climate [ change ] models predict this gentle , slow increase in temperature , ” says Peterson , “ but the main problem we ’ ve had for the last few years is the variability is so high . As scientists , we can ’ t keep up with it , and neither can the animals. ” Peterson likens it to a boxer getting pummeled round after round : “ At some point , you knock them down , and the fight is over . ” Attendant with this weird wildlife behavior is a stunning drop in the number of plankton — the basis of the ocean ’ s food chain .",fallacy of logic,intentional,0.267324,0
+"As sea levels rise in the next century , even a $ 3 billion wall won ’ t keep Lower Manhattan above water .",appeal to emotion,intentional,0.174269,0
+“ Why do we keep getting so many record-warm years ? ” Dr. Schmidt asked in an interview . “ It ’ s because the planet is warming .,circular reasoning,intentional,0.29655,0
+"John R. Christy , an atmospheric scientist at the University of Alabama in Huntsville who is known for his skepticism about the seriousness of global warming , pointed out in an interview that 2014 had surpassed the other record-warm years by only a few hundredths of a degree , well within the error margin of global temperature measurements . “ Since the end of the 20th century , the temperature hasn ’ t done much , ” Dr. Christy said . “ It ’ s on this kind of warmish plateau . ” Despite such arguments from a handful of scientists , the vast majority of those who study the climate say the earth is in a long-term warming trend that is profoundly threatening and caused almost entirely by human activity .",intentional,intentional,0.340236,1
+Exit Glacier has been shrinking for 200 years — since 1815 — long before widespread industrialization and automobiles .,fallacy of logic,intentional,0.302805,0
+"Sounding more like an Old Testament doomsayer than a president , Obama warned in his Alaska speech that unless carbon fuels are restricted , “ we will condemn our children to a planet beyond their capacity to repair : Submerged countries .",ad hominem,intentional,0.153875,0
+"News flash , Mr. President : Alaska has been buffeted by cyclical swings in climate for thousands of years . That ’ s true for the rest of the world , too . There was a 300-year-long Medieval heat wave , followed by a Little Ice Age that began around 1300 , and then the 300-year warming period we ’ re in now .",intentional,intentional,0.228181,1
+The Alaska Climate Research Center reports almost no evidence of warming trends in Alaska since 1977 .,intentional,intentional,0.347845,1
+"No matter what humans do , temperature trends go up , and then down ; glaciers expand and then recede ; sea levels rise and then fall , explains Will Happer , professor emeritus of physics at Princeton .",intentional,intentional,0.261288,1
+But don ’ t blame climate change on humans . There are bigger forces at work here .,intentional,appeal to emotion,0.163959,0
+"How about the epidemic of cop shootings in the United States , or the drowned toddlers washing up on Mediterranean shores as families flee the Middle East , or ISIS beheading thousands of Christians ?",fallacy of extension,appeal to emotion,0.171125,0
+"How about the epidemic of cop shootings in the United States , or the drowned toddlers washing up on Mediterranean shores as families flee the Middle East , or ISIS beheading thousands of Christians ?",intentional,appeal to emotion,0.171125,0
+"President Obama hiked to Exit Glacier in Alaska last week , with photographers in tow , to send the world a message :",fallacy of relevance,intentional,0.161744,0
+"The photo op was designed to build support for an international climate agreement he ’ s pushing hard to sell , so far with little success .",fallacy of relevance,intentional,0.153195,0
+Exit Glacier has been shrinking for 200 years — since 1815 — long before widespread industrialization and automobiles .,equivocation,intentional,0.302805,0
+"News flash , Mr. President : Alaska has been buffeted by cyclical swings in climate for thousands of years .",fallacy of credibility,intentional,0.189421,0
+Exit Glacier has been shrinking for 200 years — since 1815 — long before widespread industrialization and automobiles .,fallacy of credibility,intentional,0.302805,0
+"There was a 300-year-long Medieval heat wave , followed by a Little Ice Age that began around 1300 , and then the 300-year warming period we ’ re in now .",fallacy of credibility,intentional,0.260354,0
+Many scientists are predicting the onset of two or three centuries of cooler weather — which would mean bigger glaciers .,fallacy of credibility,intentional,0.33573,0
+That ’ s despite the world ’ s growing use of fossil fuels .,fallacy of logic,intentional,0.237847,0
+That doesn ’ t mean pollution controls are futile . We all want to breathe clean air .,fallacy of relevance,appeal to emotion,0.175214,0
+"Amid all this controversy and uncertainty about global climate change , Obama blindly insists that his theory of global warming “ is beyond dispute ” and attacks his critics as “ deniers . ”",ad hominem,intentional,0.182794,0
+"Sounding more like an Old Testament doomsayer than a president , Obama warned in his Alaska speech that unless carbon fuels are restricted , “ we will condemn our children to a planet beyond their capacity to repair : Submerged countries .",ad hominem,intentional,0.153875,0
+It ’ s a demonstration of Obama ’ s appalling lack of priorities .,ad hominem,intentional,0.13967,0
+"” Really , Mr. President ? How about the epidemic of cop shootings in the United States , or the drowned toddlers washing up on Mediterranean shores as families flee the Middle East , or ISIS beheading thousands of Christians ?",intentional,appeal to emotion,0.164625,0
+"” Really , Mr. President ? How about the epidemic of cop shootings in the United States , or the drowned toddlers washing up on Mediterranean shores as families flee the Middle East , or ISIS beheading thousands of Christians ?",fallacy of relevance,appeal to emotion,0.164625,0
+There is no proof the current rate of change in Antarctica will continue .,intentional,intentional,0.359396,1
+"Under high greenhouse-gas emissions , the worst-case projections of sea-level rise eventually reach over a centimeter each year , said Rob DeConto , an Antarctic expert at the University of Massachusetts at Amherst who was not involved in the new study .",fallacy of credibility,intentional,0.317786,0
+"If the acceleration continues , some of scientists ’ worst fears about rising oceans could be realized , leaving low-lying cities and communities with less time to prepare than they had hoped .",appeal to emotion,appeal to emotion,0.184854,1
+"Scientists can ’ t see the future , but they do fear continuing and even worsening losses .
+“ I don ’ t know if it ’ s going to keep exactly tripling , but I think it has a lot of potential to keep significantly increasing , ” Velicogna said .",faulty generalization,intentional,0.212775,0
+“ This has been the saddest research trip of my life ”,appeal to emotion,intentional,0.188156,0
+"If global warming is “ real , ”
+both sides of the debate seem to assume , the climate lobby ’ s policy agenda follows
+inexorably .",false dilemma,intentional,0.213797,0
+Carbon dioxide hurts nobody ’ s health .,intentional,intentional,0.188713,1
+It ’ s good for plants .,intentional,appeal to emotion,0.156556,0
+Carbon dioxide hurts nobody ’ s health . It ’ s good for plants . Climate change need not endanger anyone .,faulty generalization,intentional,0.167392,0
+"Healthy societies do not fall apart over slow , widely predicted , relatively small
+economic adjustments of the sort painted by climate analysis . Societies do fall apart
+from war , disease or chaos .",false dilemma,intentional,0.281303,0
+"Healthy societies do not fall apart over slow , widely predicted , relatively small
+economic adjustments of the sort painted by climate analysis . Societies do fall apart
+from war , disease or chaos .",intentional,intentional,0.281303,1
+"Global warming is not even the obvious top environmental threat . Dirty water , dirty air
+and insect-borne diseases are a far greater problem today for most people world-wide .",false dilemma,intentional,0.213193,0
+Carbon dioxide hurts nobody ’ s health . It ’ s good for plants .,fallacy of relevance,intentional,0.170324,0
+"If it did—and you do hear such claims—then
+living in hot Arizona rather than cool Maine , or living with Louisiana ’ s frequent floods ,
+would be considered a health catastrophe today .",fallacy of logic,appeal to emotion,0.196792,0
+Global warming is not the only risk our society faces .,intentional,intentional,0.16793,1
+"If you buy overpriced insurance against
+every potential danger , you soon run out of money .",fallacy of logic,appeal to emotion,0.197266,0
+"Dirty water , dirty air
+and insect-borne diseases are a far greater problem today for most people world-wide . Habitat loss and human predation are a far greater problem for most animals . Elephants
+won ’ t make it to see a warmer climate .",fallacy of relevance,intentional,0.188896,0
+"Dirty water , dirty air
+and insect-borne diseases are a far greater problem today for most people world-wide . Habitat loss and human predation are a far greater problem for most animals . Elephants
+won ’ t make it to see a warmer climate .",fallacy of logic,intentional,0.188896,0
+"The Intergovernmental Panel on
+Climate Change ’ s “ scientific ” recommendations , for example , include “ reduced gender
+inequality & marginalization in other forms , ” “ provisioning of adequate housing , ” “ cash
+transfers ” and “ awareness raising & integrating into education. ”",intentional,intentional,0.196966,1
+Global warming saves lives .,false causality,intentional,0.184856,0
+"Rather than a world declining into an inescapable man-made climate hell , Earth ’ s ecosystems and inhabitants are thriving because of increasing CO2 and rising temperatures not in spite of them .",faulty generalization,intentional,0.215081,0
+"Concentrations of this gas are slightly less than 420 parts-per-million ( ppm ) , or one-sixth the average historic levels of 2,600 ppm for the last 600 million years .",faulty generalization,intentional,0.302456,0
+The science and data strongly support that our planet ’ s ecosystems are thriving and that humanity is benefiting from modestly increasing temperature and an increase in carbon dioxide .,faulty generalization,intentional,0.307724,0
+These facts refute the claim that Earth is spiraling into one man-made climate catastrophe after another .,fallacy of extension,intentional,0.277983,0
+"All the while droughts , forest fires , heat waves , and temperature-related deaths have declined substantially .",intentional,intentional,0.257234,1
+"What changes the future holds are hardly certain , but judging from the past , they too will be small .",fallacy of credibility,appeal to emotion,0.165355,0
+"If you get your news only from mainstream media , you would likely believe that CO2 levels are dangerously high and unprecedented .",fallacy of credibility,intentional,0.222813,0
+"Concentrations of this gas are slightly less than 420 parts-per-million ( ppm ) , or one-sixth the average historic levels of 2,600 ppm for the last 600 million years .",fallacy of credibility,intentional,0.302456,0
+"During the last glacial period , concentrations nearly reached the “ line of death ” at 150 parts per million , below which plants die .",appeal to emotion,intentional,0.264488,0
+"However , records indicate that modern warming began more than 300 years ago in the depths of the horrific Little Ice Age .",equivocation,intentional,0.320274,0
+Context is important when reviewing climate and temperature data .,fallacy of credibility,intentional,0.328888,0
+Global warming saves lives .,fallacy of logic,intentional,0.184856,0
+"Viewed in the long-term geologic context , we are actually CO2 impoverished .",fallacy of credibility,intentional,0.33709,0
+"Longer-term data reveal multiple warming periods since the end of the last major ice age 10,000 years ago , each warmer than today .",fallacy of credibility,intentional,0.353735,0
+"There is a strong correlation between the rise and fall of temperature and the ebb and flow of civilizations . During the last three warm periods dating back 6,000 years to the advent of the first great civilizations , humanity prospered and great empires arose . Intervening cold periods brought crop failure , famine , and mass depopulation .",fallacy of relevance,intentional,0.253255,0
+History advises us to welcome warmth and fear cold .,fallacy of credibility,appeal to emotion,0.166727,0
+"Contrary to sensational media reports , extreme weather-related deaths in the U.S. have decreased more than 98 % over the last 100 years .",false causality,intentional,0.297169,0
+"Twenty times as many people die from cold as from heat , according to a worldwide review of 74 million temperature-related deaths by Dr. Antonio Gasparrini and a team of physicians . Global warming saves lives .",fallacy of relevance,intentional,0.29773,0
+"Ultimately , politicians will face a difficult choice : persuade their voters that the revolutionary change outlined in the report is urgently needed or ignore it and say the scientists have got it wrong .",false dilemma,intentional,0.162096,0
+"We used to think if we could keep warming below two degrees this century , then the changes we would experience would be manageable .",fallacy of logic,intentional,0.190028,0
+"We used to think if we could keep warming below two degrees this century , then the changes we would experience would be manageable .",appeal to emotion,intentional,0.190028,0
+The countdown to the worst of global warming seems to have accelerated .,appeal to emotion,intentional,0.337109,0
+It 's no coincidence that this storm exploded in an area of near-record warm sea surface temperatures that had not yet been tapped by any other recent storms .,false causality,intentional,0.261652,0
+"Computer models of the climate are at the heart of calls to ban the cheap , reliable energy that powers our thriving economy and promotes healthier , longer lives .",appeal to emotion,intentional,0.189749,0
+"For decades , these models have projected dramatic warming from small , fossil-fueled increases in atmospheric concentrations of carbon dioxide , with catastrophic consequences .",appeal to emotion,intentional,0.337951,0
+Should we trust these computer models of doom ?,ad hominem,intentional,0.168578,0
+"In the upper levels of the lower atmosphere , the models predicted seven times as much warming as has been observed .",intentional,intentional,0.363063,1
+"Why didn ’ t he simply look down here , where we all live ?",fallacy of relevance,appeal to emotion,0.164036,0
+"In this revision , temperatures were estimated from nearby land stations . This runs afoul of basic physics .",faulty generalization,intentional,0.346364,0
+"But each serial adjustment has tended to make the early years colder , which increases the warming trend . That ’ s wildly improbable .",false dilemma,intentional,0.317073,0
+"Even in warm summers , there ’ s plenty of ice over much of the Arctic Ocean .",faulty generalization,intentional,0.161503,0
+"According to the United Nations ' Intergovernmental Panel on Climate Change , there has been no systematic increase in the frequency of extreme weather events , and the ongoing rise in sea level that began with the end of the ice age continues with no great increase in magnitude .",fallacy of credibility,intentional,0.338548,0
+"NASA honored him for this achievement , and he was an author for a previous edition of the U.N. report . He told a House Science Committee hearing in March 2017 that the U.N. climate models have failed badly . Christy compared the average model projections since 1979 to the most reliable observations — those made by satellites and weather balloons over the vast tropics .",fallacy of credibility,intentional,0.310221,0
+"Shelters in poorer countries are not repainted as often , and darker stations absorb more of the sun ’ s energy . It ’ s no surprise that poor tropical countries show the largest warming from this effect .",intentional,intentional,0.229536,1
+"As long as the ice-water mix is well-stirred ( like a glass of ice water ) , the surface temperature stays at the freezing point until all the ice melts .",fallacy of logic,intentional,0.206994,0
+"Shelters in poorer countries are not repainted as often , and darker stations absorb more of the sun ’ s energy . It ’ s no surprise that poor tropical countries show the largest warming from this effect .",false causality,intentional,0.229536,0
+And then you get scared .,appeal to emotion,appeal to emotion,0.169867,1
+"At six feet , though , around 12 million people in the United States would be displaced , and the world ’ s most vulnerable megacities , like Shanghai , Mumbai , and Ho Chi Minh City , could be wiped off the map .",appeal to emotion,appeal to emotion,0.169895,1
+"The glaciers of Pine Island Bay are two of the largest and fastest-melting in Antarctica . ( A Rolling Stone feature earlier this year dubbed Thwaites “ The Doomsday Glacier. ” ) Together , they act as a plug holding back enough ice to pour 11 feet of sea-level rise into the world ’ s oceans — an amount that would submerge every coastal city on the planet .",appeal to emotion,intentional,0.224946,0
+"Ice gets so heavy that these taller cliffs can ’ t support their own weight . Once they start to crumble , the destruction would be unstoppable .",appeal to emotion,appeal to emotion,0.183439,1
+"Minute-by-minute , huge skyscraper-sized shards of ice cliffs would crumble into the sea , as tall as the Statue of Liberty and as deep underwater as the height of the Empire State Building .",ad populum,appeal to emotion,0.182702,0
+All this could play out in a mere 20 to 50 years — much too quickly for humanity to adapt .,appeal to emotion,intentional,0.188037,0
+"South Florida would be largely uninhabitable ; floods on the scale of Hurricane Sandy would strike twice a month in New York and New Jersey , as the tug of the moon alone would be enough to send tidewaters into homes and buildings .",faulty generalization,appeal to emotion,0.175017,0
+That ’ s a decision worth countless trillions of dollars and millions of lives .,appeal to emotion,appeal to emotion,0.17614,1
+"Stretching across a frozen plain more than 150 miles long , these glaciers , named Pine Island and Thwaites , have marched steadily for millennia toward the Amundsen Sea , part of the vast Southern Ocean .",appeal to emotion,intentional,0.186742,0
+"Minute-by-minute , huge skyscraper-sized shards of ice cliffs would crumble into the sea , as tall as the Statue of Liberty and as deep underwater as the height of the Empire State Building . The result : a global catastrophe the likes of which we ’ ve never seen .",appeal to emotion,appeal to emotion,0.184656,1
+"Unfortunately , it now seems like three feet is possible only under the rosiest of scenarios .",appeal to emotion,intentional,0.166242,0
+"Pollard and DeConto are the first to admit that their model is still crude , but its results have pushed the entire scientific community into emergency mode .",equivocation,intentional,0.268029,0
+"“ It could happen faster or slower , I don ’ t think we really know yet , ” says Jeremy Bassis , a leading ice sheet scientist at the University of Michigan . “ But it ’ s within the realm of possibility , and that ’ s kind of a scary thing . ”",faulty generalization,intentional,0.2406,0
+What we do now will determine how quickly Pine Island and Thwaites collapse .,false dilemma,appeal to emotion,0.19195,0
+"For 30 years
+I taught at MIT , during which time the climate has changed remarkably little .",faulty generalization,intentional,0.238416,0
+"For 30 years
+I taught at MIT , during which time the climate has changed remarkably little .",intentional,intentional,0.238416,1
+For politicians it ’ s money and power .,ad hominem,appeal to emotion,0.153422,0
+"And for the media it ’ s ideology , money , and headlines .",ad hominem,intentional,0.143219,0
+"For politicians it ’ s money and power . For environmentalists it ’ s money for their
+organizations and confirmation of their near religious devotion to the idea that man is a
+destructive force acting upon nature .",ad hominem,appeal to emotion,0.150227,0
+"I ’ m an atmospheric physicist . I ’ ve published more than 200 scientific papers . For 30 years
+I taught at MIT , during which time the climate has changed remarkably little .",fallacy of credibility,intentional,0.224306,0
+"In fact , it seems that the less the climate
+changes , the louder the voices of the climate alarmists get .",false causality,intentional,0.173461,0
+"But the cry
+of “ global warming ” has grown ever more shrill .",ad hominem,appeal to emotion,0.172992,0
+"The following are
+such points of agreement :
+1 ) The climate is always changing .",faulty generalization,intentional,0.288198,0
+"2 ) CO2 is a greenhouse gas without which life on earth is not possible , but adding it to the
+atmosphere should lead to some warming .",fallacy of relevance,intentional,0.235014,0
+"4 ) Over this period ( the past two centuries ) , the global mean temperature has increased
+slightly and erratically by about 1.8 degrees Fahrenheit or one degree Celsius ; but only since
+the 1960 ’ s have man ’ s greenhouse emissions been sufficient to play a role .",fallacy of credibility,intentional,0.353549,0
+"4 ) Over this period ( the past two centuries ) , the global mean temperature has increased
+slightly and erratically by about 1.8 degrees Fahrenheit or one degree Celsius ; but only since
+the 1960 ’ s have man ’ s greenhouse emissions been sufficient to play a role .",fallacy of logic,intentional,0.353549,0
+"The IPCC acknowledged in its own 2007 report that
+“ The long-term prediction of future climate states is not possible . ”",intentional,intentional,0.296386,1
+"Most importantly , the scenario that the burning of fossil fuel leads to catastrophe isn ’ t part of
+what either group asserts .",fallacy of logic,intentional,0.272275,0
+"Most importantly , the scenario that the burning of fossil fuel leads to catastrophe isn ’ t part of
+what either group asserts .",intentional,intentional,0.272275,1
+"So why are so many people worried , indeed , panic stricken about
+this issue .",appeal to emotion,appeal to emotion,0.175859,1
+"Global warming alarmism provides them , more than any other issue , with the things they
+most want : For politicians it ’ s money and power . For environmentalists it ’ s money for their
+organizations and confirmation of their near religious devotion to the idea that man is a
+destructive force acting upon nature . And for the media it ’ s ideology , money , and headlines .",fallacy of extension,appeal to emotion,0.149807,0
+"Meanwhile , over the last decade , scientists outside of climate physics have jumped on the
+bandwagon , publishing papers blaming global warming for everything from acne to the Syrian
+civil war .",intentional,intentional,0.269258,1
+"And crony capitalists have eagerly grabbed for the subsidies that governments have
+so lavishly provided .",ad hominem,appeal to emotion,0.16346,0
+"AD
+Long was not involved in the current work , but his research had previously demonstrated that ocean oxygen loss was expected to occur and that it should soon be possible to demonstrate that in the real world through measurements , despite the complexities involved in studying the global ocean and deducing trends about it .",fallacy of credibility,intentional,0.322682,0
