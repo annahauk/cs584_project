@@ -15,4 +15,6 @@ datasets
 sentencepiece
 protobuf
 
+# ollama
+ollama
 
