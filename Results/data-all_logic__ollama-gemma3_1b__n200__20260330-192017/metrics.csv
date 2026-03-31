@@ -1,0 +1,3 @@
+model,split,temperature,intervention,intervention_text,num_labels,accuracy,precision_macro,recall_macro,f1_macro,f1_weighted,parsed_rate,num_samples,seconds,samples_per_sec
+gemma3:1b,dev,0.0,none,,13,0.155,0.158033633033633,0.1446823289565225,0.11570905834629815,0.13111085996470376,0.99,200.0,136.289,1.467
+gemma3:1b,test,0.0,none,,13,0.13,0.09592353424886438,0.11238807488807488,0.08834195976060484,0.11606854921908549,0.995,200.0,134.983,1.482
