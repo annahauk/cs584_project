@@ -242,6 +242,32 @@ def resolve_label(candidate: str, valid_labels: list[str], norm_map: dict[str, s
     return None
 
 
+def build_thinking_prefix(mode: str, labels: list[str]) -> str:
+    if mode == "none":
+        return ""
+    if mode == "suppress_cot":
+        return (
+            "I will identify the fallacy label directly without extended reasoning. "
+            "I need to match the argument structure to the correct label and output JSON immediately."
+        )
+    if mode == "induce_cot":
+        return (
+            "I should reason step by step: first identify the claim being made, "
+            "then examine the reasoning structure, then match it to a fallacy pattern."
+        )
+    if mode == "counterfactual_check":
+        return (
+            "I will identify the most likely fallacy label, then consider at least one "
+            "alternative label and explain why I'm rejecting it before deciding."
+        )
+    if mode == "label_then_reason":
+        return (
+            "I will first decide which fallacy label fits best, then construct a "
+            "one-sentence reason grounded in the text's logical structure."
+        )
+    return ""
+
+
 def predict_one(
     client: Any,
     model: str,
@@ -252,15 +278,28 @@ def predict_one(
     intervention_mode: str,
     intervention_text: str,
 ) -> Prediction:
+    # Add system intervention prompt - third person
     system = build_system_prompt(intervention_mode=intervention_mode, intervention_text=intervention_text)
     prompt = build_prompt(text, labels)
 
+    messages = [
+        {"role": "system", "content": system},
+        {"role": "user", "content": prompt},
+    ]
+
+    # Add assistant intervention prompt - first person
+    # Just experimenting with this for now to see how it differs
+    # Based on paper's <think> assistant examples
+    thinking_prefix = build_thinking_prefix(intervention_mode, labels)
+    if thinking_prefix:
+        messages.append({
+            "role": "assistant", 
+            "content": f"<think>{thinking_prefix}"
+        })
+
     kwargs: dict[str, Any] = {
         "model": model,
-        "messages": [
-            {"role": "system", "content": system},
-            {"role": "user", "content": prompt},
-        ],
+        "messages": messages,
         "options": {"temperature": temperature},
     }
 
