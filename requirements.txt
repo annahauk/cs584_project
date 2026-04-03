@@ -20,4 +20,4 @@ ollama
 
 # other
 tqdm
-
+matplotlib
