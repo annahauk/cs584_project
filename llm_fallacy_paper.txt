@@ -1,0 +1,336 @@
+Large Language Models
+for Logical Fallacy Detection
+
+Nicole Teo1[0009−0006−1497−2785], Donghao Huang1,2[0009−0005−6767−4872],
+Erik Cambria3[0000−0002−3030−1280], and Zhaoxia Wang1∗[0000−0001−7674−5488]
+
+1 Singapore Management University, 80 Stamford Rd, Singapore 178902
+nicolet.2023@engd.smu.edu.sg, dh.huang.2023@engd.smu.edu.sg,
+zxwang@smu.edu.sg*
+2 Research and Development, Mastercard, 3 Fraser Street, Level 17, DUO Tower,
+Singapore 189352, Singapore
+3 Nanyang Technological University, 50 Nanyang Ave, Singapore 639798
+cambria@ntu.edu.sg
+
+Abstract. Identifying logical fallacies is essential for maintaining log-
+ical reasoning and reducing false information in a variety of domains,
+such as the media, law, and education. We present an extensive study
+on the use of large language models (LLMs) for logical fallacy detection
+and provide a comparative overview of model performance across various
+fallacy classes. We evaluate the logical fallacy detection capabilities of
+multiple state-of-the-art models (LLaMA, Qwen, Gemma, Phi) utilizing
+accuracy, precision, recall, and F1-score as assessment measures. Accord-
+ing to our findings, our models do well on simple fallacies like “circular
+reasoning,” but they have trouble with more interpretive reasoning when
+it comes to more complex categories like “equivocation” and “intentional”.
+These results highlight the potential of LLMs in fallacy detection tasks
+but also indicate a need for improved prompt engineering, fine-tuning,
+and context-rich datasets to enhance interpretive accuracy. This research
+offers insights into advancing LLMs for critical reasoning applications,
+contributing to improved information integrity across domains.
+
+Keywords: Large language models · Logical fallacies · Reasoning.
+
+1 Background
+
+The rapid advancement of large language models (LLMs) has opened new av-
+enues for natural language processing, allowing for exceptional performance on
+a variety of downstream tasks [12, 6]. In addition, it has also expanded appli-
+cations spanning from conversational agents to complex reasoning tasks [2, 17,
+3]. Among these tasks, logical fallacy detection has emerged as a critical area of
+focus, given its implications for the integrity of information and reasoning pro-
+cesses in various domains, including education, law, and media literacy. Logical
+fallacies undermine sound argumentation and can lead to flawed conclusions,
+making the ability to identify and address these fallacies essential.
+
+2 Teo et al.
+
+A fallacy is defined as “a mistake in reasoning [...] that occurs with some fre-
+quency in real arguments and which is characteristically deceptive” [5]. The task
+of classifying fallacies, or developing a classification model to distinguish between
+various forms of fallacies, has been taken up by recent publications [1]. [13] com-
+bined methods like large transformer language models and the Structure Aware
+Hypothesis [29] from natural language inference. In this line of study, the un-
+derlying logical shape of the text is extracted via argument mining [15], and
+the resulting features are used to train a classifier. Interestingly, the datasets
+presented by [13] only include false assertions, which means that they may only
+be classified as fallacious types if the argument is presumed to be false. More
+recently, [16] focused on assessing the effectiveness of GPT-4, in identifying log-
+ical fallacies as part of a digital misinformation intervention. This evaluation is
+particularly important because logical fallacies are a common feature in misin-
+formation, and understanding the capabilities of LLMs in this domain could aid
+in combating such content. They found that while GPT-4 showed strong per-
+formance in identifying logical fallacies, its performance varied across different
+types of fallacies.
+
+This study investigates the ability of leading LLMs—LLaMA, Qwen, Gemma,
+and Phi—to detect logical fallacies using metrics like accuracy, F1-score, recall,
+and precision. We also analyze their sensitivity to different fallacy types to bet-
+ter understand their reasoning processes. To enhance interpretability, we apply
+methods from interpretable AI, offering insights into model decisions and in-
+creasing transparency and accountability. By providing justifications for classi-
+fications, we aim to clarify how LLMs identify fallacies and support their use in
+fostering critical thinking and informed decision-making.
+
+Our work aims to present a thorough analysis across different LLMs for the
+identification of logical fallacies, together with new methods for evaluating the
+interpretability and effectiveness of these models. The primary contributions we
+have made in this paper are:
+
+1. The paper presents a comprehensive analysis of state-of-the-art LLMs (LLaMA,
+Qwen, Gemma, Phi) for detecting various types of logical fallacies, providing
+insights into their strengths and weaknesses.
+
+2. The study highlights how LLMs perform differently across fallacy categories,
+showing strong results on simpler fallacies like “circular reasoning” while fac-
+ing challenges with more complex types such as “equivocation” and “inten-
+tional.”
+
+3. The research suggests enhancements in prompt engineering, fine-tuning, and
+dataset design, offering practical guidance for improving LLMs’ ability to
+detect and interpret complex logical fallacies.
+
+2 Related Work
+
+Logical Reasoning. Recent developments have demonstrated that LLMs may
+generate intermediate reasoning stages to carry out reasoning tasks efficiently [23,
+26, 28]. Formal reasoning, which is frequently applied in logic and mathematics,
+
+Large Language Models for Logical Fallacy Detection 3
+
+is a methodical, logical process that adheres to a set of norms and principles.
+Informal reasoning, which is more prevalent in daily life, is a less formal method
+of problem solving that depends on experience, common sense, and intuition to
+reach conclusions. Informal reasoning is more flexible and open-ended but may
+also be less reliable than formal reasoning, which is more ordered and depend-
+able [10]. The logical reasoning skills of large language models are gaining more
+and more attention from researchers [9, 27, 31, 21]. For example, [19] integrated
+first-order logic with large language models. [20] and [30] equipped extensive
+language models with symbolic solutions. An adversarial pre-training approach
+was presented by [22] to improve logical thinking. Multi-step explicit planning
+was added to the inference process by [30]. A contrastive learning strategy was
+put up by [11] to enhance logical question responding.
+
+Logical Fallacies. False reasoning patterns are known as logical fallacies [4].
+They are frequently recognized since their claims are not backed up by any proof.
+Finding logical fallacies in natural language text has a wide range of possible
+uses, including tracking false information and confirming assertions. Further-
+more, being able to understand erroneous arguments can improve the logic and
+educational value of speech. Fallacies can also be deliberately committed in order
+to mislead or influence others, and have been used to disseminate propaganda in
+news articles [18]. Recent attempts have been made to categorize fallacies using
+deep learning models. For example [13] proposed a dataset, where the fallacies
+were categorized using a structure-based approach. Follow up work has also tried
+to classify logical fallacies and valid statements [14], and build a software that
+addresses question-answering fallacies [7]. [24] investigated discussion answers for
+the ad hominem fallacy. In their study, [8] investigated the ad hominem fallacy
+in online arguments. Argumentation essays were found to have weak arguments
+by [25]. A multi-task prompting technique was presented by [1]. It allows users to
+collaboratively learn fallacies from several datasets. To our knowledge, no prior
+work has tried to test out the logical fallacy detection capabilities of recent open
+source LLMs.
+
+3 Methodology
+
+In this study, we evaluate the logical fallacy detection capabilities of different
+state-of-the-art large language models, such as LLaMA, Qwen, Gemma, and
+Phi. These models were selected based on their recent advancements in natu-
+ral language understanding and generation, as well as their potential to address
+complex reasoning tasks such as logical fallacy detection. Each model was eval-
+uated in the context of its ability to identify fallacies across a range of types,
+including simple and complex categories.
+
+3.1 Dataset
+
+We make use of the LOGIC and LOGIC Climate logical fallacy datasets from [13],
+which has 2,449 instances of logical fallacies spanning 13 different categories. The
+LOGIC dataset comprises of typical instances of logical fallacies gathered from
+several online educational resources designed to instruct or assess students’ com-
+prehension of logical fallacies. The logical fallacy examples was gathered manu-
+ally from Google, totaling about 600 samples, and automatically gathered from
+three student quiz websites: Quizziz, study.com, and ProProfs [13]. The LOGIC
+Climate dataset contains more difficult examples of the same logical error types
+on the subject of climate change. It comprises of 1,079 samples of logical fallacies,
+with an average of 35.98 tokens per sample and a vocabulary of 5.8K words. A
+sample of the dataset structure is illustrated in Table 1. The full dataset contains
+13 logical fallacy types, each represented by exemplar statements that demon-
+strate the reasoning error characteristic of that fallacy category.
+
+Table 1: Structure of the LOGIC Dataset
+Text Label
+“You’re too ugly to be class president!” Ad Hominem
+Everyone is going to get the new smart phone when it comes out
+this weekend. Why aren’t you? Ad Populum
+Do the best for your baby Appeal to Emotion
+America is the best place to live, because it’s better than any
+other country. Circular Reasoning
+Noisy children are a real headache. Two aspirin will make a
+headache go away. Therefore, two aspirin will make noisy chil-
+dren go away. Equivocation
+I am committed to preserving traditional marriage, the union of
+one man and one woman. Fallacy of Credibility
+The Senator thinks we can solve all our ecological problems by
+driving a Prius. Fallacy of Extension
+Most Arabs are Muslims and all the 9/11 hijackers were also Mus-
+lims. Therefore most Arabs are hijackers. Fallacy of Logic
+“I believe deeply that canceling the fashion show is the best deci-
+sion. I know it is. I am very certain about it.” Fallacy of Relevance
+The Soviet Union collapsed after taking up atheism. Therefore,
+we must avoid atheism for the same reasons. False Causality
+You need to go to the party with me, otherwise you’ll just be
+bored at home. False Dilemma
+If we let this child bring the permission slip late, there is no reason
+to ever set a deadline for anything again! Faulty Generalization
+You can’t prove that space aliens don’t exist, so they must be real Intentional
+
+Large Language Models for Logical Fallacy Detection 5
+
+3.2 Data Pre-processing
+
+Each dataset contained text samples with corresponding issue labels. We be-
+gan by filtering out rows with missing values to ensure consistency and avoid
+performance issues during modeling. Next, we applied label encoding to con-
+vert categorical labels into numerical form, standardizing the format for both
+datasets.
+
+To prepare the text for model training, we used TF-IDF vectorization with a
+maximum of 5000 features, capturing the most informative terms while reducing
+computational load and overfitting. The vectorizer was fitted on the training data
+and then applied to the test set to maintain a consistent feature space. Finally,
+we split the training data into 80% for training and 20% for validation.
+
+3.3 Implementation and Evaluation
+
+Baseline. We began by loading a tokenizer and a pre-trained LLM for sequence
+classification, adjusting the label size to match our dataset classes. The token em-
+beddings were resized to fit the tokenizer’s vocabulary, and the end-of-sequence
+token was set as the padding token to ensure consistent tokenization. Each sam-
+ple was tokenized to a uniform length of 512 tokens with padding as needed, en-
+abling efficient batching during training. We monitored precision, recall, and F1-
+score to track performance. Training used a learning rate of 2e-5 over 5 epochs,
+with weight decay (0.01) and a linear learning rate scheduler for regularization.
+
+Few-shot. We applied a few-shot learning approach by embedding three rel-
+evant text-label examples from the training data into each prompt. This format
+provides contextual guidance, helping the model predict labels for new inputs
+based on similar cases. These few-shot prompts are tokenized efficiently, ensur-
+ing they stay within model limits for smooth batch processing. Each dataset
+instance includes the tokenized prompt and label tensor, supporting training
+and evaluation. By integrating context directly into inputs, this method aims to
+boost model accuracy on unseen data.
+
+Model performance evaluation in different fallacy classes. We gener-
+ate a confusion matrix that visualizes the performance of a classification model.
+First, predictions are obtained from the model on the validation dataset. The
+predicted labels are extracted by selecting the highest probability class from the
+model’s predictions, and the true labels are also collected. The confusion matrix,
+which compares the true labels with the predicted labels, is then computed. A
+custom function is then defined to plot the matrix as a heatmap with annota-
+tions, where the x-axis represents predicted labels, and the y-axis represents true
+labels. Finally, the function is called with class names (obtained from the label
+encoder) and the matrix is saved.
+
+4 Results
+
+Table 2 presents a comparative analysis of baseline (zero-shot) and few-shot
+prompting across various models on the LOGIC and LOGIC Climate datasets.
+
+Table 2: Model Performance on LOGIC and LOGIC Climate Datasets
+
+Model Type LOGIC LOGIC Climate
+A P R F1 A P R F1
+Llama-3.2-1B-Instruct baseline 0.562 0.578 0.562 0.562 0.232 0.276 0.232 0.214
+few-shot 0.631 0.646 0.631 0.632 0.261 0.225 0.261 0.226
+Llama-3.2-3B-Instruct baseline 0.595 0.616 0.595 0.592 0.213 0.207 0.213 0.191
+few-shot 0.704 0.724 0.704 0.698 0.237 0.323 0.237 0.210
+Qwen2.5-1.5B-Instruct baseline 0.613 0.631 0.613 0.614 0.251 0.230 0.251 0.232
+few-shot 0.628 0.690 0.628 0.636 0.265 0.297 0.265 0.247
+Qwen2.5-3B-Instruct baseline 0.601 0.627 0.601 0.600 0.227 0.263 0.227 0.227
+few-shot 0.680 0.712 0.680 0.682 0.242 0.260 0.242 0.217
+Gemma-7b-it baseline 0.544 0.648 0.544 0.551 0.171 0.261 0.171 0.137
+few-shot 0.550 0.545 0.550 0.543 0.190 0.126 0.190 0.125
+Gemma-2-2b-it baseline 0.595 0.602 0.595 0.587 0.246 0.267 0.246 0.222
+few-shot 0.674 0.681 0.674 0.669 0.294 0.366 0.294 0.269
+Phi-3-mini-4k-instruct baseline 0.637 0.665 0.637 0.642 0.237 0.238 0.237 0.216
+few-shot 0.695 0.712 0.695 0.690 0.322 0.323 0.322 0.297
+Phi-3.5-mini-instruct baseline 0.640 0.682 0.640 0.647 0.251 0.206 0.251 0.222
+few-shot 0.713 0.721 0.713 0.708 0.332 0.293 0.332 0.292
+
+From Table 2, we observe that few-shot prompting consistently improves perfor-
+mance across all evaluated models. The improvement is more pronounced in the
+LOGIC Climate dataset, suggesting that contextual examples help models handle
+more complex and domain-specific fallacies. Among the models, Mistral achieves
+the best overall performance, followed closely by Gemma and LLaMA.
+
+4.1 Confusion Matrix Analysis
+
+To better understand model behavior, we analyze confusion matrices for selected
+models under both zero-shot and few-shot settings. The confusion matrices reveal
+that certain fallacy classes, such as Ad Hominem and False Dilemma, are more
+easily distinguishable, while others like Fallacy of Relevance and Fallacy of Logic
+are often confused.
+
+In the few-shot setting, the confusion across similar classes is reduced, indicating
+that providing examples helps the model better capture subtle distinctions. How-
+ever, some overlap remains, particularly for semantically close categories.
+
+4.2 Discussion
+
+The results demonstrate that large language models benefit significantly from
+few-shot prompting when applied to logical fallacy detection. By incorporating
+representative examples into the prompt, models can leverage in-context learn-
+ing to generalize better on unseen data.
+
+Despite these improvements, performance is still limited by class imbalance and
+semantic ambiguity in certain fallacy categories. Models may struggle when mul-
+tiple fallacies overlap or when the text lacks sufficient context.
+
+5 Limitations
+
+This study has several limitations. First, the datasets used are relatively small,
+which may limit the generalizability of the results. Second, the manual curation
+of examples may introduce bias. Third, the reliance on prompt-based methods
+means that performance can be sensitive to prompt design and example selection.
+
+Additionally, computational constraints limited the scale of experiments, pre-
+venting the exploration of larger models or more extensive hyperparameter tun-
+ing.
+
+6 Conclusion
+
+In this paper, we explored the effectiveness of large language models for logical
+fallacy detection using zero-shot and few-shot prompting strategies. Our results
+show that few-shot prompting consistently enhances performance across models,
+particularly in more complex domains such as climate-related arguments.
+
+Future work may explore larger datasets, improved prompt engineering strate-
+gies, and hybrid approaches that combine fine-tuning with in-context learning.
+
+References
+
+[1] Devlin, J., Chang, M.-W., Lee, K., Toutanova, K.: BERT: Pre-training of deep
+bidirectional transformers for language understanding. NAACL (2019)
+
+[2] Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., Levy, O., Lewis, M.,
+Zettlemoyer, L., Stoyanov, V.: RoBERTa: A robustly optimized BERT pretraining
+approach. arXiv preprint arXiv:1907.11692 (2019)
+
+[3] Sanh, V., Debut, L., Chaumond, J., Wolf, T.: DistilBERT, a distilled version of
+BERT: smaller, faster, cheaper and lighter. arXiv preprint arXiv:1910.01108 (2019)
+
+[4] Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., Sutskever, I.: Language
+models are unsupervised multitask learners. OpenAI (2019)
+
+[5] Touvron, H., Lavril, T., Izacard, G., Martinet, X., Lachaux, M.-A., Lacroix,
+T., Rozière, B., Goyal, N., Hambro, E., Azhar, F., et al.: LLaMA: Open and effi-
+cient foundation language models. arXiv preprint arXiv:2302.13971 (2023)
+
+[6] Jiang, A. Q., Sablayrolles, A., Roux, A., Mensch, A., Savary, B., Bamford,
+C., Chaplot, D. S., de las Casas, D., Bressand, F., Lengyel, G., et al.: Mistral 7B.
+arXiv preprint arXiv:2310.06825 (2023)
+
+[7] Google DeepMind: Gemma: Open models based on Gemini research (2024)
+
+[8] Jin, Z., et al.: LOGIC: A dataset for logical fallacy detection. (2022)
+
+[9] Additional references omitted for brevity

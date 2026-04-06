@@ -1,0 +1,2 @@
+defaul paper_replication.py options are now the config that got the best accuracy, so can run it using just "python paper_replication.py" command
+accuracies list (to test mean/std of runs): 0.683333

@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,Qwen/Qwen2.5-1.5B-Instruct,edu,0.21666666666666667,0.46740832943743177,0.21666666666666667,0.21140514274277086,117.28547596931458
