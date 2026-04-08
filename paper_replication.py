@@ -19,6 +19,7 @@ import time
 from datetime import datetime
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoModelForCausalLM
 from transformers import Trainer, TrainingArguments, EarlyStoppingCallback, BitsAndBytesConfig
+from transformers import set_seed
 from peft import get_peft_model, LoraConfig, TaskType
 from pynvml import *
 from tqdm import tqdm
@@ -87,6 +88,41 @@ def encode_labels(train_labels, dev_labels, test_labels):
     y_test  = le.transform(test_labels)
 
     return y_train, y_dev, y_test, le
+
+
+def _validate_label_range(y, split_name, num_labels):
+    y = np.asarray(y)
+    if y.size == 0:
+        raise ValueError(f"{split_name} labels are empty.")
+    y_min = int(np.min(y))
+    y_max = int(np.max(y))
+    if y_min < 0 or y_max >= num_labels:
+        raise ValueError(
+            f"Label range error in {split_name}: min={y_min}, max={y_max}, num_labels={num_labels}."
+        )
+
+
+def _get_classifier_out_features(model):
+    """Best-effort lookup of classifier output size across HF/PEFT wrappers."""
+    candidate_suffixes = ("score", "classifier", "classification_head")
+    for module_name, module in model.named_modules():
+        if module_name.endswith(candidate_suffixes) and hasattr(module, "out_features"):
+            return int(module.out_features), module_name
+    return None, None
+
+
+def _validate_model_label_compat(model, num_labels):
+    cfg_labels = getattr(model.config, "num_labels", None)
+    if cfg_labels is not None and int(cfg_labels) != int(num_labels):
+        raise ValueError(
+            f"Model config num_labels mismatch: model.config.num_labels={cfg_labels}, expected={num_labels}."
+        )
+
+    head_out, head_name = _get_classifier_out_features(model)
+    if head_out is not None and int(head_out) != int(num_labels):
+        raise ValueError(
+            f"Classifier head mismatch at '{head_name}': out_features={head_out}, expected={num_labels}."
+        )
 ############################################
 # 3. TF-IDF BASELINE (paper baseline)
 ############################################
@@ -321,7 +357,7 @@ def few_shot_inference(
 
     model_kwargs = {
         "device_map": "auto",
-        "torch_dtype": torch.bfloat16,
+        "dtype": torch.bfloat16,
     }
     if use_quantization:
         model_kwargs["quantization_config"] = BitsAndBytesConfig(
@@ -486,17 +522,25 @@ def train_model(
     max_len=512,
     use_quantization=True,
     use_lora=True,
+    use_torch_compile=False,
+    seed=42,
 ):
+
+    train_labels = np.asarray(train_labels, dtype=np.int64)
+    val_labels = np.asarray(val_labels, dtype=np.int64)
+    _validate_label_range(train_labels, "train(train_model)", num_labels)
+    _validate_label_range(val_labels, "val(train_model)", num_labels)
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     tokenizer.pad_token = tokenizer.eos_token
 
     model_kwargs = {
         "num_labels": num_labels,
-        "device_map": "auto",
-        "torch_dtype": torch.bfloat16,
     }
     if use_quantization:
+        # For quantized runs, keep model sharded automatically.
+        model_kwargs["device_map"] = "auto"
+        model_kwargs["dtype"] = torch.bfloat16
         model_kwargs["quantization_config"] = BitsAndBytesConfig(
             load_in_4bit=True,
             bnb_4bit_quant_type="nf4",
@@ -504,6 +548,7 @@ def train_model(
         )
 
     model = AutoModelForSequenceClassification.from_pretrained(model_name, **model_kwargs)
+    _validate_model_label_compat(model, num_labels)
 
     # Paper reports resizing token embeddings to tokenizer vocabulary size.
     model.resize_token_embeddings(len(tokenizer))
@@ -520,6 +565,7 @@ def train_model(
 
         model = get_peft_model(model, peft_config)
         model.print_trainable_parameters()
+        _validate_model_label_compat(model, num_labels)
 
 
     train_dataset = FallacyDataset(train_texts, train_labels, tokenizer, max_len=max_len)
@@ -533,8 +579,10 @@ def train_model(
         num_train_epochs=5,
         weight_decay=0.01,
         logging_dir="./logs",
-        torch_compile=True,
-        optim="paged_adamw_8bit",
+        seed=seed,
+        data_seed=seed,
+        torch_compile=use_torch_compile,
+        optim="paged_adamw_8bit" if use_quantization else "adamw_torch",
         max_grad_norm=0.3,
         warmup_ratio=0.03
     )
@@ -560,7 +608,23 @@ def train_model(
         compute_metrics=compute_metrics_hf,
     )
 
-    trainer.train()
+    try:
+        trainer.train()
+    except Exception as exc:
+        train_min = int(np.min(train_labels))
+        train_max = int(np.max(train_labels))
+        val_min = int(np.min(val_labels))
+        val_max = int(np.max(val_labels))
+        print(
+            "Training failed diagnostics: "
+            f"num_labels={num_labels}, "
+            f"train_label_range=[{train_min}, {train_max}], "
+            f"val_label_range=[{val_min}, {val_max}]"
+        )
+        raise RuntimeError(
+            "Training failed. This is often a label/head mismatch or CUDA assert. "
+            "If this persists, run with CUDA_LAUNCH_BLOCKING=1 for a synchronous traceback."
+        ) from exc
 
     return trainer, tokenizer
 
@@ -582,6 +646,8 @@ def evaluate(trainer, dataset):
 
 def main(args):
 
+    set_seed(args.seed)
+
     effective_max_len = 512 if args.paper_parity else args.max_len
     effective_prompt_budget = min(args.prompt_budget_tokens, effective_max_len) if args.paper_parity else args.prompt_budget_tokens
 
@@ -597,6 +663,17 @@ def main(args):
     test_texts, test_labels = preprocess(test_df)
 
     y_train, y_dev, y_test, le = encode_labels(train_labels, dev_labels, test_labels)
+    # Derive label count from encoded targets to prevent classifier head mismatch.
+    num_labels = int(max(np.max(y_train), np.max(y_dev), np.max(y_test)) + 1)
+    _validate_label_range(y_train, "train", num_labels)
+    _validate_label_range(y_dev, "dev", num_labels)
+    _validate_label_range(y_test, "test", num_labels)
+
+    if num_labels != len(le.classes_):
+        print(
+            f"Warning: num_labels from encoded targets ({num_labels}) differs from LabelEncoder classes ({len(le.classes_)})."
+        )
+
     print_gpu_utilization()
     ########################################
     # BASELINE TF-IDF
@@ -619,10 +696,12 @@ def main(args):
             dev_texts,
             y_train,
             y_dev,
-            num_labels=len(le.classes_),
+            num_labels=num_labels,
             max_len=effective_max_len,
             use_quantization=args.use_quantization,
             use_lora=args.use_lora,
+            use_torch_compile=args.use_torch_compile,
+            seed=args.seed,
         )
         
         test_dataset = FallacyDataset(test_texts, y_test, tokenizer, max_len=effective_max_len)
@@ -725,10 +804,12 @@ def main(args):
                 prompted_dev,
                 y_train,
                 y_dev,
-                num_labels=len(le.classes_),
+                num_labels=num_labels,
                 max_len=effective_max_len,
                 use_quantization=args.use_quantization,
                 use_lora=args.use_lora,
+                use_torch_compile=args.use_torch_compile,
+                seed=args.seed,
             )
             fs_test_dataset = FallacyDataset(prompted_test, y_test, fs_tokenizer, max_len=effective_max_len)
             y_true, y_pred = evaluate(fs_trainer, fs_test_dataset)
@@ -792,6 +873,13 @@ if __name__ == "__main__":
     parser.add_argument("--max_len", type=int, default=512)
     parser.add_argument("--num_shots", type=int, default=3)
     parser.add_argument("--prompt_budget_tokens", type=int, default=512)
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument(
+        "--use_torch_compile",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Enable torch.compile in TrainingArguments.",
+    )
     parser.add_argument(
         "--use_quantization",
         action=argparse.BooleanOptionalAction,
