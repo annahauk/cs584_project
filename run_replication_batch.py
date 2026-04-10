@@ -14,6 +14,11 @@ python run_replication_batch.py --num_runs 5 --max_attempts 10 --cuda_visible_de
 """
 
 NUMERIC_METRIC_COLUMNS = ["accuracy", "precision", "recall", "f1", "train_time_s"]
+OOM_ERROR_TOKENS = [
+    "cuda out of memory",
+    "torch.outofmemoryerror",
+    "outofmemoryerror",
+]
 
 
 def _ensure_dir(path: str) -> None:
@@ -48,6 +53,33 @@ def _mode_from_prediction_path(path: str) -> str:
     if name.startswith("predictions_") and name.endswith(".csv"):
         return name[len("predictions_") : -len(".csv")]
     return "unknown"
+
+
+def _stderr_contains_oom(stderr_path: str) -> bool:
+    if not os.path.exists(stderr_path):
+        return False
+    try:
+        with open(stderr_path, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.read().lower()
+    except OSError:
+        return False
+    return any(token in content for token in OOM_ERROR_TOKENS)
+
+
+def _build_oom_retry_args(run_args: list[str], args: argparse.Namespace) -> list[str]:
+    retry_args = list(run_args)
+    retry_args.extend(
+        [
+            "--use_quantization",
+            "--use_lora",
+            "--no-paper_parity",
+            "--max_len",
+            str(args.oom_retry_max_len),
+            "--prompt_budget_tokens",
+            str(args.oom_retry_prompt_budget_tokens),
+        ]
+    )
+    return retry_args
 
 
 def _aggregate_metrics(all_metrics: pd.DataFrame) -> pd.DataFrame:
@@ -96,6 +128,8 @@ def run_batch(args: argparse.Namespace) -> None:
     all_predictions_parts = []
 
     passthrough_args = args.experiment_args or []
+    if passthrough_args and passthrough_args[0] == "--":
+        passthrough_args = passthrough_args[1:]
     passthrough_has_seed = _has_seed_arg(passthrough_args)
     manifest_path = os.path.join(batch_root, "run_manifest.json")
 
@@ -182,11 +216,56 @@ def run_batch(args: argparse.Namespace) -> None:
         if proc.returncode != 0:
             print(f"[{run_name}] FAILED with return code {proc.returncode}")
             print(f"[{run_name}] See stderr: {run_stderr}")
-            run_records.append(record)
-            _write_manifest()
-            if args.stop_on_error:
-                break
-            continue
+
+            if args.enable_oom_retry_fallback and _stderr_contains_oom(run_stderr):
+                print(f"[{run_name}] CUDA OOM detected. Retrying once with memory-efficient fallback args.")
+
+                retry_run_args = _build_oom_retry_args(run_args, args)
+                retry_cmd = [
+                    args.python_exec,
+                    script_path,
+                    "--output_dir",
+                    run_dir,
+                ]
+                retry_cmd.extend(retry_run_args)
+
+                retry_stdout = os.path.join(run_dir, "run_stdout_oom_retry.log")
+                retry_stderr = os.path.join(run_dir, "run_stderr_oom_retry.log")
+                retry_started_at = datetime.now().isoformat(timespec="seconds")
+                with open(retry_stdout, "w", encoding="utf-8") as out_f, open(retry_stderr, "w", encoding="utf-8") as err_f:
+                    retry_proc = subprocess.run(retry_cmd, cwd=repo_root, stdout=out_f, stderr=err_f, env=run_env)
+                retry_finished_at = datetime.now().isoformat(timespec="seconds")
+
+                record["oom_retry_applied"] = True
+                record["oom_retry_started_at"] = retry_started_at
+                record["oom_retry_finished_at"] = retry_finished_at
+                record["oom_retry_command"] = retry_cmd
+                record["oom_retry_return_code"] = retry_proc.returncode
+                record["oom_retry_stdout_path"] = retry_stdout
+                record["oom_retry_stderr_path"] = retry_stderr
+
+                if retry_proc.returncode == 0:
+                    print(f"[{run_name}] OOM fallback retry succeeded.")
+                    record["primary_return_code"] = record["return_code"]
+                    record["primary_stdout_path"] = record["stdout_path"]
+                    record["primary_stderr_path"] = record["stderr_path"]
+                    record["return_code"] = retry_proc.returncode
+                    record["command"] = retry_cmd
+                    record["stdout_path"] = retry_stdout
+                    record["stderr_path"] = retry_stderr
+                    proc = retry_proc
+                else:
+                    print(f"[{run_name}] OOM fallback retry also failed (return code {retry_proc.returncode}).")
+
+            if proc.returncode != 0:
+                run_records.append(record)
+                _write_manifest()
+                if args.stop_on_error:
+                    break
+                continue
+
+            # OOM fallback succeeded, so continue through normal success handling
+            # (metrics discovery, aggregation, and success_count increment).
 
         metric_paths = _find_one_or_more_metrics(run_dir)
         if not metric_paths:
@@ -230,12 +309,19 @@ def run_batch(args: argparse.Namespace) -> None:
             f"(target was {args.num_runs})."
         )
 
+    batch_incomplete = success_count < args.num_runs
+
     # Save run manifest regardless of success/failure.
     _write_manifest()
 
     if not all_metrics_parts:
         print("No metrics were collected from successful runs. See run_manifest.json for details.")
         print(f"Manifest: {manifest_path}")
+        if batch_incomplete:
+            raise RuntimeError(
+                "Batch did not reach the requested number of successful runs; "
+                "check run_manifest.json and per-run stderr logs."
+            )
         return
 
     all_metrics_df = pd.concat(all_metrics_parts, ignore_index=True)
@@ -260,6 +346,12 @@ def run_batch(args: argparse.Namespace) -> None:
     print(f"Aggregate mean/std: {summary_path}")
     if all_predictions_path:
         print(f"All predictions: {all_predictions_path}")
+
+    if batch_incomplete:
+        raise RuntimeError(
+            "Batch produced partial results but did not reach the requested "
+            "number of successful runs."
+        )
 
 
 if __name__ == "__main__":
@@ -332,6 +424,27 @@ if __name__ == "__main__":
         type=int,
         default=42,
         help="Base seed used by batch seed strategy.",
+    )
+    parser.add_argument(
+        "--enable_oom_retry_fallback",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help=(
+            "If a run fails with CUDA OOM, retry once with memory-efficient overrides "
+            "(--use_quantization --use_lora --no-paper_parity plus shorter lengths)."
+        ),
+    )
+    parser.add_argument(
+        "--oom_retry_max_len",
+        type=int,
+        default=192,
+        help="max_len used for OOM fallback retry.",
+    )
+    parser.add_argument(
+        "--oom_retry_prompt_budget_tokens",
+        type=int,
+        default=192,
+        help="prompt_budget_tokens used for OOM fallback retry.",
     )
     parser.add_argument(
         "experiment_args",

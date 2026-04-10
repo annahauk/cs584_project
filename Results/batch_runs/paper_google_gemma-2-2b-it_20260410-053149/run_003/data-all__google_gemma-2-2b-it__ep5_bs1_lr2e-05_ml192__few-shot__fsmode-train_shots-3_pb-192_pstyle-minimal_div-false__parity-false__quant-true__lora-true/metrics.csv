@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,google/gemma-2-2b-it,all,0.512720156555773,0.511811656163452,0.512720156555773,0.5092559166246046,1485.3742430210114

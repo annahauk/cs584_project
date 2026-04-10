@@ -123,6 +123,48 @@ def _validate_model_label_compat(model, num_labels):
         raise ValueError(
             f"Classifier head mismatch at '{head_name}': out_features={head_out}, expected={num_labels}."
         )
+
+
+def _ensure_tokenizer_pad_token(tokenizer):
+    """Ensure tokenizer has a pad token across model families."""
+    if tokenizer.pad_token is None:
+        if tokenizer.eos_token is not None:
+            tokenizer.pad_token = tokenizer.eos_token
+        else:
+            tokenizer.add_special_tokens({"pad_token": "[PAD]"})
+
+
+def _infer_lora_target_modules(model):
+    """Infer LoRA target modules from model internals for broader architecture support."""
+    candidate_suffixes = [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "qkv_proj",
+        "query_key_value",
+        "Wqkv",
+        "c_attn",
+    ]
+    discovered = set()
+    for module_name, module in model.named_modules():
+        if not isinstance(module, torch.nn.Linear):
+            continue
+        leaf = module_name.split(".")[-1]
+        if leaf in candidate_suffixes:
+            discovered.add(leaf)
+
+    ordered = [name for name in candidate_suffixes if name in discovered]
+    return ordered
+
+
+def _is_system_role_unsupported_error(exc: Exception) -> bool:
+    msg = str(exc).lower()
+    return "system role not supported" in msg or (
+        "system" in msg and "role" in msg and "not supported" in msg
+    )
+
+
 ############################################
 # 3. TF-IDF BASELINE (paper baseline)
 ############################################
@@ -193,16 +235,34 @@ def build_few_shot_prompt(text, examples, labels, tokenizer=None, prompt_style="
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt},
         ]
-        return tokenizer.apply_chat_template(
-            messages,
-            tokenize=False,
-            add_generation_prompt=True,
-        )
+        try:
+            return tokenizer.apply_chat_template(
+                messages,
+                tokenize=False,
+                add_generation_prompt=True,
+            )
+        except Exception as exc:
+            # Some chat templates (e.g., Gemma variants) reject an explicit system role.
+            if _is_system_role_unsupported_error(exc):
+                user_only_messages = [
+                    {
+                        "role": "user",
+                        "content": f"System instruction: {system_prompt}\n\n{user_prompt}",
+                    }
+                ]
+                try:
+                    return tokenizer.apply_chat_template(
+                        user_only_messages,
+                        tokenize=False,
+                        add_generation_prompt=True,
+                    )
+                except Exception:
+                    pass
+            else:
+                raise
 
-    # Fallback
-    prompt = f"<|im_start|>system\n{system_prompt}<|im_end|>\n"
-    prompt += f"<|im_start|>user\n{user_prompt}<|im_end|>\n"
-    prompt += f"<|im_start|>assistant\n"
+    # Cross-model fallback that avoids model-family-specific control tokens.
+    prompt = f"System: {system_prompt}\n\nUser: {user_prompt}\n\nAssistant:"
     return prompt
 
 def _truncate_text_to_tokens(text, tokenizer, max_tokens):
@@ -351,8 +411,7 @@ def few_shot_inference(
     Performs few-shot inference on the test set using a causal LM.
     """
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
+    _ensure_tokenizer_pad_token(tokenizer)
     tokenizer.padding_side = "left"  # Important for generative models
 
     model_kwargs = {
@@ -532,7 +591,7 @@ def train_model(
     _validate_label_range(val_labels, "val(train_model)", num_labels)
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    tokenizer.pad_token = tokenizer.eos_token
+    _ensure_tokenizer_pad_token(tokenizer)
 
     model_kwargs = {
         "num_labels": num_labels,
@@ -555,12 +614,18 @@ def train_model(
     model.config.pad_token_id = tokenizer.pad_token_id
 
     if use_lora:
+        target_modules = _infer_lora_target_modules(model)
+        if not target_modules:
+            print("Warning: No compatible LoRA target modules detected for this model; skipping LoRA.")
+            use_lora = False
+
+    if use_lora:
         peft_config = LoraConfig(
             task_type=TaskType.SEQ_CLS,
             r=16,
             lora_alpha=16,
             lora_dropout=0.05,
-            target_modules=["q_proj", "v_proj"],
+            target_modules=target_modules,
         )
 
         model = get_peft_model(model, peft_config)
