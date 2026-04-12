@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,meta-llama/Llama-3.2-3B-Instruct,climate,0.20853080568720378,0.14414373676515077,0.20853080568720378,0.13855801952027402,456.08254408836365

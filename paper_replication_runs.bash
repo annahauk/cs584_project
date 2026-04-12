@@ -15,14 +15,14 @@ cd "$SCRIPT_DIR"
 
 # Model IDs matching the paper table model names.
 MODELS=(
-	# "meta-llama/Llama-3.2-1B-Instruct" # SUCCESSFULLY HAVE RUN
+	"meta-llama/Llama-3.2-1B-Instruct" 
 	"meta-llama/Llama-3.2-3B-Instruct"
 	"google/gemma-7b-it"
 	"google/gemma-2-2b-it"
 	"microsoft/Phi-3-mini-4k-instruct"
 	"microsoft/Phi-3.5-mini-instruct"
 	"Qwen/Qwen2.5-3B-Instruct"
-	# "Qwen/Qwen2.5-1.5B-Instruct" # SUFFESSFULLY HAVE RUN
+	"Qwen/Qwen2.5-1.5B-Instruct" 
 )
 
 # Fixed batch controls requested.

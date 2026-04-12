@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,Qwen/Qwen2.5-1.5B-Instruct,climate,0.2938388625592417,0.2894954256750509,0.2938388625592417,0.2835035767260186,948.5765600204468

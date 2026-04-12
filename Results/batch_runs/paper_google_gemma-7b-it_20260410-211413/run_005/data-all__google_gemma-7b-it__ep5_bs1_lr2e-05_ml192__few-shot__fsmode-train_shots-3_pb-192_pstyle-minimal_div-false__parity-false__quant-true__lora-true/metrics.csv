@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,google/gemma-7b-it,all,0.350293542074364,0.36550840005344387,0.350293542074364,0.34474299360587884,1909.3352677822113

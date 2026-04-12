@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,microsoft/Phi-3.5-mini-instruct,all,0.43052837573385516,0.4238546962741119,0.43052837573385516,0.42176452474062354,1157.3117282390594

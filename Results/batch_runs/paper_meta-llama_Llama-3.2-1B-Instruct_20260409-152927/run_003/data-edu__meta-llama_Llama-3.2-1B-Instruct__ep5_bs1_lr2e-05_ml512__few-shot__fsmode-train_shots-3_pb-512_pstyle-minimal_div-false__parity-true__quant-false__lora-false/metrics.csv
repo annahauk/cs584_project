@@ -1,2 +1,0 @@
-mode,model,dataset,accuracy,precision,recall,f1,train_time_s
-few-shot,meta-llama/Llama-3.2-1B-Instruct,edu,0.6433333333333333,0.6412520931859504,0.6433333333333333,0.6375820042474623,1621.9358768463135

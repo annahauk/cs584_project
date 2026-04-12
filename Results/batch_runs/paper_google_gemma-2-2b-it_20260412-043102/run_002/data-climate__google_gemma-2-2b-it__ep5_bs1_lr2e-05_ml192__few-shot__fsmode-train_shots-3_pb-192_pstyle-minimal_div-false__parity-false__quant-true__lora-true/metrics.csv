@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,google/gemma-2-2b-it,climate,0.2559241706161137,0.16157817615678732,0.2559241706161137,0.16756332273185615,466.45176005363464

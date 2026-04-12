@@ -1,0 +1,2 @@
+mode,model,dataset,accuracy,precision,recall,f1,train_time_s
+few-shot,microsoft/Phi-3.5-mini-instruct,climate,0.23222748815165878,0.13909498914629123,0.23222748815165878,0.1160962577449123,358.21567940711975
