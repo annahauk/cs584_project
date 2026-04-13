@@ -37,14 +37,14 @@ Model-family handling
 Usage
 -----
 # Exact baseline (should reproduce paper_replication few-shot infer results)
-python thinking_intervention.py --ti_mode none --few_shot_mode infer
+python3 thinking_intervention.py --ti_mode none --few_shot_mode infer
 
 # Main TI contribution — structure_focus targets equivocation / intentional
-python thinking_intervention.py --ti_mode structure_focus --few_shot_mode infer
+python3 thinking_intervention.py --ti_mode structure_focus --few_shot_mode infer
 
 # Ablation across all modes
 for mode in none label_first structure_focus counterfactual suppress_cot; do
-    python thinking_intervention.py --ti_mode $mode --few_shot_mode infer
+    python3 thinking_intervention.py --ti_mode $mode --few_shot_mode infer
 done
 """
 from __future__ import annotations
@@ -132,6 +132,9 @@ def _model_supports_think_tags(model_name: str) -> bool:
 
 TI_MODES = ("none", "label_first", "structure_focus", "counterfactual", "suppress_cot")
 
+# if want to do an ablation across all modes, can loop over TI_MODES in the CLI:
+# for mode in none label_first structure_focus counterfactual suppress_cot; do
+#     python3 thinking_intervention.py --ti_mode $mode --few_shot_mode infer
 
 def build_thinking_prefix(ti_mode: str, labels: list[str]) -> str:
     """
@@ -170,8 +173,7 @@ def build_thinking_prefix(ti_mode: str, labels: list[str]) -> str:
         # similar fallacies — equivocation vs appeal to emotion vs fallacy of relevance.
         # Forces attention to logical form rather than surface topic or emotional tone.
         return (
-            "I need to focus on the LOGICAL STRUCTURE of this argument, not its topic or "
-            "emotional tone. "
+            "I need to focus on the LOGICAL STRUCTURE of this argument, not its topic or emotional tone. "
             "I should ask: what specific reasoning error is being made? "
             "Emotional language does not automatically mean 'appeal to emotion' if the "
             "underlying error is a different structural flaw. "
@@ -325,7 +327,7 @@ def few_shot_inference_with_ti(
     _ensure_tokenizer_pad_token(tokenizer)
     tokenizer.padding_side = "left"
 
-    model_kwargs: dict = {"device_map": "auto", "torch_dtype": torch.bfloat16}
+    model_kwargs: dict = {"device_map": "auto", "dtype": torch.bfloat16}
     if use_quantization:
         model_kwargs["quantization_config"] = BitsAndBytesConfig(
             load_in_4bit=True,
@@ -518,7 +520,7 @@ def main(args: argparse.Namespace) -> None:
     print(f"Model:                {args.model_name}")
     print(f"Reasoning model:      {_model_supports_think_tags(args.model_name)}")
 
-    print_gpu_utilization()
+    #print_gpu_utilization()
     train_df, dev_df, test_df = load_dataset(args.data_dir, args.dataset_type)
 
     train_texts, train_labels = preprocess(train_df)
@@ -682,7 +684,7 @@ if __name__ == "__main__":
                         choices=["climate", "edu", "all"])
     parser.add_argument("--model_name",           type=str,
                         default="Qwen/Qwen2.5-1.5B-Instruct")
-    parser.add_argument("--output_dir",           type=str,  default="./Results")
+    parser.add_argument("--output_dir",           type=str,  default="./Results_TI")
     parser.add_argument("--max_len",              type=int,  default=512)
     parser.add_argument("--num_shots",            type=int,  default=3)
     parser.add_argument("--prompt_budget_tokens", type=int,  default=512)
@@ -725,3 +727,29 @@ if __name__ == "__main__":
     args.training_mode = "few-shot"
 
     main(args)
+
+# running all TI modes for a single model (e.g. gemma3:1b) can be done with:
+# for mode in none label_first structure_focus counterfactual suppress_cot; do
+#     python3 thinking_intervention.py --ti_mode $mode --few_shot_mode infer
+
+
+# time: 1087.6s
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode infer --model_name google/gemma-3-1b-it
+
+# TI baselines for gemma-2-2b-it infer
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode infer --model_name google/gemma-2-2b-it
+
+# TI baselines for gemma-2-2b-it train
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode train --model_name google/gemma-2-2b-it
+
+# time: 
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode train --model_name google/gemma-2-1b-it
+
+# python3 thinking_intervention.py --ti_mode none --few_shot_mode train --model_name google/gemma-3-1b-it
+# python3 thinking_intervention.py --ti_mode none --few_shot_mode infer --model_name google/gemma-3-1b-it
+
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode train --model_name google/gemma-2-2b-it
+
+# Qwen/Qwen2.5-1.5B-Instruct
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode infer --model_name Qwen/Qwen2.5-1.5B-Instruct
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode train --model_name Qwen/Qwen2.5-1.5B-Instruct

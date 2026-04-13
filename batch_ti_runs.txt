@@ -1,0 +1,25 @@
+models=(
+  "Qwen/Qwen2.5-1.5B-Instruct"
+  "Qwen/Qwen2.5-3B-Instruct"
+  "microsoft/Phi-3-mini-4k-instruct"
+  "microsoft/Phi-3.5-mini-instruct"
+  "google/gemma-2-2b-it"
+  "google/gemma-7b-it"
+  "meta/llama-3.2-1B-Instruct"
+  "meta/llama-3.2-3B-Instruct"
+)
+
+ti_modes=(none label_first structure_focus counterfactual suppress_cot)
+fs_modes=(infer train)
+
+for model in "${models[@]}"; do
+  for fs in "${fs_modes[@]}"; do
+    for ti in "${ti_modes[@]}"; do
+      echo "Running model=$model fs=$fs ti=$ti"
+      python3 thinking_intervention.py \
+        --model_name "$model" \
+        --few_shot_mode "$fs" \
+        --ti_mode "$ti"
+    done
+  done
+done

@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+label_first,infer,google/gemma-3-1b-it,edu,3,minimal,0.13666666666666666,0.20537801321485533,0.13666666666666666,0.09037927147927148,1087.6
