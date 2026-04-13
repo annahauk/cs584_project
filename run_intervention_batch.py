@@ -13,7 +13,7 @@ import pandas as pd
 python run_intervention_batch.py --num_runs 5 --max_attempts 10 --cuda_visible_devices 0
 """
 
-NUMERIC_METRIC_COLUMNS = ["accuracy", "precision", "recall", "f1", "train_time_s"]
+NUMERIC_METRIC_COLUMNS = ["accuracy", "precision", "recall", "f1", "time_s", "train_time_s"]
 OOM_ERROR_TOKENS = [
     "cuda out of memory",
     "torch.outofmemoryerror",
@@ -87,9 +87,17 @@ def _build_oom_retry_args(run_args: list[str], args: argparse.Namespace) -> list
 
 
 def _aggregate_metrics(all_metrics: pd.DataFrame) -> pd.DataFrame:
-    group_cols = [c for c in ["mode", "model", "dataset"] if c in all_metrics.columns]
+    # Keep TI and few-shot variants separated; fall back gracefully when columns are absent.
+    group_cols = [
+        c
+        for c in ["ti_mode", "few_shot_mode", "mode", "model", "dataset", "num_shots", "prompt_style"]
+        if c in all_metrics.columns
+    ]
     if not group_cols:
-        raise ValueError("No grouping columns found in metrics; expected at least one of mode/model/dataset.")
+        raise ValueError(
+            "No grouping columns found in metrics; expected at least one grouping key "
+            "(e.g., ti_mode/few_shot_mode/model/dataset)."
+        )
 
     metric_cols = [c for c in NUMERIC_METRIC_COLUMNS if c in all_metrics.columns]
     if not metric_cols:
