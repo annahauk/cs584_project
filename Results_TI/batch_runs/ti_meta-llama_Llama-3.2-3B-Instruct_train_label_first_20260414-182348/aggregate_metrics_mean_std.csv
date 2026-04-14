@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+label_first,train,meta-llama/Llama-3.2-3B-Instruct,all,3,minimal,0.47005870841487274,0.02095852952718634,0.4702149157843011,0.03017938705704359,0.47005870841487274,0.02095852952718634,0.4626719332539155,0.02271562978147807,1326.946,12.74034850386754
