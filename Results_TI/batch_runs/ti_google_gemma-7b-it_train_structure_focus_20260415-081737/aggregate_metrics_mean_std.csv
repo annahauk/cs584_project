@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+structure_focus,train,google/gemma-7b-it,all,3,minimal,0.3886497064579256,0.07826076133612399,0.38524949590925645,0.08393209546006421,0.3886497064579256,0.07826076133612399,0.3790466997967548,0.08110582442412217,1836.85,1.7062092485976912
