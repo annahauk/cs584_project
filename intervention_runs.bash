@@ -23,7 +23,7 @@ models=(
 )
 
 ti_modes=(label_first structure_focus counterfactual suppress_cot)
-fs_modes=(infer train)
+fs_modes=(train)
 
 NUM_RUNS=3
 MAX_ATTEMPTS=5
@@ -106,9 +106,9 @@ fi
 success_jobs=()
 failed_jobs=()
 
-for model in "${models[@]}"; do
-  for fs in "${fs_modes[@]}"; do
-    for ti in "${ti_modes[@]}"; do
+for fs in "${fs_modes[@]}"; do
+  for ti in "${ti_modes[@]}"; do
+    for model in "${models[@]}"; do
       model_tag="${model//\//_}"
       batch_name="ti_${model_tag}_${fs}_${ti}_$(date +%Y%m%d-%H%M%S)"
       job="model=${model} fs=${fs} ti=${ti}"

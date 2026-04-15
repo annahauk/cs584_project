@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+label_first,train,Qwen/Qwen2.5-1.5B-Instruct,all,3,minimal,0.464187866927593,0.10758226920060619,0.4769457419769202,0.11090100415137734,0.464187866927593,0.10758226920060619,0.4639647640592329,0.10846243310603611,3241.3959999999997,8.842552233376916
