@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+suppress_cot,train,meta-llama/llama-3.2-1B-Instruct,edu,3,minimal,0.7066666666666667,0.7155147737027455,0.7066666666666667,0.700242320708829,7907.89
