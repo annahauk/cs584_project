@@ -9,7 +9,7 @@ models=(
   "meta/llama-3.2-3B-Instruct"
 )
 
-ti_modes=(none label_first structure_focus counterfactual suppress_cot)
+ti_modes=(label_first structure_focus counterfactual suppress_cot)
 fs_modes=(infer train)
 
 for model in "${models[@]}"; do
