@@ -753,3 +753,25 @@ if __name__ == "__main__":
 # Qwen/Qwen2.5-1.5B-Instruct
 # python3 thinking_intervention.py --ti_mode label_first --few_shot_mode infer --model_name Qwen/Qwen2.5-1.5B-Instruct
 # python3 thinking_intervention.py --ti_mode label_first --few_shot_mode train --model_name Qwen/Qwen2.5-1.5B-Instruct
+
+
+# meta/llama-3.2-1B-Instruct
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode infer --model_name meta-llama/llama-3.2-1B-Instruct --dataset_type all
+# python3 thinking_intervention.py --ti_mode label_first --few_shot_mode infer --model_name meta-llama/llama-3.2-1B-Instruct --dataset_type climate
+
+# loop through all TI modes (meta llama 3.2-1b train)
+# for mode in label_first structure_focus counterfactual suppress_cot; do
+#     python3 thinking_intervention.py --ti_mode $mode --few_shot_mode train --model_name Qwen/Qwen2.5-1.5B-Instruct --dataset_type edu
+# done
+
+# python3 thinking_intervention.py --ti_mode suppress_cot --few_shot_mode train --model_name meta-llama/llama-3.2-1B-Instruct --dataset_type edu
+
+# models: 
+# meta-llama/llama-3.2-1B-Instruct
+# meta-llama/llama-3.2-3B-Instruct
+# google/gemma-2-2b-it
+# google/gemma-7b-it
+# Qwen/Qwen2.5-1.5B-Instruct
+# Qwen/Qwen2.5-3B-Instruct
+# microsoft/Phi-3-mini-4k-instruct
+# microsoft/Phi-3.5-mini-instruct

@@ -214,3 +214,7 @@ __marimo__/
 *.pth
 
 .vscode/*
+
+.DS_Store
+
+.env
