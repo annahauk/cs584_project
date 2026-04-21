@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+suppress_cot,train,microsoft/Phi-3-mini-4k-instruct,edu,3,minimal,0.5026666666666667,0.12696018623524818,0.4856348234242214,0.13180827478173304,0.5026666666666667,0.12696018623524818,0.48356754218515957,0.13225573074494534,762.272,9.049067355258233

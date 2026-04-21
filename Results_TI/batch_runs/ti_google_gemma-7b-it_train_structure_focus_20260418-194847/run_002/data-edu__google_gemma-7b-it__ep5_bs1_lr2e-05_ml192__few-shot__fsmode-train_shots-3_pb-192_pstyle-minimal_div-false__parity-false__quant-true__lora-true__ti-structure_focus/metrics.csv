@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+structure_focus,train,google/gemma-7b-it,edu,3,minimal,0.6,0.6107294664981233,0.6,0.593723229450799,1269.67

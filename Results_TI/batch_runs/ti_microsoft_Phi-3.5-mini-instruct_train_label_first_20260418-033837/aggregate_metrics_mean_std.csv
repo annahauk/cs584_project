@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+label_first,train,microsoft/Phi-3.5-mini-instruct,edu,3,minimal,0.5326666666666666,0.1306692176621734,0.5216487219557446,0.13975735047258775,0.5326666666666666,0.1306692176621734,0.5178612096347905,0.13852656516707287,759.2280000000001,17.4460832280487

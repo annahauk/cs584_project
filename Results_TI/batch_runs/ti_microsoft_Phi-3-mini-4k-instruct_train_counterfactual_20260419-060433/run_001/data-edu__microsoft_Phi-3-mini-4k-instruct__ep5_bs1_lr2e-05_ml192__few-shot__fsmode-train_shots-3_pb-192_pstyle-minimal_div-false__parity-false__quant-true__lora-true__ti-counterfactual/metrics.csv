@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+counterfactual,train,microsoft/Phi-3-mini-4k-instruct,edu,3,minimal,0.33666666666666667,0.3153285349594021,0.33666666666666667,0.31189082126690515,771.48

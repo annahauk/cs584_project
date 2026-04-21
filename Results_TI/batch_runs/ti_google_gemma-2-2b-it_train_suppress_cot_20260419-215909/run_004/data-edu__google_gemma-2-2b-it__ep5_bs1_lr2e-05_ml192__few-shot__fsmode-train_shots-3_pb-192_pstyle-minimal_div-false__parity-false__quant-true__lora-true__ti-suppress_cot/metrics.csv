@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+suppress_cot,train,google/gemma-2-2b-it,edu,3,minimal,0.63,0.6155856904819711,0.63,0.6142627175874106,957.26

@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+suppress_cot,train,Qwen/Qwen2.5-1.5B-Instruct,climate,3,minimal,0.21800947867298573,0.04007472636324113,0.20641124686543283,0.03901343709436597,0.21800947867298573,0.04007472636324113,0.20387815857785335,0.04031472520373442,1026.45,5.741380496013189

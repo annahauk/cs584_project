@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+suppress_cot,train,Qwen/Qwen2.5-3B-Instruct,climate,3,minimal,0.16113744075829384,0.08249336719653508,0.16113744075829384,0.09834035733065477,538.14

@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+label_first,train,microsoft/Phi-3.5-mini-instruct,climate,3,minimal,0.18009478672985782,0.10740183269265563,0.18009478672985782,0.12117563227149507,352.45

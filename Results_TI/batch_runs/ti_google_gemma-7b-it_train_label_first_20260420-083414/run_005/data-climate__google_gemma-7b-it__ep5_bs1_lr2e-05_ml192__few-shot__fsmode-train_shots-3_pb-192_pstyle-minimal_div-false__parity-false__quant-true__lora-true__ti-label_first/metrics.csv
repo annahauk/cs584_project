@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy,precision,recall,f1,time_s
+label_first,train,google/gemma-7b-it,climate,3,minimal,0.11374407582938388,0.07192507334687429,0.11374407582938388,0.08131218500445878,579.26

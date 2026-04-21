@@ -1,0 +1,2 @@
+ti_mode,few_shot_mode,model,dataset,num_shots,prompt_style,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,f1_mean,f1_std,time_s_mean,time_s_std
+suppress_cot,train,google/gemma-7b-it,climate,3,minimal,0.1393364928909952,0.021088716077049294,0.0897953619580552,0.02835780293719705,0.1393364928909952,0.021088716077049294,0.09694079663040903,0.022315207069717676,578.9159999999999,0.19138965489283977
